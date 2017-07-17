@@ -370,13 +370,13 @@ footer {
   text-decoration: none;
   cursor: url("https://html5book.ru/wp-content/uploads/2015/09/fox.png"), pointer
 }
- a {
+a {
     color: #fff; /* Цвет ссылок */
    }
 a:visited {
     color: #fff; /* Цвет посещенных ссылок */
    }
- a:active {
+a:active {
     color: yellow; /* Цвет активных ссылок */
    }
 
