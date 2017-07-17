@@ -1,0 +1,1011 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+<meta name="viewport" content="width=device-width">
+<link href="fortis_files/css.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="fortis_files/style.css">
+<!--<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)" href="css/styleios.css" />--> 
+        
+  
+<script type="text/javascript" src="fortis_files/jquery-1.js"></script>
+<script type="text/javascript" src="fortis_files/jquery_005.js"></script>
+<script type="text/javascript" src="fortis_files/callback.js"></script>   
+
+<!--PLUGIN jcarousel-0.3.1-->
+<link rel="stylesheet" type="text/css" href="fortis_files/jcarousel.css"> 
+<script type="text/javascript" src="fortis_files/jquery.js"></script>
+<script type="text/javascript" src="fortis_files/jcarousel.js"></script>
+<!--PLUGIN jcarousel-0.3.1 END-->
+
+<!--PLUGIN FANCYBOX-->
+<!--<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="js/fancybox/fancybox-start.js"></script>   
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />  -->
+<!--PLUGIN FANCYBOX END-->
+
+<link type="text/css" rel="stylesheet" href="fortis_files/jquery.css">
+<script type="text/javascript" src="fortis_files/jquery-1_002.js"></script> 
+<script type="text/javascript" src="fortis_files/jquery_004.js"></script>
+<script type="text/javascript" src="fortis_files/jquery_003.js"></script>
+
+
+
+
+<script type="text/javascript">
+
+    function showmodal() {
+    
+        $(function() {
+        
+            $(".modal_shadow").fadeIn();
+            $(".form_modal").fadeIn();
+        
+        });
+        
+    
+    }
+    
+    
+    function hidemodal() {
+    
+        $(function() {
+        
+            $(".modal_shadow").fadeOut();
+            $(".form_modal").fadeOut();
+        
+        });
+    
+    }
+    
+    function hidemessage() {
+    
+        $(function() {
+        
+            $(".message").fadeOut();
+            $(".modal_shadow").fadeOut();
+        
+        });
+    
+    }
+
+
+</script> 
+
+
+<script type="text/javascript" src="fortis_files/animatescroll.js"></script>
+<script type="text/javascript">    
+$(function(){
+ 
+  
+// $(".slide2 .area .keypoint").css({display: "block", width: "0px"});
+
+
+//      
+// $(window).scroll(function(){
+//  
+//     
+//  if ($(window).scrollTop() >= "250") { $(".slide2 .area .keypoint").stop(true,false).animate({width: "195px"}) }
+//  else { $(".slide2 .area .keypoint").stop(true,false).animate({width: "0"}) }
+//    
+// });
+ 
+ 
+
+
+     
+     
+
+    
+//Title container slide6    
+//    $(".slide6").hover(function() {
+//    
+//        $(".slide6 .titleContainer").css({left: "-120px"});
+//       $(".slide6 .titleContainer").fadeIn(); 
+//       $(".slide6 .titleContainer").stop(true,false).animate({opacity: "1", left: "0px"});
+//        
+//    }, function() {
+//       $(".slide6 .titleContainer").fadeOut();
+//       $(".slide6 .titleContainer").stop(true,false).animate({opacity: "0", left: "-120px"}); 
+//    
+//    })
+
+//     
+
+});
+</script>  
+
+<script type="text/javascript" src="fortis_files/TweenMax.js"></script>
+<script type="text/javascript" src="fortis_files/jquery_002.js"></script>  
+ 
+ <script type="text/javascript">
+ 
+        $(document).ready(function() {   
+
+            // TimelineLite for title animation, then start up superscrollorama when complete
+            (new TimelineLite())
+               
+                .from( $('.slide1'), .9, {delay: 0, css:{opacity:'0'}, ease:Back.easeOut})
+                .from( $('.menu'), .5, {css:{top:'330px',opacity:'0'}, ease:Quad.easeInOut})       
+                .from( $('.menu .logo'), .7, {css:{top:'-200px',opacity:'0'}, ease:Quad.easeInOut})
+                .from( $('.slide1 .caption'), .7, {css:{left:'-200px',opacity:'0'}, ease:Quad.easeInOut})
+                .from( $('.slide1 .form-container.sl1'), .7, {css:{top:'-200px',opacity:'0'}, ease:Quad.easeInOut})
+               
+                 
+             
+            function initScrollAnimations() {
+                
+               var controller = $.superscrollorama();
+   
+                // showcase tweens
+                    controller.addTween(80, TweenMax.from( $('.advantages-container'), 1, {css:{bottom: '-200px',opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.logo img'), 1, {delay: 0,css:{width: '0px', opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .lines.Top'), 1, {delay: 2,css:{width: '0px', opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem1'), 1, {delay: 3,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem2'), 1, {delay: 3.2,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem3'), 1, {delay: 3.6,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem4'), 1, {delay: 4,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem5'), 1, {delay: 4.4,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem6'), 1, {delay: 4.8,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .lines.Bottom'), 1, {delay: 5,css:{width: '0px', opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem7'), 1, {delay: 6.2,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem8'), 1, {delay: 6.6,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem9'), 1, {delay: 7,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem10'), 1, {delay: 7.4,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem11'), 1, {delay: 7.8,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(400, TweenMax.from( $('.slide2 .area .block.elem12'), 1, {delay: 8.2,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(1500, TweenMax.from( $('.slide4 .area .block.elem1'), 1, {delay: 0,css:{ right: '300px',opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(1500, TweenMax.from( $('.slide4 .area .block.elem2'), 1, {delay: 0.5,css:{ right: '300px',opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(1500, TweenMax.from( $('.slide4 .area .block.elem3'), 1, {delay: 1.0,css:{ right: '300px',opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(1500, TweenMax.from( $('.slide4 .area .block.elem4'), 1, {delay: 1.5,css:{ right: '300px',opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(1500, TweenMax.from( $('.slide4 .area .block.elem5'), 1, {delay: 2,css:{ right: '300px',opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(2200, TweenMax.from( $('.slide5 .area ul.left'), 1, {delay: 0,css:{ top: '300px',opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(2200, TweenMax.from( $('.slide5 .area ul.right'), 1, {delay: 1,css:{ top: '300px',opacity: '0'}, ease:Quad.easeInOut}));
+                    controller.addTween(3500, TweenMax.from( $('.slide8 .area .mapcaption'), 1, {delay: 0,css:{ opacity: '0'}, ease:Quad.easeInOut}));
+                    
+                    
+                    
+//                    controller.addTween(1030, TweenMax.from( $('.slide4 .area .mapContainer'), 1, {css:{top:'400px'}, ease:Quad.easeInOut}));
+//                    controller.addTween(1050, TweenMax.from( $('.slide4 .area .line.type1'), 1, {css:{width:'0px'}, ease:Quad.easeInOut}));
+//                    controller.addTween(1060, TweenMax.from( $('.slide4 .area .caption.elem1'), 1, {delay: 1,css:{opacity:'0px'}, ease:Quad.easeInOut}));
+//                    controller.addTween(1050, TweenMax.from( $('.slide4 .area .line.type3'), 1, {delay: 1.5, css:{height:'0px'}, ease:Quad.easeInOut}));
+//                    controller.addTween(1060, TweenMax.from( $('.slide4 .area .caption.elem2'), 2, {delay: 1.8, css:{opacity:'0px'}, ease:Quad.easeInOut}));
+//                    controller.addTween(1050, TweenMax.from( $('.slide4 .area .line.type2'), 1, {delay: 2.2, css:{height:'0px'}, ease:Quad.easeInOut}));
+//                    controller.addTween(1060, TweenMax.from( $('.slide4 .area .caption.elem3'), 2, {delay: 2.5, css:{opacity:'0px'}, ease:Quad.easeInOut}));
+//                    
+
+               
+//                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon1'), 1, {delay: 0, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+//                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon2'), 1, {delay: 0.5, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+//                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon3'), 1, {delay: 1, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+//                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon4'), 1, {delay: 1.5, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+//                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon5'), 1, {delay: 2, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+
+
+            }
+                               
+
+                  initScrollAnimations();
+        });
+    </script>  
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+<div style="opacity: 1; top: 0px;" class="menu">
+
+    <div class="area">
+
+        <ul class="left">
+            <li><a href="javascript:void(0)" onclick="$('.ancor2').animatescroll({scrollSpeed:2000});">Наши услуги</a></li>
+            <li><a href="javascript:void(0)" onclick="$('.ancor3').animatescroll({scrollSpeed:2000});">Почему мы</a></li>
+            <li><a href="javascript:void(0)" onclick="$('.ancor4').animatescroll({scrollSpeed:2000});">Схема работы</a></li>
+            <li><a href="javascript:void(0)" onclick="$('.ancor6').animatescroll({scrollSpeed:2000});">Наши работы</a></li>
+        </ul>
+        
+        <div style="opacity: 1; top: 0px;" class="logo">
+            <img onclick="$('.slide1').animatescroll({scrollSpeed:2000});" src="fortis_files/logo.png" alt="">    
+        </div>
+        
+        <ul class="right">
+            <li><a href="javascript:void(0)" onclick="$('.ancor7').animatescroll({scrollSpeed:2000});">Отзывы</a></li>
+            <li><a href="javascript:void(0)" onclick="$('.ancor8').animatescroll({scrollSpeed:2000});">Контакты</a></li>
+        </ul>
+        
+        <div class="phone-container">
+        
+            <a class="number" href="tel:+84959741644">8(495)974-16-44</a><br>
+            <a class="callback" href="javascript:void(0)" onclick="showmodal()">Заказать обратный звонок</a>
+        
+        </div>
+    
+    </div>
+    
+</div>
+
+<!-- SLIDE 1 -->
+<div style="opacity: 1;" class="slide1">
+    <div class="area">
+    
+        <div style="opacity: 1; left: 0px;" class="caption darkopacity">
+        
+            <span class="font-42 white lineheight-40">Решение вопросов</span><br>
+            <span class="font-29 orange uppercase lineheight-40">в сфере недвижимости</span><br>
+            <span class="font-40 white lineheight-30">от профессионалов,</span><br>
+            <span class="font-17 white lineheight-60">Более <span class="orange">1000</span> решений вопросов по всей России</span>
+                
+        </div>
+    
+        <!-- FORM -->
+        <div style="opacity: 1; top: 0px;" class="form-container sl1">
+                    
+            <div class="name">
+                
+                <span class="font-23 bold">Закажите <span class="red">звонок</span></span><br>
+                <span class="font-24 bold uppercase">Прямо сейчас!</span>
+                        
+            </div>
+                        
+            <form method="post" action="">
+                <div class="inp one"><input id="f1_name" placeholder="Ваше имя" type="text"></div>
+                <div class="inp two"><input id="f1_phone" class="masked" placeholder="Ваш телефон" type="text"></div>
+                <a class="btn" href="javascript:void(0)" onclick="formCheck(document.getElementById('f1_name').value,document.getElementById('f1_phone').value);">Заказать!</a>
+            </form>
+                    
+        </div>
+    <!--  FORM END -->
+    
+    </div>
+    
+    
+<!-- Преимущества -->
+<div style="opacity: 0; bottom: -200px;" class="advantages-container">
+    <div class="area">
+    
+        <div class="block elem1">
+            <img src="fortis_files/slide1-icon1.png" elt="">
+            <span class="font-30 orange">7</span> <span class="font-30">лет</span><br>
+            <span>на рынке</span>
+        </div>
+
+
+        <div class="block elem2">
+            <img src="fortis_files/slide1-icon2.png" elt="">
+            <span class="font-30 orange lineheight-26">875 000</span> <span class="font-30 lineheight-26">м<sup>2</sup></span><br>
+            <span>согласовано за 2014 год</span>
+            
+
+
+        </div>
+
+        <div class="block elem3">
+            <img src="fortis_files/slide1-icon3.png" elt="">
+            
+            <span class="font-30 orange">100</span> <span class="font-30">%</span><br>
+            <span>гарантия качества</span>
+
+        </div>
+
+        <div class="block elem4 last">
+            <img src="fortis_files/slide1-icon4.png" elt="">
+            
+            <span class="font-30 orange">СРО</span><br> 
+            <span>лицензия</span>
+
+        </div>
+        <div class="clear"></div>
+    
+    </div> 
+    
+</div><div class="clear"></div>
+<!-- Преимущества END -->    
+    
+    
+    
+</div>
+<!-- SLIDE 1 END -->
+
+ 
+   
+
+<!-- SLIDE 2 -->
+<div class="ancor2"></div>
+<div class="slide2">
+    <div class="area">
+    
+        <div class="slide-name">
+            решение всех вопросов<br>
+            <span class="black">в сфере недвижимости</span>
+        </div>
+    
+        <div class="block logo">
+            <img style="opacity: 0; width: 0px;" src="fortis_files/slide2-logo.png" alt="">
+        </div>
+        
+        <div style="opacity: 0;" class="block elem1">
+            <div class="content">
+                <span class="font-23 white uppercase bold lineheight-22">Перепланировка</span><br>
+                <span class="font-13 black bold">квартир и нежилых помещений</span><br>
+                <span class="price">от <span class="bold">15 000р</span>.</span>
+            </div>
+            <img src="fortis_files/slide2-icon1.png" alt="">
+        </div>
+        
+        <div style="opacity: 0;" class="block elem2">          
+            <img src="fortis_files/slide2-icon2.png" alt="">
+            <div class="content">
+                <span class="font-23 white uppercase bold lineheight-22">Конструктивные</span><br>
+                <span class="font-13 black bold">решения</span><br>
+                <span class="price">от <span class="bold">12 000р</span>.</span>
+            </div>  
+        </div>
+
+        <div style="opacity: 0;" class="block elem3">
+            <div class="content">
+                <span class="font-23 white uppercase bold lineheight-22">Предоставление интересов в суде</span><br>
+                <span class="font-13 black bold">по вопросам в сфере недвижимости</span><br>
+                <span class="price">от <span class="bold">15 000р</span>.</span>
+            </div>
+            <img src="fortis_files/slide2-icon3.png" alt="">
+        </div>
+
+
+        <div style="opacity: 0;" class="block elem4">          
+            <img src="fortis_files/slide2-icon4.png" alt="">
+            <div class="content">
+                <span class="font-13 black bold">авторский</span><br>
+                <span class="font-23 white uppercase bold lineheight-22">Надзор</span><br>
+                <span class="price">от <span class="bold">10 000р</span>.</span>
+            </div>  
+        </div>
+
+        <div style="opacity: 0;" class="block elem5">
+            <div class="content">
+                <span class="font-23 white uppercase bold lineheight-22">Технический план</span><br>
+                <span class="font-13 black bold">для Росреестра</span><br>
+                <span class="price">от <span class="bold">15 000р</span>.</span>
+            </div>
+            <img src="fortis_files/slide2-icon5.png" alt="">
+        </div>
+
+
+        <div style="opacity: 0;" class="block elem6">          
+            <img src="fortis_files/slide2-icon6.png" alt="">
+            <div class="content">
+                <span class="font-13 black bold">решение</span><br>
+                <span class="font-23 white uppercase bold lineheight-22">сложных вопросов</span><br>
+                <span class="price">от <span class="bold">10 000р</span>.</span>
+            </div>  
+        </div>
+
+        <div style="opacity: 0;" class="block elem7">
+            <div class="content">
+                <span class="font-13 black bold">разработка</span><br>
+                <span class="font-23 white uppercase bold lineheight-22">Технического заключения</span><br>
+                <span class="price">от <span class="bold">20 000р</span>.</span>
+            </div>
+            <img src="fortis_files/slide2-icon7.png" alt="">
+        </div>
+
+
+        <div style="opacity: 0;" class="block elem8">          
+            <img src="fortis_files/slide2-icon8.png" alt="">
+            <div class="content">
+                <span class="font-13 black bold">разработка</span><br>
+                <span class="font-23 white uppercase bold lineheight-22">фасадов зданий</span><br>  
+                <span class="price">от <span class="bold">15 000р</span>.</span>
+            </div>  
+        </div>
+
+        <div style="opacity: 0;" class="block elem9">
+            <div class="content">
+                <span class="font-13 black bold">понижение кадастровой</span><br>
+                <span class="font-23 white uppercase bold lineheight-22">Стоимости объектов</span><br>
+                <span class="price">от <span class="bold">20 000р</span>.</span>
+            </div>
+            <img src="fortis_files/slide2-icon9.png" alt="">
+        </div>
+
+
+        <div style="opacity: 0;" class="block elem10">          
+            <img src="fortis_files/slide2-icon10.png" alt="">
+            <div class="content">
+                <span class="font-23 white uppercase bold lineheight-22">Сопровождение и согласование</span><br>
+                <span class="font-13 black bold">от А до Я</span><br>
+                <span class="price">от <span class="bold">10 000р</span>.</span>
+            </div>  
+        </div>
+
+        <div style="opacity: 0;" class="block elem11">
+            <div class="content">
+                <span class="font-13 black bold">разработка</span><br>
+                <span class="font-23 white uppercase bold lineheight-22">Архитектурного проекта</span><br>
+                <span class="price">от <span class="bold">10 000р</span>.</span>
+            </div>
+            <img src="fortis_files/slide2-icon11.png" alt="">
+        </div>
+
+
+        <div style="opacity: 0;" class="block elem12">          
+            <img src="fortis_files/slide2-icon12.png" alt="">
+            <div class="content">
+                <span class="font-13 black bold">получение</span><br>
+                <span class="font-23 white uppercase bold lineheight-22">Ордеров в ОАТИ</span><br>
+                <span class="price">от <span class="bold">12 000р</span>.</span>
+            </div>  
+        </div>
+        
+        <div style="opacity: 0; width: 0px;" class="lines Top"></div>
+        <div style="opacity: 0; width: 0px;" class="lines Bottom"></div>
+    
+    
+    </div>
+</div>
+<!-- SLIDE 2 END -->
+
+
+<!-- SLIDE 3 -->
+<div class="ancor3"></div>
+<div class="slide3">
+    <div class="area">
+    
+        <div class="caption whiteopacity">
+        
+            <span class="font-62 black lineheight-40 uppercase"><span class="orange">12</span> причин</span><br>
+            <span class="font-40 black lineheight-40">почему Вам стоит</span><br>
+            <span class="font-31 black lineheight-30">заказать согласование</span><br>
+            <span class="font-46 black lineheight-50 uppercase">именно <span class="orange">у нас</span></span>
+                
+        </div>
+        
+        <div class="blocksContainer">
+        
+            <div class="block elem1">
+                <div class="number">1.</div>
+                <div class="text">
+                    100% гарантия<br>
+                    качества
+                </div>
+            </div>
+
+            <div class="block elem2">
+                <div class="number">7.</div>
+                <div class="text">
+                    Оплата<br>
+                    частями
+                </div>
+            </div>
+
+            <div class="block elem3">
+                <div class="number">2.</div>
+                <div class="text">
+                    Работы<br>
+                    по договору
+                </div>
+            </div>
+
+            <div class="block elem4">
+                <div class="number">8.</div>
+                <div class="text">
+                    Ведение скрытых<br>
+                    работ
+                </div>
+            </div>
+
+            <div class="block elem5">
+                <div class="number">3.</div>
+                <div class="text">
+                    Оперативность<br>
+                    исполнения
+                </div>
+            </div>
+
+            <div class="block elem6">
+                <div class="number">9.</div>
+                <div class="text">
+                    Работаем без<br>
+                    без посредников
+                </div>
+            </div>
+
+            <div class="block elem7">
+                <div class="number">4.</div>
+                <div class="text">
+                    Бесплатные<br>
+                    Консультации<br>
+                    Специалистов
+                </div>
+            </div>
+
+            <div class="block elem8">
+                <div class="number">10.</div>
+                <div class="text">
+                    Разработка<br>
+                    архитектурного<br>
+                    проекта
+                </div>
+            </div>
+
+            <div class="block elem9">
+                <div class="number">5.</div>
+                <div class="text">
+                    Нас рекомендуют<br>
+                    друзьям
+                </div>
+            </div>
+            
+            <div class="block elem10">
+                <div class="number">11.</div>
+                <div class="text">
+                    Разработка<br> 
+                    технического<br>
+                    заключения
+                </div>
+            </div>
+
+            <div class="block elem11">
+                <div class="number">6.</div>
+                <div class="text">
+                    Ведение авторского<br>
+                    надзора
+                </div>
+            </div>
+
+            <div class="block elem12">
+                <div class="number">12.</div>
+                <div class="text">
+                    Опыт наших<br>
+                    специалистов
+                    - более 10 лет    
+                </div>
+            </div>
+            <div class="clear"></div>
+        
+        </div>
+         
+    </div>
+</div>
+<!-- SLIDE 3 END-->
+
+<!-- horisont form -->
+<div class="horisontForm">
+    <div class="area">
+    
+        <!-- FORM -->
+        <div class="form-container horisont">
+                    
+            <div class="name">
+                
+                <span class="font-30 bold white uppercase">Заказать звонок</span>
+                        
+            </div>
+                        
+            <form method="post" action="">
+                <div class="inp one"><input id="f2_name" placeholder="Ваше имя" type="text"></div>
+                <div class="inp two"><input id="f2_phone" class="masked" placeholder="Ваш телефон" type="text"></div>
+                <a class="btn" href="javascript:void(0)" onclick="formCheck(document.getElementById('f2_name').value,document.getElementById('f2_phone').value);">Заказать!</a>
+                <div class="clear"></div>
+            </form>
+                    
+        </div>
+    <!--  FORM END -->
+    
+    </div>
+</div>
+<!-- horisont form END -->
+
+<!-- SLIDE 4 -->
+<div class="ancor4"></div>
+<div class="slide4">
+    <div class="area">
+        
+        <div class="slide-name">
+            <span>Схема нашей работы</span>
+        </div>
+        
+        <div class="blockContainer">
+        
+            <div style="opacity: 0; right: 300px;" class="block elem1">
+                <div>
+                    Звонок
+                </div>
+            </div>    
+
+            <div style="opacity: 0; right: 300px;" class="block elem2">
+                <div>
+                    Первичная<br> консультация
+                </div>
+            </div>
+
+            <div style="opacity: 0; right: 300px;" class="block elem3">
+                <div>
+                    Заключение<br> договора
+                </div>
+            </div>
+
+            <div style="opacity: 0; right: 300px;" class="block elem4">
+                <div>
+                    Разработка<br> проекта
+                </div>
+            </div>
+
+            <div style="opacity: 0; right: 300px;" class="block elem5">
+                <div>
+                Получение<br> разрешения
+                </div>
+            </div>
+            <div class="clear"></div>
+        
+        </div>
+    
+    </div>
+</div>
+<!-- SLIDE 4 END -->
+
+
+<!-- SLIDE 5 -->
+<div class="ancor5"></div>
+<div class="slide5">
+    <div class="area">
+   
+        <div class="slide-name">
+            <span class="font-54 uppercase">Почему</span><br>
+            <span class="font-32">выбирают нас:</span>
+        </div>
+        
+        <ul style="opacity: 0; top: 300px;" class="left">
+            <li class="first"><div>Типичные проблемы с которыми сталкиваются 95% людей:</div></li>
+            <li><div>Неквалифицированные специалисты</div></li>
+            <li><div>Обращение к посредникам</div></li>
+            <li><div>100% предоплата до начала работ</div></li>
+            <li><div>Невозврат денег при невыполнении обязателсьт</div></li>
+            <li><div>Отсутствие гарантий</div></li>
+            <li><div>Отсутствие полного комплекта<br>документов для сдачи объекта</div></li>
+            <li><div>Отсутствие контроля</div></li>
+        </ul>
+
+        <ul style="opacity: 0; top: 300px;" class="right">
+            <li class="first"><div>Плюсы работы с нами:</div></li>
+            <li><div>Профессионалы своего дела более чем с 10-ти летним стажем</div></li>
+            <li><div>Работаем напрямую с инстанциями</div></li>
+            <li><div>Поэтапная оплата по факту<br>выполненных работ</div></li>
+            <li><div>Возврат денег</div></li>
+            <li><div>Выполнение своих обязательств.<br>Наличие лицензии СРО</div></li>
+            <li><div>Выдаем все необходимые документы:<br>Акт о скрытых работах, Авторский надзор</div></li>
+            <li><div>Сопровождение на всех этапах работы</div></li>
+        </ul>
+        <div class="clear"></div>
+    
+    </div>
+</div>
+<!-- SLIDE 5 END -->
+
+
+<!-- SLIDE 6 -->
+<div class="ancor6"></div>
+<div class="slide6">
+    <div class="area">
+        
+        <div class="slide-name">
+            <span>Наши клиенты</span>
+        </div>
+        
+        <!-- SLIDER -->
+
+            <script type="text/javascript">
+              
+            var slideWidth=162; 
+
+            $(function() { 
+
+            //Длинна списка равна сумме списков li помноженное на длинну элемента 122px;
+            // Тем самым выстраиваем все элементы в ряд без переноса
+            $('.slider ul').width($('.slider ul').children().size()*slideWidth);
+
+
+                jQuery(function()
+                {
+                    jQuery('.container-show-area').jScrollPane({
+                    
+                            horizontalDragMinWidth: 85,
+                            horizontalDragMaxWidth: 85,
+                            animateDuration: 1000,
+                            clickOnTrack: false
+                    
+                    });
+
+
+                });
+
+                    function nextSlide(){     
+               
+                     
+                        var pane = jQuery('.container-show-area');
+                        var api = pane.data('jsp');
+                        
+                        
+                        var step = api.getContentPositionX()+154;
+                        api.scrollToX(step,1);
+
+                    }
+
+
+                    function prevSlide(){     
+
+                        var pane = jQuery('.container-show-area');
+                        var api = pane.data('jsp');
+                        
+                        
+                        var step = api.getContentPositionX()-154;
+                        api.scrollToX(step,1);
+                     
+                    
+                    }
+                     
+
+                    $("#next").click(function() {
+                        nextSlide();
+                    })
+
+                    $("#prev").click(function() {
+                        prevSlide();
+                    })
+                    
+
+            })
+
+
+               </script>
+
+               <div class="slider">
+                      <div tabindex="0" style="overflow: hidden; padding: 0px; width: 932px;" class="container-show-area jspScrollable">  
+                                
+                                
+                                 
+                      <div style="width: 932px; height: 180px;" class="jspContainer"><div style="padding: 0px; width: 932px; left: 0px;" class="jspPane"><ul style="width: 2430px;">                                                            
+                                    
+                                    <li><img src="fortis_files/partners.png" alt=""></li>
+                                    <li><img src="fortis_files/partners2.png" alt=""></li>
+                                    <li><img src="fortis_files/partners3.png" alt=""></li>
+                                    <li><img src="fortis_files/partners4.png" alt=""></li>
+                                    <li><img src="fortis_files/partners5.png" alt=""></li>
+                                    <li><img src="fortis_files/partners6.png" alt=""></li>
+                                    <li><img src="fortis_files/partners7.png" alt=""></li>
+                                    <li><img src="fortis_files/partners8.png" alt=""></li>
+                                    <li><img src="fortis_files/partners9.png" alt=""></li>
+                                    <li><img src="fortis_files/partners10.png" alt=""></li>
+                                    <li><img src="fortis_files/partners11.png" alt=""></li>
+                                    <li><img src="fortis_files/partners12.png" alt=""></li>
+                                    <li><img src="fortis_files/partners13.png" alt=""></li>
+                                    <li><img src="fortis_files/partners14.png" alt=""></li>
+                                    <li><img src="fortis_files/partners15.png" alt=""></li>  
+                                </ul><div class="clear"></div></div><div class="jspHorizontalBar"><div class="jspCap jspCapLeft"></div><div style="width: 932px;" class="jspTrack"><div style="width: 85px;" class="jspDrag"><div class="jspDragLeft"></div><div class="jspDragRight"></div></div></div><div class="jspCap jspCapRight"></div></div></div></div>
+                            
+
+                      <a href="javascript:void(0)" id="next"></a>
+                      <a href="javascript:void(0)" id="prev"></a>
+
+               </div>
+    
+   <!-- SLIDER END -->
+        
+    
+    </div>
+</div>
+<!-- SLIDE 6 END -->
+
+
+<!-- horisont form -->
+<div class="horisontForm">
+    <div class="area">
+    
+        <!-- FORM -->
+        <div class="form-container horisont">
+                    
+            <div class="name">
+                
+                <span class="font-30 bold white uppercase">Заказать звонок</span>
+                        
+            </div>
+                        
+            <form method="post" action="">
+                <div class="inp one"><input id="f3_name" placeholder="Ваше имя" type="text"></div>
+                <div class="inp two"><input id="f3_phone" class="masked" placeholder="Ваш телефон" type="text"></div>
+                <a class="btn" href="javascript:void(0)" onclick="formCheck(document.getElementById('f3_name').value,document.getElementById('f3_phone').value);">Заказать!</a>
+                <div class="clear"></div>
+            </form>
+                    
+        </div>
+    <!--  FORM END -->
+    
+    </div>
+</div>
+<!-- horisont form END -->
+
+
+
+<!-- SLIDE 7 -->
+<div class="ancor7"></div>
+<div class="slide7">
+    <div class="area">
+        
+        <div class="slide-name">
+            <span>Отзывы наших довольных клиентов</span>
+        </div>
+        
+        <div class="block">
+            <img src="fortis_files/otziv1.jpg" alt="">
+            <p>
+                <span class="bold">«..получили новый акт и новые БТИ-но дешевле в 100!..»</span><br><br>
+
+                Мы с мужем приобрели квартиру в 2003 году вместе с 
+документами на перепланировку. Особо не вникали в документацию. Решили 
+квартиру продать, заказали БТИ а там все по другому. Начали обращаться в
+ компании по перепланировкам и везде называли суммы не менее 200 000 
+рублей. Потом обратились в фортис. Сотрудники компании нам объяснили, 
+что наша ситуация не стоит таких денег. Разложили по полочкам куда 
+сходить восстановить документы и ВСЕ! Мы подняли документы из архива, 
+получили новый акт и новые БТИ-но дешевле в 100!!!!!! раз. Огромное 
+спасибо сотрудникам компании «Фортис», удачи и процветания вашей 
+компании!
+
+                <br><br><span class="bold">Евгения 32 года</span>
+            </p>
+        </div>
+
+        <div class="block">
+            <img src="fortis_files/otziv2.jpg" alt="">
+            <p>
+                <span class="bold">«..помимо крыльца нашли такие расхождения в документации,которые даже проверяющие не замечали..»</span><br><br>
+
+                Имею торговое помещение. Сделал крыльцо с навесом и 
+начались проверки одна за другой! Начал искать фирмы-которые занимаются 
+согласованием переустройств. Вышел на фирму «Фортис». Они действительно 
+специалисты! Когда приехали ко мне, помимо крыльца нашли такие 
+расхождения в документации, которые даже проверяющие не замечали! 
+Согласовали все. Спасибо!
+
+                <br><br><span class="bold">Арсен 28 лет. Предприниматель.</span>
+            </p>
+        </div>
+        
+        <div class="block">
+            <img src="fortis_files/otziv3.jpg" alt="">
+            <p>
+                <span class="bold">«..вместе с «Фортис» мы нашли оптимальное решение..»</span><br><br>
+
+                Приобрели квартиру в ипотеку.
+Планировка была типовая и нас не устраивала. Решили обратиться в 
+организацию для проведения перепланировки.
+Нашли «Фортис». Показали, что бы хотели видеть после перепланировки. К 
+сожалению не все наши замыслы можно было осуществить, но вместе с 
+«Фортис» мы нашли оптимальное решение. Заключили договор, сделали 
+доверенность, письма от банка(фортис подсказал) и в течении месяца 
+получили проект и распоряжение Жилинспекции! Около 3-х месяцев делали 
+ремонт, потом опять в «Фортис», для приемки работ. Они 
+молодцы-сопроводили комиссию, сделали все акты и вызвали БТИ(кстати тоже
+ были вместе с ними). Мы с новой планировкой, новыми БТИ - 
+спасибо «Фортис»!
+
+                <br><br><span class="bold">Андрей 26 лет</span>
+            </p>
+        </div>
+        <div class="clear"></div>
+        
+    </div>
+</div>
+<div class="clear"></div>
+<!-- SLIDE 7 END -->
+
+
+<!-- SLIDE 8 -->
+<div class="ancor8"></div>
+<div class="slide8">
+    <div class="area">
+       <img class="pin" src="fortis_files/pin.png" alt=""> 
+       <div style="opacity: 0;" class="mapcaption">
+            <div>
+                <span class="block font-20 black bold">
+                    г. Москва,<br> 
+                    Шипиловский проезд д.47
+                </span>
+                <table>
+                    <tbody><tr>
+                        <td class="width-80"><span class="bold">Телефон:</span></td>
+                        <td><a href="tel:74959741644">7(495) 974-16-44</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="bold">Email:</span></td>
+                        <td>fortis21vek@mail.ru</td>
+                    </tr>
+                </tbody></table>
+            </div>
+       </div>
+    </div>
+</div>
+<!-- SLIDER 8 END -->
+
+<!-- FOOTER -->
+<div class="footer">
+
+    <div class="area">
+
+        <div class="logo">
+            <img src="fortis_files/logo-footer.png" alt="">
+        </div>
+        
+        <div class="content">
+            Еропейское качество<br>
+            по стандартам РФ
+        </div>
+        
+        <div class="phone-container">
+        
+            <a class="number" href="tel:+84959741644">8(495)974-16-44</a><br>
+            <a class="callback" href="javascript:void(0)" onclick="showmodal()">Заказать обратный звонок</a>
+        
+        </div>
+        
+        <div class="creatby">
+            <a href="http://cwebs.ru/" target="_blank">Создание сайта<br><img src="fortis_files/cwebs.png" alt="cwebs"></a>
+        </div>
+
+        
+    
+    </div>
+
+</div> 
+<!-- FOOTER END -->
+
+
+
+<div class="modal_shadow"></div>
+
+        <!-- FORM MODAL-->
+        <div class="form_modal">
+
+            <div class="form-container">
+            
+                <div class="close">
+                    <img src="fortis_files/close.png" alt="close" onclick="hidemodal();">
+                </div>
+                        
+                <div class="name">
+                    
+                    <span class="font-23 bold">Закажите <span class="red">звонок</span></span><br>
+                    <span class="font-24 bold uppercase">Прямо сейчас!</span>
+                            
+                </div>
+                            
+                <form method="post" action="">
+                    <div class="inp one"><input id="f4_name" placeholder="Ваше имя" type="text"></div>
+                    <div class="inp two"><input id="f4_phone" class="masked" placeholder="Ваш телефон" type="text"></div>
+                    <a class="btn" href="javascript:void(0)" onclick="formCheck(document.getElementById('f4_name').value,document.getElementById('f4_phone').value);">Заказать!</a>
+                </form>
+                        
+            </div>
+        </div>
+        <!--  FORM END -->
+
+    
+
+
+
+
+
+
+
+
+
+</body></html>

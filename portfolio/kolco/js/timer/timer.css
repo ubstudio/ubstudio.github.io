@@ -1,0 +1,57 @@
+.timer {
+    width: 262px;
+}
+.timer .title {
+    margin: 0 0 5px;
+    font-size: 16pt;
+    text-align: center;
+}
+.timer .text {
+    margin-left: -20px;
+    margin-right: -20px;
+    text-align: center;
+}
+.timer .container {
+    padding: 1px 0 0 4px;
+    height: 64px;
+    background: url(images/timer-bg.png) no-repeat;
+}
+.timer-with-text .container {
+    height: 77px;
+    background: url(images/timer-bg-with-text.png) no-repeat;
+}
+.timer .container .flip {
+    float: left;
+    height: 100%;
+    width: 27px;
+}
+.timer .hour2Play, .timer .minute6Play, .timer .second6Play {
+    margin-left: 11px;
+}
+.timer .dayPlay, .timer .hourPlay, .timer .minutePlay, .timer .secondPlay {
+    background: url(images/timer0_9.png);
+}
+.timer .hour2Play, .timer .day1Play {
+    background: url(images/timer0_2_l.png);
+}
+.timer .minute6Play, .timer .second6Play {
+    background: url(images/timer0_5_l.png);
+}
+.timer .hourPlay {
+    background-position: 0px 800px;
+}
+.timer .hour2Play {
+    background-position: 0px 400px;
+}
+.timer .minutePlay {
+    background-position: 0px 1600px;
+}
+.timer .minute6Play {
+    background-position: 0px 2000px;
+}
+.timer .secondPlay {
+    background-position: 0px 2000px;
+}
+.timer .second6Play {
+    background-position: 0px 400px;
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Кольцо всевластия</title>
+	<meta name="keywords" content="Кольцо всевластия">
+	<meta name="description" content="Кольцо всевластия">
+	<link rel="shortcut icon" href="http://fresh-landing.ru/portfolio/kolco/images/favicon.ico" type="images/x-icon">
+
+	<link href="css/normalize-2.1.2.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="js/arcticmodal/jquery.arcticmodal.css" rel="stylesheet">
+	<link href="js/arcticmodal/themes/simple.css" rel="stylesheet">
+	<link href="js/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="js/timer/timer.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/jquery.localScroll.min.js"></script>
+	<script src="js/arcticmodal/jquery.arcticmodal.js"></script>
+	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/timer/timer.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div class="content">
+			<a class="logo" href="index.html#home">Kolco-vsevlasti.ru</a>
+			<div class="right text-right">
+				<div class="phone-wrap">
+					<span class="phone">
+						<span class="number">8 800 777 21 07</span>
+					</span><br>
+					<span class="text">Звонки по РФ - бесплатно</span>
+				</div>
+				<button type="button" class="callback-btn button button-bg-yellow button_size_short">Заказать звонок</button>
+			</div>
+			<ul class="nav items-list">
+				<li><a href="index.html#comments">Отзывы</a></li>
+				<li><a href="index.html#action">В подарок</a></li>
+				<li><a href="index.html#contacts">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="home" class="section home">
+		<div class="content">
+			<div class="video">
+				<h3 class="header"></h3>
+				<iframe width="472" height="265" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				<p class="text">оставьте заявку сегодня,<br>чтобы зафиксировать скидку</p>
+			</div>
+			<form class="request-form send-request" action="http://fresh-landing.ru/portfolio/kolco/send.php" method="post">
+				<input type="hidden" name="subject" value="Заказать по акции">
+				<h3 class="header">Акция! Скидка <i class="discount"></i></h3>
+				<div class="subheader">на кольцо из властелина колец</div>
+				<div class="text">
+					<div class="buy">
+						<div class="prices">
+							<span class="old-price">1410 <span class="currency">Р</span>.</span>
+							<span class="price"></span>
+						</div>
+					</div>
+					<div class="timer" id="timer1">
+						<div class="container">
+							<div class="flip day1Play"></div>
+							<div class="flip dayPlay"></div>
+							<div class="flip hour2Play"></div>
+							<div class="flip hourPlay"></div>
+							<div class="flip minute6Play"></div>
+							<div class="flip minutePlay"></div>
+							<div class="flip second6Play"></div>
+							<div class="flip secondPlay"></div>
+						</div>
+						<div class="text"></div>
+					</div>
+					<div class="separator"></div>
+				</div>
+				<div class="form-row">
+					<label for="form-name">ФИО:</label><span class="form-field"><input id="form-name" type="text" name="name"></span>
+				</div>
+				<div class="form-row">
+					<label for="form-phone">Телефон:<span class="form-required-label">*</span></label><span class="form-field"><input id="form-phone" type="text" name="phone" required></span>
+				</div>
+				<div class="form-row">
+					<button class="button button-bg-orange button-size-big" type="submit"><div>Заказать со скидкой</div></button>
+				</div>
+				<div class="fairy"></div>
+			</form>
+		</div>
+	</div>
+
+	<div id="why-we" class="section why-we odd tower">
+		<div class="content">
+			<ul class="items-list">
+				<li class="first">
+					<div class="title"><span>100%</span><br>оригинальная продукция</div>
+					<div class="text">Кольцо отвечает всем<br>заявленным свойствам<br>остерегайтесь подделок</div>
+				</li><li class="second">
+					<div class="title"><span>100%</span><br>гарантия<br>возврата<br>денег</div>
+					<div class="text">В случае выявления брака<br>безоговорочно<br>возвращаем деньги</div>
+				</li><li class="third">
+					<div class="title">Без<br>предоплат</div>
+					<div class="text">100% защита от мошенников<br>Вы оплачиваете товар<br>при получении</div>
+				</li><li class="four">
+					<div class="title"><span>3</span><br>года на рынке</div>
+					<div class="text">более 1500 довольных<br>клиентов<br>наша главная заслуга</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="description" class="section description">
+		<div class="content">
+			<div class="left">
+				<div class="gallery">
+					<a class="main-pic fancybox" rel="gallery-0" href="files/desc-gallery-main.jpg"><span class="zoom-icon"></span><img src="files/desc-gallery-main-thumb.jpg"></a>
+					<ul class="items-list gallery-list">
+						<li>
+							<a class="fancybox" rel="gallery-0" href="files/desc-gallery-1.jpg"><span class="zoom-icon"></span><img src="files/desc-gallery-1-thumb.jpg" alt=""></a>
+						</li><li>
+							<a class="fancybox" rel="gallery-0" href="files/desc-gallery-2.jpg"><span class="zoom-icon"></span><img src="files/desc-gallery-2-thumb.jpg" alt=""></a>
+						</li><li>
+							<a class="fancybox" rel="gallery-0" href="files/order-gallery-main.jpg"><span class="zoom-icon"></span><img src="files/desc-gallery-3-thumb.jpg" alt=""></a>
+						</li><li>
+							<a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed"><span class="zoom-icon"></span><img src="files/desc-gallery-4-thumb.jpg" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<h3 class="header">Кольцо всевластия (из фильма Властелин Колец)<br><b>Достанется именно тебе!</b></h3>
+
+				<p>Кольцо Всевластия - это легендарная реликвия из мира приключений!<br>Только с ним можно стать настоящим хозяином всего мира.</p>
+
+				<p>Сделано из сверхпрочного карбида вольфрама.<br>Кольцо Всевластия будет служить вечно.<br>Температура плавления карбида вольфрама достигает 2780 градусов<br>(для сравнения температура вулканической лавы - 1200 градусов).</p>
+
+				<p>Руны на языке Мордора выгравированы лазером<br>на внутреннюю и внешнюю поверхность.<br>Надпись не подвержена истиранию<br>с течением времени.</p>
+
+				<ul class="features items-list">
+					<li class="first">
+						<span class="icon"></span><br>
+						Кольцо нельзя поцарапать,<br>погнуть или расплавить
+					</li><!-- <li class="third">
+						<span class="icon"></span><br>
+						Доставка<br>от 2ух дней
+					</li> --><li class="second">
+						<span class="icon"></span><br>
+						Экологически чистое,<br>не подвержено окислению.
+					</li><li class="four">
+						<span class="icon"></span><br>
+						Все размеры<br>в наличии
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="section quick-order">
+		<div class="content">
+			<div class="buy">
+				<span class="text">только сегодня</span><br>
+				<div class="prices">
+					<span class="old-price">
+						1410 <span class="currency">Р</span>.
+					</span>
+					<span class="price"></span>
+				</div>
+			</div>
+			<form class="form send-request" action="http://fresh-landing.ru/portfolio/kolco/send.php" method="post">
+				<input type="hidden" name="subject" value="Заказать со скидкой">
+				<label>ФИО: <span class="form-field"><input type="text" name="name"></span></label>
+				<label>Телефон:<span class="form-required-label">*</span> <span class="form-field"><input type="text" name="phone" required></span></label>
+				<input class="button button-bg-orange button_size_med" type="submit" value="Заказать со скидкой">
+			</form>
+		</div>
+	</div>
+
+	<div id="comments" class="section video odd">
+		<div class="content">
+			<h2 class="header">Отзывы наших счастливых клиентов</h2>
+			<ul class="items-list">
+				<li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="action" class="section action">
+		<div class="content">
+			<h2 class="header">При покупке кольца всевластия<br>цепочка в подарок!</h2>
+			<form class="request-form send-request" action="http://fresh-landing.ru/portfolio/kolco/send.php" method="post">
+				<input type="hidden" name="subject" value="Заказать по акции">
+				<h3 class="header">Акция! Скидка <i class="discount"></i></h3>
+				<div class="text">
+					<div class="buy">
+						<div class="prices">
+							<span class="old-price">1410 <span class="currency">Р</span>.</span>
+							<span class="price"></span>
+						</div>
+					</div>
+					<div class="gift-text"></div>
+					<div class="gift-icon"></div>
+					<div class="separator">Акция действует только<br>до <span class="date"></span></div>
+				</div>
+				<div class="form-row">
+					<label for="form-name">ФИО:</label><span class="form-field"><input id="form-name" type="text" name="name"></span>
+				</div>
+				<div class="form-row">
+					<label for="form-phone">Телефон:<span class="form-required-label">*</span></label><span class="form-field"><input id="form-phone" type="text" name="phone" required></span>
+				</div>
+				<div class="form-row">
+					<button class="button button-bg-orange button-size-big" type="submit"><div>Заказать со скидкой</div></button>
+				</div>
+			</form>
+			<div class="left">
+				<div class="timer timer-with-text" id="timer2">
+					<div class="title">До конца акции осталось:</div>
+					<div class="container">
+						<div class="flip day1Play"></div>
+						<div class="flip dayPlay"></div>
+						<div class="flip hour2Play"></div>
+						<div class="flip hourPlay"></div>
+						<div class="flip minute6Play"></div>
+						<div class="flip minutePlay"></div>
+						<div class="flip second6Play"></div>
+						<div class="flip secondPlay"></div>
+					</div>
+					<div class="text"></div>
+				</div>
+				<div class="gallery">
+					<a class="main-pic fancybox" rel="gallery-1" href="files/order-gallery-main.jpg"><span class="zoom-icon"></span><img src="files/order-gallery-main-thumb.jpg"></a>
+					<ul class="items-list gallery-list">
+						<li>
+							<a class="fancybox" rel="gallery-1" href="files/order-gallery-1.jpg"><span class="zoom-icon"></span><img src="files/order-gallery-1-thumb.jpg" alt=""></a>
+						</li><li>
+							<a class="fancybox" rel="gallery-1" href="files/order-gallery-2.jpg"><span class="zoom-icon"></span><img src="files/order-gallery-2-thumb.jpg" alt=""></a>
+						</li><li>
+							<a class="fancybox" rel="gallery-1" href="files/order-gallery-3.jpg"><span class="zoom-icon"></span><img src="files/order-gallery-3-thumb.jpg" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="why-we" class="section why-we why-we2 odd tower">
+		<div class="content">
+			<ul class="items-list">
+				<li class="first">
+					<div class="title"><span>12</span><br>месяцев<br>гарантии</div>
+				</li><li class="second">
+					<div class="title">
+						<a class="fancybox" href="files/certificate.jpg"><span class="zoom-icon zoom-icon-dark"></span><img src="files/certificate-thumb.jpg" alt="Сертификат"></a><br>
+						товар<br>сертифицирован
+					</div>
+				</li><li class="third">
+					<div class="title">более<br><span>1500</span><br>довольных<br>клиентов</div>
+				</li><li class="four">
+					<div class="title">Доставка<br>от <span>2</span> до<br><span>12</span> дней</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="how-we-work" class="section how-we-work">
+		<div class="content">
+			<h2 class="header">Как мы работаем:</h2>
+			<ul class="items-list">
+				<li>
+					Оставляете заявку
+				</li><li>
+					Менеджер уточняет<br>данные заказа
+				</li><li>
+					Доставляем Вам заказ
+				</li><li>
+					Вы - счастливы
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="section quick-order">
+		<div class="content">
+			<div class="buy">
+				<span class="text">только сегодня</span><br>
+				<div class="prices">
+					<span class="old-price">
+						1410 <span class="currency">Р</span>.
+					</span>
+					<span class="price"></span>
+				</div>
+			</div>
+			<form class="form send-request" action="http://fresh-landing.ru/portfolio/kolco/send.php" method="post" class="">
+				<input type="hidden" name="subject" value="Заказать со скидкой">
+				<label>ФИО: <span class="form-field"><input type="text" name="name"></span></label>
+				<label>Телефон:<span class="form-required-label">*</span> <span class="form-field"><input type="text" name="phone" required></span></label>
+				<input class="button button-bg-orange button_size_med" type="submit" value="Заказать со скидкой">
+			</form>
+		</div>
+	</div>
+
+	<div id="how-we-work" class="section delivery shadow-bottom">
+		<div class="content">
+			<div class="delivery-type delivery-by-mail">
+				<h3 class="title">Доставка Почтой России - 250 руб.</h3>
+				во все регионы ускоренным отправлением
+			</div>
+			<div class="delivery-type delivery-by-courier">
+				<h3 class="title">Доставка курьером в руки - 350 руб.</h3>
+				производится курьерской службой
+			</div>
+			<div id="payment" class="text-center">
+				<h3>Оплата</h3>
+				<p>
+					товар оплачивается только при получении<br>
+					Вы ничем не рискуете и оплачиваете товар,<br>
+					как в обычном магазине
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="contacts" class="section contacts">
+		<div class="content">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=TSI2GwImyBngo1Tt1J10HXMAswNe9rBF"></script>
+			<div class="text-border">
+				<div class="text">
+					<h2 class="header">Контакты</h2>
+					<p>Телефон: 8 800 777 21 07</p>
+					<p>E-mail: info@kolco-vsevlasti.ru</p>
+					<p class="address">Адрес: г. Москва,<br>Измайловское шоссе, д. 71А, оф. 401</p>
+					<p>ОГРН: 312434509600092</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="section shadow-top">
+		<div class="content">
+			<div class="left">
+				<a class="agreement text-small" href="sogl.html" target="_blank">Соглашение об обработке персональных данных</a>
+			</div>
+			<div class="developer">Разработка и продвижение сайта: <a href="../../index.html" target="_blank"><img src="images/develoder-logo.png" alt="fresh-landing.ru"></a></div>
+		</div>
+	</div>
+
+	<div style="display: none;">
+		<div id="callback-modal" class="box-modal">
+			<div class="box-modal_close arcticmodal-close"></div>
+			<p class="text text-center"></p>
+			<form action="http://fresh-landing.ru/portfolio/kolco/send.php" method="post">
+				<input type="hidden" name="subject" value="Заказ звонка">
+				<table cellspacing="0" cellpadding="0" border="0" class="modal-form-table">
+					<tr>
+						<td align="left">Ваше имя:</td>
+						<td align="right" class="form-td">
+							<span class="form-field">
+								<input type="text" name="name" class="input-form">
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">Ваш телефон:<span class="form-required-label">*</span></td>
+						<td align="right" class="form-td">
+							<span class="form-field">
+								<input type="text" name="phone" class="input-form" required>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" class="button button-bg-yellow button_size_med submit-form" value="Подтвердить">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<p class="text-center"><button type="button" id="callback-modal-btn-ok" class="button button_size_med button-bg-yellow arcticmodal-close">Ok</button></p>
+		</div>
+	</div>
+
+	<div style="display: none;">
+		<div id="send-address-modal" class="box-modal">
+			<div class="box-modal_close arcticmodal-close"></div>
+			<p class="text text-center"></p>
+			<form action="http://fresh-landing.ru/portfolio/kolco/send.php" method="post">
+				<input type="hidden" name="subject" value="Заказ по акции">
+				<table cellspacing="0" cellpadding="0" border="0" class="modal-form-table">
+					<tr>
+						<td align="left">Ваш адрес:<span class="form-required-label">*</span></td>
+						<td align="right" class="form-td">
+							<span class="form-field">
+								<input type="text" name="address" class="input-form" required>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" class="button button_size_med button-bg-yellow submit-form" value="Подтвердить">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<p class="text-center"><button type="button" id="send-address-modal-btn-ok" class="button button_size_med button-bg-yellow arcticmodal-close" style="display:none;">Ok</button></p>
+		</div>
+	</div>
+
+</body>
+</html>

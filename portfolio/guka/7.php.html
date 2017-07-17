@@ -1,0 +1,738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-RU">
+<head>
+<title>Платья Guka Jalie оптом от производителя</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="bablomag" />
+	<meta name="description" content="Платья Guka Jalie оптом от производителя" />
+	<meta name="keywords"  content="Платья Guka Jalie оптом от производителя" />
+
+<!-- Bootstrap -->
+<link href="files/css/bootstrap.min.css" rel="stylesheet">
+<script src="files/js/bootstrap.min.js"></script>
+<!-- Bootstrap -->	
+	<link rel="stylesheet" type="text/css" href="files/css/style.css" />
+	<link rel="shortcut icon" href="files/images/favicon.ico" type="images/x-icon">
+	<script src="files/js/jquery.min.js"></script>
+	<script src="files/js/jquery-ui.min.js"></script>
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->	
+<!--ЛайтБокс-->
+	<link rel="stylesheet" type="text/css" href="resource/lightbox.css" media="screen,tv" />
+	<script type="text/javascript" charset="UTF-8" src="resource/lightbox_plus_min.js"></script>
+<!--ЛайтБокс-->
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/jquery.localScroll.min.js"></script>
+<!--		<script src="js/main.js"></script>-->
+<!-- Валидация формы -->	
+<script type="text/javascript" src="files/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="files/js/jquery.maskedinput.js"></script>
+<!--<script type="text/javascript" src="files/js/jquery.scrollTo-min.js"></script>-->
+<script type="text/javascript" src="files/js/effects.js"></script>
+<script>
+ $(document).ready(function() {
+       
+   jQuery(function($){ $('input[name=phone]').mask("+7 (999) 999-99-99");}); 
+   
+				$.validator.addMethod('validEml', function (value) {
+				var regexp = /^[a-zA-Z0-9_\-.]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-.]+$/.exec(value);
+                if (regexp != null)
+				        return true;
+			       else
+			            return false;
+				}, '');
+
+				
+				$.validator.addMethod('validName', function (value) {
+				var result = true;
+				var iChars = "!@#$%^&*()+=-[]\\\';,./{}|\:<>?0123456789";
+				for (var i = 0; i < value.length; i++) {
+					if (iChars.indexOf(value.charAt(i)) != -1) {
+					return false;
+					}
+				}
+				return result;
+				}, '');
+    
+	
+				$.validator.addMethod('reqPhn', function (value) {
+				var result = true;
+				if(value.indexOf("_") != -1 || value == "") 
+					result = false;
+				return result;
+				}, '');
+   
+   
+   
+				$("form").each(function(){
+					$(this).validate({
+							rules:{
+								name:{
+									required: true,
+									minlength: 3,
+									maxlength: 35,
+									validName: true
+								}, 
+								email: {
+									required: true,
+									validEml: true
+								},
+								phone: {
+									required: true, 
+									reqPhn: true
+								}
+							},
+							submitHandler: function(form) {
+								$.ajax({
+									type:"POST",
+									url:$(form).attr("action")+"?jspromo=1",
+									data:$(form).serialize(),
+									success:function(r){
+										var re = $(r), rd=re.children().parent(), c = rd.find('._link').size(), m = rd.find('._msg').html();
+										if(!c) alert(m);
+										else $(form).parents('.forma').html('<div class="cmplt_msg">'+m+'</div>');
+									},
+									error:function(e){alert("error "+e.parsererror);}
+								});
+								return false;
+							}
+					});
+					$(this).on("submit",function(){
+						return false;
+					});
+				}); 
+});
+</script>
+<style type="text/css">
+.cmplt_msg{padding:10px 20px 30px;margin:0px -15px;background-color:#fc0;color:#000;font:13px/1.3 Arial;}
+.cmplt_msg h4{font:24px/1 Arial;margin:10px 0px -10px;}
+.cmplt_msg a{color:#00f;}
+</style>
+</head>
+<body>    
+
+
+<div id="ancor01"></div>
+<div id="ancor02"></div>
+<div id="ancor03"></div>
+<div id="ancor04"></div>
+<div id="ancor05"></div>
+   
+<!--Хедер-->
+<div class="container header">
+    	<div class="container top">
+    		<div class="row">
+	    		<div class="col-md-2 logo">
+	    			<img src="files/images/logo.png"/>
+	    		</div>
+	    		<ul class="col-md-5 menu">
+					<li><a href="7.php.html#ancor01" id="ancor1">Каталог</a></li>
+					<li><a href="7.php.html#ancor02" id="ancor2">Отзывы</a></li>
+					<li><a href="7.php.html#ancor03" id="ancor3">Преимущества</a></li>
+					<li><a href="7.php.html#ancor04" id="ancor4">Награды</a></li>
+					<li><a href="7.php.html#ancor05" id="ancor5">Шоу-рум</a></li>
+				</ul> 
+	    		<div class="col-md-3 phone">
+	    			<span><b>+7 (499) 346 85 50</b></span>
+	    			<p>позвоните нам прямо сейчас</p>
+	    		</div>
+	    		<a class="col-md-2" id="btn01">Заказать звонок</a>
+	    	</div>
+    	</div>
+    	<div class="container vizual">
+    		<div class="row">
+		    	<div class="col-md-3 title">
+		    		<h1>Платья Guka Jalie оптом от производителя</h1>
+		    	</div>
+	    		<h2>Платья оптом от производителя</h2>
+				<div class="col-md-4 forma">
+					<h3 class="form-signin-heading"><span>Получите доступ к <span class="bold">оптовым ценам</span></span>
+					<br>+ подарок &mdash; систему &laquo;Увеличение прибыли магазина одежды в 2,5 раза!&raquo;</h3>
+					<img src="files/images/arr01.png"/>
+				<form class="promoform" method="post" action="7.php.html">
+					<ul>
+						<li>Имя</li>
+						<li>Телефон</li>
+						<li>e-mail</li>
+					</ul>				
+					<input type="text" placeholder="Введите Ваше имя" name="name" class="form-control">
+					<input type="text" placeholder="Введите телефон" name="phone" class="form-control">
+					<input type="text" placeholder="Введите e-mail" name="email" class="form-control">
+					<input type="hidden" name="promo" value="0" />
+					<button type="submit"><img src="files/images/ic02.png"/>Получить доступ</button>
+				</form>	
+				<div class="promo_text_add">4 775 человек успешно пользуются этой системой</div>
+				</div>
+				<ul class="col-md-4 bullet">
+					<li>По-настоящему эксклюзивный продукт!</li>
+					<li><span>Собственное</span> производство из качественных турецких тканей</li>
+					<!--<li><span>Гарантия возврата</span> первой партии товара</li>
+					<li>Возможность отсрочки платежа <span>до 30 дней</span></li>-->
+					<li>Готовая система создания <span>высокодоходного бизнеса с нуля</span></li>
+					<li>Мы не работаем с совместными покупками</li>
+				</ul>  	
+				
+				<div class="col-md-8 advantage">
+					<div class="col-md-3">
+						<img src="files/images/a01.png"/>
+						<p>Заработайте от $750<br>уже на первом заказе</p>
+					</div>
+					<div class="col-md-3">
+						<img src="files/images/a02.png"/>
+						<p>Помогаем создать<br>бизнес с нуля</p>
+					</div>
+					<div class="col-md-3">
+						<img src="files/images/a03.png"/>
+						<p>4 года на рынке</p>
+					</div>
+					<div class="col-md-3">
+						<img src="files/images/a04.png"/>
+						<p>3 платья на пробу</p>
+					</div>
+				</div>
+			</div>						  		
+    	</div>    	
+    </div>
+<!--Каталог осень-зима-->
+	<div class="container catalog fall-winter">
+		<div class="row">
+			<h2>Каталог осень-зима<img src="files/images/ic03.png"/></h2>
+			<div class="col-md-12">
+				<div class="col-md-4">
+					<a href="files/images/c17.jpg" rel="lightbox_winter" class="vertical"><span></span><img src="files/images/c17.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 420 р.</p>
+				</div>
+				<div class="col-md-4">
+					<a href="files/images/c15.jpg" rel="lightbox_winter" class="vertical"><img src="files/images/c15.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 595 р.</p>
+				</div>
+				<div class="col-md-4">
+					<a href="files/images/c16.jpg" rel="lightbox_winter" class="vertical"><img src="files/images/c16.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 630 р.</p>
+				</div>
+			</div>			
+			<div class="col-md-12">
+				<div class="col-md-4">
+					<a href="files/images/c14.jpg" rel="lightbox_winter" class="vertical"><img src="files/images/c14.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 735 р.</p>
+				</div>
+				<div class="col-md-4">
+					<a href="files/images/c18.jpg" rel="lightbox_winter" class="vertical"><img src="files/images/c18.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 595 р.</p>
+				</div>
+				<div class="col-md-4">
+					<a href="files/images/c19.jpg" rel="lightbox_winter" class="vertical"><img src="files/images/c19.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 595 р.</p>
+				</div>
+			</div>			
+			<h3>Получите полный каталог</h3>	
+			<img class="arrows02" src="files/images/arr02.jpg"/>	
+		</div>
+	</div>    
+<!--Преимущества-->
+	<div class="container why">
+		<div class="row">
+		<h2>Почему наша компания - <span>лидер</span> в оптовых поставках повседневных платьев:</h2>
+			<div class="col-md-3">
+				<img src="files/images/w01.png"/>
+				<p>По-настоящему<br>эксклюзивный<br>продукт</p>
+			</div>
+			<div class="col-md-3">
+				<img src="files/images/w02.png"/>
+				<p>Большая наценка<br>от 150%<br>Вы сможете заработать больше</p>
+			</div>
+			<div class="col-md-3">
+				<img src="files/images/w03.png"/>
+				<p>Оказываем поддержку<br>Персональный бизнес консультант<br>365 дней в году</p>
+			</div>
+			<div class="col-md-3">
+				<img src="files/images/w04.png"/>
+				<p>Более 1000<br>положительных<br>отзывов</p>
+			</div>
+		</div>		
+	</div> 
+
+<!--Захват-->
+	<div class="container take">
+		<div class="row">
+			<h2><span>Получите доступ к <span class="bold">оптовым ценам</span></span>
+					<br>+ подарок &mdash; систему &laquo;Увеличение прибыли магазина одежды в 2,5 раза!&raquo;</h2>
+			<img src="files/images/arr03.jpg"/>
+			<div class="col-md-8 forma">
+				<ul class="bullet">
+					<li>Имя</li>
+					<li>Телефон</li>
+					<li>e-mail</li>
+				</ul>
+<!--				<form action="" method="post" role="form" class="form-signin" novalidate="novalidate">-->
+				<form class="promoform" method="post" action="7.php.html">
+					<div>
+						<input type="text" placeholder="Введите Ваше имя" name="name" class="form-control">
+						<input type="text" placeholder="Введите телефон" name="phone" class="form-control">
+						<input type="text" placeholder="Введите e-mail" name="email" class="form-control">
+						<input type="hidden" name="promo" value="0" />
+					</div>				
+					<button class="submit button" type="submit"><img src="files/images/ic02.png"/>Получить доступ</button>
+				</form>	
+				<div class="promo_text_add2">4 775 человек успешно пользуются этой системой</div>
+			</div>
+		</div>
+	</div>
+<!--Каталог весна-лето-->
+	<div class="container catalog spring-summer">
+		<div class="row">
+			<h2>Каталог весна-лето<img src="files/images/ic01.png"/></h2>
+			<div class="col-md-12">
+				<div class="col-md-4">
+					<a href="files/images/c01.jpg" rel="lightbox_summer" class="vertical"><img src="files/images/c01.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 490 р.</p>
+				</div>
+				<div class="col-md-4">
+					<a href="files/images/c02.jpg" rel="lightbox_summer" class="vertical"><img src="files/images/c02.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 490 р.</p>
+				</div>
+				<div class="col-md-4">
+					<a href="files/images/c03.jpg" rel="lightbox_summer" class="vertical"><img src="files/images/c03.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 350 р.</p>
+				</div>
+			</div>			
+			<div class="col-md-12">
+				<div class="col-md-4">
+					<a href="files/images/c04.jpg" rel="lightbox_summer" class="vertical"><img src="files/images/c04.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 595 р.</p>
+				</div>
+				<div class="col-md-4">
+					<a href="files/images/c05.jpg" rel="lightbox_summer" class="vertical"><img src="files/images/c05.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 560 р.</p>
+				</div>
+				<div class="col-md-4">
+					<a href="files/images/c06.jpg" rel="lightbox_summer" class="vertical"><img src="files/images/c06.jpg" alt="Каталог весна-лето" /></a>
+					<p>Оптовая цена: 420 р.</p>
+				</div>
+			</div>	
+			<h3>Получите полный каталог</h3>	
+			<img class="arrows02" src="files/images/arr02.jpg"/>	
+		</div>
+	</div>	
+
+<!--Захват-->
+	<div class="container take">
+		<div class="row">
+			<h2><span>Получите доступ к <span class="bold">оптовым ценам</span></span>
+					<br>+ подарок &mdash; систему &laquo;Увеличение прибыли магазина одежды в 2,5 раза!&raquo;</h2>
+			<img src="files/images/arr03.jpg"/>
+			<div class="col-md-4 forma">
+				<ul class="bullet">
+					<li>Имя</li>
+					<li>Телефон</li>
+					<li>e-mail</li>
+				</ul>
+				<form class="promoform" method="post" action="7.php.html">
+					<div>
+						<input type="text" placeholder="Введите Ваше имя" name="name" class="form-control">
+						<input type="text" placeholder="Введите телефон" name="phone" class="form-control">
+						<input type="text" placeholder="Введите e-mail" name="email" class="form-control">
+						<input type="hidden" name="promo" value="0" />
+					</div>				
+					<button type="submit"><img src="files/images/ic02.png"/>Получить доступ</button>
+				</form>	
+				<div class="promo_text_add2">4 775 человек успешно пользуются этой системой</div>
+			</div>
+		</div>
+	</div>
+<!--Отзывы-->
+	<div class="container reviews">
+		<div class="row">
+			<h2>Отзывы наших оптовиков</h2>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<img src="files/images/r01.png"/>
+					<h3>Наталья Самохвалова, г. Самара</h3>
+					<p>Первая поставка прошла очень успешно.  Менеджеры молодцы, работу выполняют  оперативно и качественно.</p>
+					<p>При этом консультируют, какие цвета есть в наличии. Всё четко. Товар получила именно тот, который заказывала ( без неприятных сюрпризов с пересортом по цвету, как часто бывает с другими поставщиками). Работать с вами очень приятно,  продукция красивая, качественная, недорогая. Спасибо вам! Надеюсь на долгосрочное  сотрудничество</p>
+				</div>
+				<div class="col-md-6">
+					<img src="files/images/r02.png"/>
+					<h3>Екатерина Ерёмина, г. Н. Новгород</h3>
+					<p>Работаю с этой компанией давно и у меня только положительные отзывы. Работают девочки  очень быстро и грамотно. Без недочётов.</p>
+					<p>Приятно порадовали новые новшества - это: новый сайт. Вещи качесвтенные и отшиты хорошо Модели платьев сидят прекрасно, особенно  модель Оксана - уходит влёт. Надеюсь на наше дальнейшее сотрудничество. Спасибо.</p>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<img src="files/images/r03.png"/>
+					<h3>Наталья Солнцева, г. Воронеж</h3>
+					<p>Огромное спасибо менеджерам компании Guka Jalie! Всё очень чётко и оперативно, работать одно удовольствие. </p>
+					<p>Специалисты “проводят” заказ от начала и до конца, на всех этапах готовы ответить на любые вопросы. Платья просто шикарны! Качественно пошиты, хорошо садятся по фигуре, оптимальная цена. Рассчитываем на долгое и взаимовыгодное сотрудничество.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="files/images/r04.png"/>
+					<h3>Ольга Фомичёва, г. Вологда</h3>
+					<p>Очень понравился ассортимент и качество  платьев, замечательная, оперативная работа менеджеров, все посоветуют, подскажут.</p>
+					<p>Пришло всё быстро. Несмотря на мою  удалённость (Вологда). Смотрю новый ассортимент и обязательно закажу ещё. Спасибо за вашу работу. Пожелание почаще видеть новинки!</p>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<img src="files/images/r05.png"/>
+					<h3>Мария Мехоношина, г. Пермь</h3>
+					<p>Менеджеры молодцы, это точно.  Сотрудничать с вами приятно, спасибо за организованный сервис, продукция качественная и недорогая. </p>
+					<p>Доставка сравнительно быстро (Пермь!). Модель Колокол на Ура!</p>
+				</div>
+				<div class="col-md-6">
+					<img src="files/images/r06.png"/>
+					<h3>Олеся Гучева, г. Тюмень</h3>
+					<p>Работаю с этой компанией очень давно и мне всё очень, очень нравится. Девочки Жанна и Мария умницы, очень приятно с вами работать.</p>
+					<p>Спасибо за модель Олеся (подарок к моему 30-ти летию). Тюмень с вами, вы лучшие. Так держать!</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+<!--Сравнение-->
+	<div class="container simile help">
+		<div class="row">
+			<h2>Поможем зарабатывать много. Как? </h2>
+			<h4>После регистрации Вы получите готовые инструменты для заработка больших денег</h4>
+			<div class="col-md-6 minus">
+				<h3>Начать бизнес с нуля</h3>
+				<ul>
+					<li>Пошаговая инструкция открытия  прибыльного магазина женской одежды</li>
+					<li>Персональный бизнес-консультант, который будет отвечать на Ваши вопросы 365 дней в году.</li>
+					<li>Рассылка по тематике “Увеличение продаж в розничном магазине”</li>
+					<li>Расчёт бизнес-модели в формате Excel</li>
+				</ul>
+			</div>
+			<div class="col-md-6 plus">
+				<h3>Информация для владельцев магазина</h3>
+				<ul>
+					<li>3 примера работающих листовок</li>
+					<li>15 способов увеличения объёма продаж в магазине одежды</li>
+					<li>Ответы на вопросы о юридических и бухгалтерских проблемах</li>
+					<li>7 примеров эффективных рекламных  акций</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!--Захват-->
+	<div class="container take noshadow">
+		<div class="row">
+			<h2><span>Получите доступ к <span class="bold">оптовым ценам</span></span>
+					<br>+ подарок &mdash; систему &laquo;Увеличение прибыли магазина одежды в 2,5 раза!&raquo;</h2>
+			<img src="files/images/arr03.jpg"/>
+			<div class="col-md-4 forma">
+				<ul class="bullet">
+					<li>Имя</li>
+					<li>Телефон</li>
+					<li>e-mail</li>
+				</ul>
+				<form class="promoform" method="post" action="7.php.html">
+					<div>
+						<input type="text" placeholder="Введите Ваше имя" name="name" class="form-control">
+						<input type="text" placeholder="Введите телефон" name="phone" class="form-control">
+						<input type="text" placeholder="Введите e-mail" name="email" class="form-control">
+						<input type="hidden" name="promo" value="0" />
+					</div>				
+					<button type="submit"><img src="files/images/ic02.png"/>Получить доступ</button>
+				</form>	
+				<div class="promo_text_add2">4 775 человек успешно пользуются этой системой</div>
+			</div>
+		</div>
+	</div>	
+<!--С кем мы хотим работать-->
+	<div class="container we-want">
+		<div class="row">
+			<h2>С кем мы хотим работать:</h2>
+			<div class="col-md-12">
+				<div class="col-md-4 want01">
+					<h3>Владельцы розничных магазинов женской одежды</h3>
+					<img src="files/images/ww01.jpg"/>
+					<p>Вы сможете закупать уникальный и разнообразный ассортимент в одном месте</p>
+				</div>
+				<div class="col-md-4 want01">
+					<h3>Бизнесы смежных тематик</h3>
+					<img src="files/images/ww02.jpg"/>
+					<p>Магазины и торговые точки одежды, магазины обуви, галантереи и бижутерии</p>
+				</div>
+				<div class="col-md-4 want01">
+					<h3>Интернет-магазины</h3>
+					<img src="files/images/ww03.jpg"/>
+					<p>Всем покупателям мы дарим фото продукцию</p>
+				</div>
+			</div>		
+			<div class="col-md-12">
+				<div class="col-md-4 want02">
+					<h3>Крупные розничные сети</h3>
+					<img src="files/images/ww04.jpg"/>
+					<p>Имеем опыт работы с крупным бизнесом</p>
+				</div>
+				<div class="col-md-4 want02">
+					<h3>Начинающие предприниматели</h3>
+					<img src="files/images/ww05.jpg"/>
+					<p>Пошаговая система построения бизнеса с нуля бесплатно</p>
+				</div>
+			</div>		
+		</div>		
+	</div>
+	
+<!--Степы-->
+	<div class="container steps">
+		<div class="row">
+			<h2>Схема работы:</h2>
+			<div class="col-md-12">
+				<div class="col-md-2">
+					<img src="files/images/s01.png"/>
+					<p>Вы проходите регистрацию, оставляете заявку на сайте</p>
+				</div>
+				<img src="files/images/arr04.png"/>
+				<div class="col-md-2">
+					<img src="files/images/s02.png"/>
+					<p>Мы связываемся с Вами по телефону</p>
+				</div>
+				<img src="files/images/arr04.png"/>
+				<div class="col-md-2">
+					<img src="files/images/s03.png"/>
+					<p>Вы получаете доступ к каталогу как оптовый покупатель</p>
+				</div>
+				<img src="files/images/arr04.png"/>
+				<div class="col-md-2">
+					<img src="files/images/s04.png"/>
+					<p>Вы получаете инструкции и инструменты для увеличения объёма продаж</p>
+				</div>
+				<img src="files/images/arr04.png"/>
+				<div class="col-md-2">
+					<img src="files/images/s05.png"/>
+					<p>Мы выделяем Вам персонального менеджера, он консультирует Вас по всем вопросам и находит наилучшие пути решения Ваших задач</p>
+					<img src="files/images/arr05.png"/>
+				</div>
+			</div>		
+			<div class="col-md-12">
+				<div class="col-md-2">
+					<img src="files/images/s06.png"/>
+					<p>Повторное обращение, как постоянный покупатель<!--, Вы получаете  скидки и бонусы--></p>
+				</div>
+				<img src="files/images/arr06.png"/>
+				<div class="col-md-2">
+					<img src="files/images/s07.png"/>
+					<p>Продажа закупленного товара и получение прибыли</p>
+				</div>
+				<img src="files/images/arr06.png"/>
+				<div class="col-md-2">
+					<img src="files/images/s08.png"/>
+					<p>Доставка заказа до Вашего города</p>
+				</div>
+				<img src="files/images/arr06.png"/>
+				<div class="col-md-2">
+					<img src="files/images/s09.png"/>
+					<p>Выставление счёта, оплата</p>
+				</div>
+				<img src="files/images/arr06.png"/>
+				<div class="col-md-2">
+					<img src="files/images/s10.png"/>
+					<p>Вы оформляете Ваш заказ на нашем сайте или с помощью персонального менеджера</p>
+				</div>
+			</div>		
+		</div>		
+	</div>
+	
+<!--Сравнение-->
+	<div class="container simile causes">
+		<div class="row">
+			<h2>7 причин купить платья оптом у нас</h2>
+			<div class="col-md-6 minus">
+				<h3>Основные проблемы оптовых покупателей</h3>
+				<ul>
+					<li>Поставщиков не интересует Ваш успех</li>
+					<li>Продают продукцию, которая есть у многих</li>
+					<li>Продают продукцию по завышенной оптовой цене</li>
+					<li>Качество продукции оставляет желать лучшего</li>
+					<li>Сложности с доставкой</li>
+					<li>Не отвечают на Ваши звонки и письма</li>
+				</ul>
+			</div>
+			<div class="col-md-6 plus">
+				<h3>Как работаем мы</h3>
+				<ul>
+					<li>Мы хотим, чтобы Ваш бизнес стал прибыльным! Мы делимся с Вами готовыми решениями для  увеличения продаж и прибыли</li>
+					<li>Мы производим только уникальные платья У Вас всегда будет в наличии продукция, которая отличается от конкурентов</li>
+					<li>Мы - производители, это значит, что у нас всегда будет самое лучшее для Вас ценовое предложение</li>
+					<li>У нас внедрена многоступенчатая система контроля качества на производстве, и мы даём гарантию высокого качества наших платьев</li>
+					<li>У нас доставка в самый удалённый уголок - до 12 дней</li>
+					<li>Вы получите ответы на все вопросы, звонки и письма</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row honors">
+			<h2>Наши награды</h2>
+			<a href="files/images/h01.jpg" rel="lightbox_honors" class="vertical"><img src="files/images/h01.jpg" alt="Сертификаты" /></a>
+			<a href="files/images/h02.jpg" rel="lightbox_honors" class="vertical"><img src="files/images/h02.jpg" alt="Сертификаты" /></a>
+			<a href="files/images/h03.jpg" rel="lightbox_honors" class="vertical"><img src="files/images/h03.jpg" alt="Сертификаты" /></a>
+			<a href="files/images/h04.jpg" rel="lightbox_honors" class="vertical"><img src="files/images/h04.jpg" alt="Сертификаты" /></a>
+			<a href="files/images/h05.jpg" rel="lightbox_honors" class="vertical"><img src="files/images/h05.jpg" alt="Сертификаты" /></a>
+		</div>		
+	</div>
+
+<!--Визуализация-->
+	<div class="container vizual bottom">
+
+		<div class="row">
+			<ul class="bullet">
+				<li>По-настоящему эксклюзивный продукт!</li>
+				<li><span>Собственное</span> производство из качественных турецких тканей</li>
+				<!--<li><span>Гарантия возврата</span> первой партии товара</li>
+				<li>Возможность отсрочки платежа <span>до 30 дней</span></li>-->
+				<li>Готовая система создания <span>высокодоходного бизнеса с нуля</span></li>
+				<li>Мы не работаем с совместными покупками</li>
+			</ul>  	
+			<div class="col-md-4 forma">
+					<h3 class="form-signin-heading"><span>Получите доступ к <span class="bold">оптовым ценам</span></span>
+					<br>+ подарок &mdash; систему &laquo;Увеличение прибыли магазина одежды в 2,5 раза!&raquo;</h3>
+				<img src="files/images/arr01.png"/>
+				<form id="promoform1" class="promoform" method="post" action="7.php.html">
+					<ul>
+						<li>Имя</li>
+						<li>Телефон</li>
+						<li>e-mail</li>
+					</ul>				
+					<input type="text" placeholder="Введите Ваше имя" name="name" class="form-control">
+					<input type="text" placeholder="Введите телефон" name="phone" class="form-control">
+					<input type="text" placeholder="Введите e-mail" name="email" class="form-control">
+					<input type="hidden" name="promo" value="0" />
+					<button type="submit"><img src="files/images/ic02.png"/>Получить доступ</button>
+				</form>	
+				<div class="promo_text_add">4 775 человек успешно пользуются этой системой</div>
+			</div>
+			<div class="col-md-8 advantage">
+				<div class="col-md-3">
+					<img src="files/images/a01.png"/>
+					<p>Заработайте от $750<br>уже на первом заказе</p>
+				</div>
+				<div class="col-md-3">
+					<img src="files/images/a02.png"/>
+					<p>Помогаем создать<br>бизнес с нуля</p>
+				</div>
+				<div class="col-md-3">
+					<img src="files/images/a03.png"/>
+					<p>4 года на рынке</p>
+				</div>
+				<div class="col-md-3">
+					<img src="files/images/a04.png"/>
+					<p>3 платья на пробу</p>
+				</div>
+			</div>
+		</div>						  		
+	</div>    	
+<!--Для кого-->
+	<div class="container showroom">
+		<div class="row">
+			<h2>Ждём Вас в нашем шоу руме</h2>
+			<h3>Убедитесь вживую в <span>отличном качестве</span> наших платьев</h3>
+			<img src="files/images/sh01.jpg"/>
+			<img src="files/images/sh02.jpg"/>
+		</div>
+	</div>
+<!--Футер-->	
+	<div class="container about">
+		<div class="container maps">
+			<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_1tbaO_jidzLY8tZSGpYJ8FEu-ac3lmW"></script>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 border">
+		 		<div class="col-md-4 contacts">
+		 			<h2>Контакты нашего шоу рума</h2>
+			 		<div class="col-md-12">
+			 			<p><span>Телефоны:</span><br>
+			 			+7 499 346 85 50<br>
+			 			+7 903 671 81 19
+			 			</p>	 				
+			 		</div>
+			 		<div class="col-md-12">
+			 			<p><span>Адрес:</span><br>
+			 			г. Москва, ул. Жигулёвская,<br>
+						д. 1/24, кор. 1, комната 4.
+			 			</p>	 				
+			 		</div>
+			 		<div class="col-md-12">
+			 			<p><span>E-mail:</span> info@gukajalie.com</p>	 				
+			 		</div>
+			 		<div class="col-md-12">
+			 			<p><span>Skype:</span> guka.jalie1</p>	
+			 		</div>	
+			 	</div> 		
+		 	</div> 		
+	 	</div>
+ 	</div>
+	<div class="container footer">
+	 	<div class="row">
+	 		<a class="agreement" href="http://fresh-landing.ru/portfolio/guka/sogl.html" target="_blank">Соглашение об обработке персональных данных</a>
+	 		<div class="col-md-8 copyright">
+	 			<a href="../../index.html" target="_blank"><img src="files/images/copyright.png" alt="fresh-landing.ru"></a>
+	 			<p>Разработка и продвижение сайта:</p>
+	 		</div>
+	 	</div>
+	</div>
+<!--Попандер-->	
+	<div id='PopUp01'>
+		<div class="PopUpCont01" id='PopUpCont'>
+			<form id="form_PopUp01" action="http://fresh-landing.ru/portfolio/guka/obr01.php" method="post" role="form" novalidate="novalidate" onsubmit="yaCounter21940195.reachGoal('promo7'); return true;">
+				<a class="callx01"><img src="files/images/x.png"/></a>
+				<h3 class="form-signin-heading"><span>Оставьте заявку</span><br>на обратный звонок</h3>
+				<input id="inp_name_PopUp01" type="text" placeholder="Ваше имя" name="name" class="form-control" onclick="yaCounter21940195.reachGoal('promo7'); return true;">
+				<input type="text" placeholder="Ваш телефон" name="phone" class="form-control" onclick="yaCounter21940195.reachGoal('promo7'); return true;">			
+				<button type="submit" onclick="yaCounter21940195.reachGoal('promo7'); return true;">ЗАКАЗАТЬ</button>
+			</form>		
+		</div>
+	</div>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    window.onload = function() {
+        //yaCounter21940195.reachGoal('promo7');
+    }
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter21940195 = new Ya.Metrika({id:21940195,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="http://mc.yandex.ru/watch/21940195" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	<!-- Google.Analytics counter -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-52541190-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
+	

@@ -1,0 +1,1025 @@
+@font-face {
+  font-family: 'Arial-Black';
+  src: url("../fonts/Arial-Black.eot%3F") format('embedded-opentype'), url("../fonts/Arial-Black.otf") format('opentype'), url("../fonts/Arial-Black.woff") format('woff'), url("../fonts/Arial-Black.ttf") format('truetype'), url("../fonts/Arial-Black.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
+@font-face {
+  font-family: 'ArialMT';
+  src: url("../fonts/ArialMT.eot%3F") format('embedded-opentype'), url("../fonts/ArialMT.otf") format('opentype'), url("../fonts/ArialMT.woff") format('woff'), url("../fonts/ArialMT.ttf") format('truetype'), url("../fonts/ArialMT.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial-BoldMT';
+  src: url("../fonts/Arial-BoldMT.eot%3F") format('embedded-opentype'), url("../fonts/Arial-BoldMT.otf") format('opentype'), url("../fonts/Arial-BoldMT.woff") format('woff'), url("../fonts/Arial-BoldMT.ttf") format('truetype'), url("../fonts/Arial-BoldMT.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+p,h1,h2,h3,h4,h5,h6{
+  text-rendering: optimizeLegibility;-webkit-text-size-adjust: none;
+}
+#vk_groups, #vk_groups iframe {
+  width: 100% !important;
+}
+.fancybox-skin {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.fancybox-close {
+  background: url("../images/close-popup.png");
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: -38px;
+}
+.loadPopap {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: url("../images/popup-bg.png") center center no-repeat;
+  background-size: cover;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.loadPopap h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-family: arial;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.loadPopap h3 {
+  text-align: center;
+  font-size: 16px;
+  color: #0c4955;
+  font-family: arial;
+  font-weight: 900;
+  margin-top: 12px;
+}
+.loadPopap ul {
+  margin-top: 55px;
+  font-size: 0;
+  text-align: center;
+}
+.loadPopap ul li {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.loadPopap ul li img {
+  display: block;
+  margin: 0 auto;
+}
+.loadPopap ul li .pcode {
+  margin: 27px auto;
+  width: 90px;
+}
+.loadPopap h4 {
+  font-size: 24px;
+  color: #767474;
+  text-align: center;
+  font-family: 'Arial-Black';
+}
+.loadPopap input[type=text] {
+  width: 220px;
+  height: 39px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #c9c4be;
+  margin: 4.5px 0;
+  text-indent: 18px;
+  font-family: 'Roboto';
+  font-weight: 100;
+  max-width: 100%;
+}
+.loadPopap textarea{
+  width: 384px;
+  height: 101px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #c9c4be;
+  margin: 4.5px 0;
+  font-family: 'Roboto';
+  font-weight: 100;
+  resize: none;
+  padding-top: 10px;
+  padding-left: 18px;
+  text-indent: 0;
+  max-width: 100%;
+}
+.loadPopap input[type=submit]{
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Arial-Black';
+    text-align: center;
+    width: 190px;
+    height: 45px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #19abc7;
+    -webkit-border-radius: 22.5px;
+    -moz-border-radius: 22.5px;
+    border-radius: 22.5px;
+    -webkit-box-shadow: 0px 4px 0px 0px #178fa6;
+    -moz-box-shadow: 0px 4px 0px 0px #178fa6;
+    box-shadow: 0px 4px 0px 0px #178fa6;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    margin: 20px auto;
+}
+.loadPopap input[type=submit]:hover{
+  background-color: #1dc1e0;
+    -webkit-box-shadow: 0px 2px 0px 0px #178fa6;
+    -moz-box-shadow: 0px 2px 0px 0px #178fa6;
+    box-shadow: 0px 2px 0px 0px #178fa6;
+}
+.mobileShow {
+  display: none !important;
+}
+.menuBtn {
+  width: 60px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  display: none;
+}
+.menuBtn img {
+  width: 100%;
+}
+.close {
+  opacity: 1;
+  display: none;
+}
+.active {
+  -webkit-transform: translate(0, 0) !important;
+  -ms-transform: translate(0, 0) !important;
+  -o-transform: translate(0, 0) !important;
+  transform: translate(0, 0) !important;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  position: fixed;
+  display: none;
+}
+.fixedMenu {
+  display: block;
+  width: 100%;
+  background-color: #8e8d8d;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: auto;
+  -webkit-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.fixedMenu .logo {
+  padding: 25px 0;
+}
+.fixedMenu .logo img {
+  display: block;
+  margin: 0 auto;
+}
+.fixedMenu .headerMenu {
+  text-align: center;
+}
+.fixedMenu .headerMenu ul {
+  font-size: 0;
+}
+.fixedMenu .headerMenu ul li {
+  display: block;
+  margin: 30px 20px;
+}
+.fixedMenu .headerMenu ul li a {
+  font-size: 14px;
+  color: #626262;
+  font-family: 'Arial-Black';
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.fixedMenu .headerMenu ul li a:hover {
+  color: #ff8e00;
+}
+.fixedMenu .headerButton a {
+  display: block;
+  color: #fff;
+  font-family: 'Arial-Black';
+  font-size: 12px;
+  text-transform: uppercase;
+  height: 40px;
+  width: 220px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #19abc7;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  -webkit-box-shadow: 0px 4px 0px 0px #178fa6;
+  -moz-box-shadow: 0px 4px 0px 0px #178fa6;
+  box-shadow: 0px 4px 0px 0px #178fa6;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.fixedMenu .headerButton a:hover {
+  background-color: #1dc1e0;
+  -webkit-box-shadow: 0px 2px 0px 0px #178fa6;
+  -moz-box-shadow: 0px 2px 0px 0px #178fa6;
+  box-shadow: 0px 2px 0px 0px #178fa6;
+}
+* {
+  margin: 0;
+  outline: none;
+}
+body {
+  margin: 0;
+}
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.resize {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.cf:after,
+.cf:before {
+  content: '';
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
+.error {
+  border-color: red !important;
+}
+.valid {
+  border-color: green !important;
+}
+label.error {
+  display: none !important;
+}
+.fll {
+  float: left;
+}
+.flr {
+  float: right;
+}
+.displayT {
+  display: table;
+}
+.displayTC {
+  display: table-cell;
+}
+.displayIB {
+  display: inline;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: top;
+  list-style-type: none;
+}
+.globalWrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px 0 #000;
+  box-shadow: 0 0 10px 0 #000;
+  overflow-x: hidden;
+  height: auto;
+  z-index: 10;
+  margin-bottom: -20px;
+}
+.globalWrapper .headerWrapper {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-box-shadow: 0px 1px 22px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 22px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 22px 0px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.globalWrapper .headerWrapper .logo {
+  padding: 25px 0;
+}
+.globalWrapper .headerWrapper .headerMenu {
+  text-align: center;
+}
+.globalWrapper .headerWrapper .headerMenu ul {
+  font-size: 0;
+}
+.globalWrapper .headerWrapper .headerMenu ul li {
+  margin: 30px 20px;
+}
+.globalWrapper .headerWrapper .headerMenu ul li:first-child {
+  margin-left: 0;
+}
+.globalWrapper .headerWrapper .headerMenu ul li:last-child {
+  margin-right: 0;
+}
+.globalWrapper .headerWrapper .headerMenu ul li a {
+  font-size: 14px;
+  color: #626262;
+  font-family: 'Arial-Black';
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.globalWrapper .headerWrapper .headerMenu ul li a:hover {
+  color: #ff8e00;
+}
+.globalWrapper .headerWrapper .headerButton a {
+  display: block;
+  color: #fff;
+  font-family: 'Arial-Black';
+  font-size: 12px;
+  text-transform: uppercase;
+  height: 40px;
+  width: 220px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #19abc7;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  -webkit-box-shadow: 0px 4px 0px 0px #178fa6;
+  -moz-box-shadow: 0px 4px 0px 0px #178fa6;
+  box-shadow: 0px 4px 0px 0px #178fa6;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.globalWrapper .headerWrapper .headerButton a:hover {
+  background-color: #1dc1e0;
+  -webkit-box-shadow: 0px 2px 0px 0px #178fa6;
+  -moz-box-shadow: 0px 2px 0px 0px #178fa6;
+  box-shadow: 0px 2px 0px 0px #178fa6;
+}
+.globalWrapper .mainWrapper .firstScreen {
+  background: url("../images/first-bg.jpg") center center no-repeat;
+  padding-bottom: 413px;
+  background-size: cover;
+}
+.globalWrapper .mainWrapper .firstScreen h1 {
+  padding-top: 159px;
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  font-family: arial;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.globalWrapper .mainWrapper .firstScreen h1 span {
+  font-size: 36px;
+  font-family: arial;
+  font-weight: 900;
+}
+.globalWrapper .mainWrapper .firstScreen h2 {
+  margin-top: 31px;
+  font-family: arial;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+  font-size: 30px;
+  text-align: center;
+}
+.globalWrapper .mainWrapper .firstScreen h2 span {
+  /*font-family: 'Arial-BoldMT';*/
+    font-family: arial;
+  font-weight: 700;
+}
+.globalWrapper .mainWrapper .firstScreen .download ul {
+  font-size: 0;
+  text-align: center;
+}
+.globalWrapper .mainWrapper .firstScreen .download ul li {
+  margin: 40px 15px;
+}
+.globalWrapper .mainWrapper .about {
+  background: url("../images/about-bg.jpg") center top no-repeat;
+  padding-top: 25px;
+}
+.globalWrapper .mainWrapper .about img {
+  display: block;
+  margin: 0 auto;
+}
+.globalWrapper .mainWrapper .about p {
+  max-width: 610px;
+  display: block;
+  margin: 30px auto 0;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 20px;
+  color: #626262;
+}
+.globalWrapper .mainWrapper .withPhone {
+  background: url("../images/phone-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+.globalWrapper .mainWrapper .withPhone ul {
+  margin-top: 260px;
+  margin-right: 30px;
+}
+.globalWrapper .mainWrapper .withPhone ul li {
+  text-align: right;
+  list-style-type: none;
+  margin: 20px 0;
+}
+.globalWrapper .mainWrapper .withPhone ul li .text {
+  width: 280px;
+  vertical-align: middle;
+  margin-right: 32px;
+  /*letter-spacing: 1px;*/
+}
+.globalWrapper .mainWrapper .withPhone ul li .text h3 {
+  font-size: 19px;
+  color: #fff;
+  /*font-family: arial;*/
+  font-family: 'Roboto';
+
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.globalWrapper .mainWrapper .withPhone ul li .text p {
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.globalWrapper .mainWrapper .withPhone ul li img {
+  vertical-align: middle;
+}
+.globalWrapper .mainWrapper .withPhone .phone {
+  padding-top: 65px;
+}
+.globalWrapper .mainWrapper .withPhone .phone img {
+  max-width: 100%;
+}
+.globalWrapper .mainWrapper .howTakeMoney {
+  margin-top: 49px;
+}
+.globalWrapper .mainWrapper .howTakeMoney h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #626262;
+  font-family: 'Arial-Black';
+  text-transform: uppercase;
+  line-height: 1;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue {
+  font-size: 0;
+  text-align: center;
+  margin-top: 69px;
+  position: relative;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue:before {
+  content: '';
+  position: absolute;
+  background: url("../images/wave.jpg") center center no-repeat;
+  width: 1920px;
+  height: 217px;
+  left: 50%;
+  margin-left: -960px;
+  bottom: -210px;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue li {
+  width: 33%;
+  position: relative;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue li:first-child:before {
+  content: '';
+  position: absolute;
+  background: url("../images/arrow1.png");
+  width: 200px;
+  height: 30px;
+  right: -100px;
+  top: 29px;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue li:nth-child(2):before {
+  content: '';
+  position: absolute;
+  background: url("../images/arrow2.png");
+  width: 200px;
+  height: 31px;
+  right: -100px;
+  top: 99px;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue li img {
+  display: block;
+  margin: 0 auto;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue li .text {
+  margin-top: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue li .text h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #1bafcc;
+    font-family: 'Roboto';
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue li .text p {
+  font-size: 16px;
+  color: #626262;
+  font-family: 'ArialMT';
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue li .text a {
+  display: block;
+  margin: 0 auto 20px;
+  height: 45px;
+  width: 175px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Arial-Black';
+  background-color: #ff8e00;
+  -webkit-border-radius: 22.5px;
+  -moz-border-radius: 22.5px;
+  border-radius: 22.5px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 4px 0px 0px #c76f00;
+  -moz-box-shadow: 0px 4px 0px 0px #c76f00;
+  box-shadow: 0px 4px 0px 0px #c76f00;
+}
+.globalWrapper .mainWrapper .howTakeMoney .blue li .text a:hover {
+  background-color: #ff9c20;
+  -webkit-box-shadow: 0px 2px 0px 0px #c76f00;
+  -moz-box-shadow: 0px 2px 0px 0px #c76f00;
+  box-shadow: 0px 2px 0px 0px #c76f00;
+}
+.globalWrapper .mainWrapper .howTakeMoney .orange {
+  font-size: 0;
+  text-align: center;
+  margin-top: 212px;
+}
+.globalWrapper .mainWrapper .howTakeMoney .orange li {
+  width: 33%;
+}
+.globalWrapper .mainWrapper .howTakeMoney .orange li img {
+  display: block;
+  margin: 0 auto;
+}
+.globalWrapper .mainWrapper .howTakeMoney .orange li .text {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin-top: 30px;
+}
+.globalWrapper .mainWrapper .howTakeMoney .orange li .text h3 {
+  font-size: 16px;
+  color: #ff8e00;
+  font-family: 'Roboto';
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.globalWrapper .mainWrapper .howTakeMoney .orange li .text p {
+  font-size: 16px;
+  color: #626262;
+  font-family: 'ArialMT';
+}
+.globalWrapper .mainWrapper .howTakeMoney .orange li .text ul {
+  margin-top: 28px;
+}
+.globalWrapper .mainWrapper .howCan {
+  background: url("../images/how-can.jpg") center center no-repeat;
+  background-size: cover;
+  margin-top: 94px;
+  padding-top: 130px;
+  padding-bottom: 170px;
+}
+.globalWrapper .mainWrapper .howCan .rightText h3 {
+  font-size: 30px;
+  color: #73e4ff;
+  font-family: 'Roboto';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.globalWrapper .mainWrapper .howCan .rightText p {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin-top: 25px;
+}
+.globalWrapper .mainWrapper .howCan .rightText p span {
+  color: #ffb558;
+}
+.globalWrapper .mainWrapper .howCan .rightText h4 {
+  font-size: 26px;
+  color: #73e4ff;
+  font-family: 'Roboto';
+  font-weight: 700;
+  margin-top: 30px;
+}
+.globalWrapper .mainWrapper .weInVk {
+  padding-bottom: 82px;
+}
+.globalWrapper .mainWrapper .weInVk h2 {
+  font-size: 36px;
+  color: #626262;
+  font-family: 'Arial-Black';
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.globalWrapper .mainWrapper .weInVk h3 {
+  font-size: 30px;
+  color: #626262;
+  font-family: 'Arial-Black';
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 33px;
+}
+.globalWrapper .mainWrapper .weInVk h4 {
+  text-align: center;
+  font-size: 30px;
+  color: #626262;
+  font-family: 'ArialMT';
+  margin-top: 12px;
+}
+.globalWrapper .mainWrapper .weInVk h4 a {
+  color: #19abc7;
+  text-decoration: underline;
+}
+.globalWrapper .mainWrapper .weInVk h4 a:hover {
+  text-decoration: none;
+}
+.globalWrapper .footerWrapper {
+  background: url("../images/footer-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding-top: 46px;
+}
+.globalWrapper .footerWrapper .downloadLinks ul li {
+  font-size: 0;
+  list-style-type: none;
+  margin: 9px 0;
+}
+.globalWrapper .footerWrapper .downloadLinks ul li .displayIB {
+  vertical-align: middle;
+}
+.globalWrapper .footerWrapper .downloadLinks ul li .code{
+  width: 90px;
+}
+.globalWrapper .footerWrapper .downloadLinks ul li .link {
+  margin-left: 48px;
+}
+.globalWrapper .footerWrapper .contacts {
+  margin-top: 32px;
+}
+.globalWrapper .footerWrapper .contacts h3 {
+  font-size: 24px;
+  color: #93eeff;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+.globalWrapper .footerWrapper .contacts p {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin-top: 18px;
+}
+.globalWrapper .footerWrapper .contacts .button {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Arial-Black';
+  text-align: center;
+  width: 190px;
+  height: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #19abc7;
+  -webkit-border-radius: 22.5px;
+  -moz-border-radius: 22.5px;
+  border-radius: 22.5px;
+  -webkit-box-shadow: 0px 4px 0px 0px #178fa6;
+  -moz-box-shadow: 0px 4px 0px 0px #178fa6;
+  box-shadow: 0px 4px 0px 0px #178fa6;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin: 20px 0;
+}
+.globalWrapper .footerWrapper .contacts .button:hover {
+  background-color: #1dc1e0;
+  -webkit-box-shadow: 0px 2px 0px 0px #178fa6;
+  -moz-box-shadow: 0px 2px 0px 0px #178fa6;
+  box-shadow: 0px 2px 0px 0px #178fa6;
+}
+.globalWrapper .footerWrapper .contacts h4 {
+  font-size: 16px;
+  color: #feb55a;
+  font-family: 'Roboto';
+  margin-top: 18px;
+  text-transform: uppercase;
+}
+.globalWrapper .footerWrapper .contacts .upp {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 700;
+  margin-top: 18px;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.globalWrapper .footerWrapper .contacts .upp:hover {
+  color: #feb55a;
+}
+.globalWrapper .footerWrapper .social {
+  margin: 37px 0;
+}
+.globalWrapper .footerWrapper .social ul {
+  font-size: 0;
+  margin: 40px 0;
+}
+.globalWrapper .footerWrapper .social ul li {
+  margin: 2.5px;
+}
+.globalWrapper .footerWrapper .social ul li:first-child {
+  margin-left: 0;
+}
+.globalWrapper .footerWrapper .social ul li:last-child {
+  margin-right: 0;
+}
+.globalWrapper .footerWrapper .social ul .plus {
+  position: relative;
+}
+.globalWrapper .footerWrapper .social ul .plus .count {
+  position: absolute;
+  right: -70px;
+  top: 2px;
+}
+.globalWrapper .footerWrapper .footerPhone {
+  margin-top: 117px;
+}
+.globalWrapper .footerWrapper .footerPhone img {
+  max-width: 100%;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .globalWrapper .headerWrapper .logo img {
+    display: block;
+    margin: 0 auto;
+  }
+  .globalWrapper .mainWrapper .firstScreen h1 {
+    padding-top: 80px;
+  }
+  .globalWrapper .mainWrapper .withPhone ul li .text {
+    max-width: 270px;
+    width: 54%;
+  }
+  .globalWrapper .mainWrapper .withPhone ul {
+    margin-top: 160px;
+  }
+  .globalWrapper .mainWrapper .withPhone ul li .text h3 {
+    font-size: 16px;
+  }
+  .globalWrapper .mainWrapper .withPhone ul li .text p {
+    font-size: 13px;
+  }
+  .globalWrapper .headerWrapper .headerMenu ul li {
+    margin: 30px 12px;
+  }
+  .globalWrapper .mainWrapper .howCan {
+    background: url("../images/how-can.jpg") center right no-repeat;
+  }
+  .globalWrapper .footerWrapper .footerPhone {
+    display: none;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney .orange li ul li img {
+    width: 100%;
+    max-width: 41px;
+    display: block;
+    margin: 0 auto;
+  }
+  .globalWrapper .footerWrapper {
+    text-align: center;
+  }
+  .globalWrapper .footerWrapper .contacts .button {
+    margin: 20px auto;
+  }
+  .mobileShow {
+    display: none;
+  }
+  .menuBtn {
+    display: block;
+  }
+  .globalWrapper .headerWrapper {
+    display: none;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney .blue li:first-child:before {
+    background-size: 100% 100%;
+    max-width: 200px;
+    width: 60%;
+    right: -70px;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney .blue li:nth-child(2):before {
+    right: -70px;
+    max-width: 200px;
+    width: 60%;
+    background-size: 100% 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .globalWrapper .mainWrapper .howTakeMoney .blue li:first-child:before {
+    display: none;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney .blue li:nth-child(2):before {
+    display: none;
+  }
+  .globalWrapper .mainWrapper .withPhone .col-sm-6 {
+    width: 100%;
+  }
+  .menuBtn {
+    display: block;
+  }
+  .globalWrapper .headerWrapper {
+    display: none;
+  }
+  .globalWrapper .mainWrapper .about img {
+    max-width: 300px;
+  }
+  .globalWrapper .mainWrapper .withPhone .phone {
+    display: none;
+  }
+  .globalWrapper .mainWrapper .firstScreen h1 span {
+    font-size: 30px;
+  }
+  .globalWrapper .mainWrapper .firstScreen h1 {
+    padding-top: 100px;
+    font-size: 34px;
+  }
+  .fixedMenu .logo {
+    margin-top: 90px;
+  }
+  .mobileShow {
+    display: block !important;
+    margin: 0 auto 15px;
+  }
+  .mobileHide {
+    display: none;
+  }
+  .globalWrapper .mainWrapper .withPhone ul li .text {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .globalWrapper .mainWrapper .withPhone ul {
+    margin-top: 160px;
+    padding-bottom: 170px;
+    margin-right: 0;
+  }
+  .globalWrapper .mainWrapper .withPhone ul li .text h3 {
+    font-size: 16px;
+  }
+  .globalWrapper .mainWrapper .withPhone ul li .text p {
+    font-size: 13px;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney h2 {
+    font-size: 27px;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney .blue li {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney .orange li {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney .orange li ul li {
+    width: 33%;
+  }
+  .globalWrapper .mainWrapper .howCan {
+    background: #1694af;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .globalWrapper .mainWrapper .weInVk {
+    margin-top: 70px;
+  }
+  .globalWrapper .footerWrapper {
+    text-align: center;
+  }
+  .globalWrapper .footerWrapper .contacts .button {
+    margin: 20px auto;
+  }
+  .globalWrapper .footerWrapper .footerPhone {
+    display: none;
+  }
+  .globalWrapper .footerWrapper .downloadLinks ul li .link {
+    margin: 15px auto;
+    display: block;
+  }
+  .loadPopap ul li {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .globalWrapper .mainWrapper .withPhone ul {
+    text-align: center;
+  }
+  .globalWrapper .mainWrapper .withPhone ul li {
+    width: 49%;
+    display: inline;
+    display: inline-block;
+    zoom: 1;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney .blue li {
+    width: 50%;
+    margin: 20px 0;
+  }
+  .globalWrapper .mainWrapper .howTakeMoney .orange li {
+    width: 50%;
+    margin: 20px 0;
+  }
+}

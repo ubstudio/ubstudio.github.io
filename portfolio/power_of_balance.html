@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Power Balance</title>
+	<meta name="keywords" content="Power Balance">
+	<meta name="description" content="Power Balance">
+	<link rel="shortcut icon" href="power_of_balance/images/favicon.ico" type="images/x-icon">
+
+	<link href="power_of_balance/css/normalize-2.1.2.css" rel="stylesheet">
+	<link href="power_of_balance/css/main.css" rel="stylesheet">
+	<link href="power_of_balance/js/arcticmodal/jquery.arcticmodal.css" rel="stylesheet">
+	<link href="power_of_balance/js/arcticmodal/themes/simple.css" rel="stylesheet">
+	<link href="power_of_balance/js/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="power_of_balance/js/timer/timer.css" rel="stylesheet">
+	<link href="power_of_balance/css/jquery.countdown.css" rel="stylesheet">
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="power_of_balance/js/jquery.scrollTo.min.js"></script>
+	<script src="power_of_balance/js/jquery.localScroll.min.js"></script>
+	<script src="power_of_balance/js/arcticmodal/jquery.arcticmodal.js"></script>
+	<script src="power_of_balance/js/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="power_of_balance/js/main.js"></script>
+	<script src="power_of_balance/js/timer/timer.js"></script>
+	<script src="power_of_balance/js/jquery.countdown.js"></script>
+	<script src="power_of_balance/js/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+	<div class="blue-flash"></div>
+	<div id="header">
+		<div class="content">
+			<a class="logo" href="power_of_balance.html#home"></a>
+			<div class="right text-right">
+				<div class="phone-wrap">
+					<span class="phone">
+						<span class="number">8 800 777 21 07</span>
+					</span><br>
+					<span class="text">Звоните бесплатно!</span>
+				</div>
+				<button type="button" class="callback-btn button button-bg-yellow button_size_short">Заказать звонок</button>
+			</div>
+			<ul class="nav items-list">
+				<li><a href="power_of_balance.html#home">Акция</a></li>
+				<li><a href="power_of_balance.html#features">Эффект браслета</a></li>
+				<li><a href="power_of_balance.html#smi">Мы в СМИ</a></li>
+				<li><a href="power_of_balance.html#certificate">Сертификаты</a></li>
+				<li><a href="power_of_balance.html#comments">Отзывы</a></li>
+				<li><a href="power_of_balance.html#contacts">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="home" class="section home">
+		<div class="content">
+			<div class="brand-1"></div>
+			<div class="brand-2"></div>
+			<div class="counter">
+				<div class="caption">До конца акции осталось:</div>
+				<div class="counts" id="counter1"></div>
+			</div>
+			<div class="intro">Оригинальные<br>энергетические&nbsp;<br>браслеты из США</div>
+			<form class="request-form send-request" action="http://fresh-landing.ru/portfolio/power_of_balance/send.php" method="post">
+				<input type="hidden" name="subject" value="Заказ с формы 1">
+				<h3 class="header">Скидка <span class="discount-stick">&nbsp;50%</span></h3>
+				<div class="text">
+					<div class="buy">
+						<div class="prices">
+							<span class="price"></span>
+							<span class="old-price">3000 <span class="currency">Р</span>.</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<label>ФИО:</label><span class="form-field"><input type="text" name="name"></span>
+				</div>
+				<div class="form-row">
+					<label>Телефон<span class="form-required-label">*</span>:</label><span class="form-field"><input type="text" name="phone" required></span>
+				</div>
+				<div class="form-row">
+					<button class="button submit button-bg-orange button-size-big" type="submit"><div>Заказать со скидкой</div></button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="why-we" class="section why-we">
+		<div class="content">
+			<ul class="items-list">
+				<li class="first">
+					<div class="title"><span>100%</span><br>оригинал</div>
+				</li><li class="second">
+					<div class="title"><span>Без</span><br>предоплаты</div>
+				</li><li class="third">
+					<div class="title">производство<br><span>США</span></div>
+				</li><li class="four">
+					<div class="title">более<br><span>2000</span><br>покупателей</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="features" class="section features section-bg-black">
+		<div class="content">
+			<div class="clearfix">
+				<div class="left">
+					<h3 class="caption"><i class="icon"></i><div class="text">В чём сила<br>энергетического<br>браслета?</div></h3>
+					<ul class="items-list ordered">
+						<li>Создан из природных компонентов<br>(турмалин, вулканический пепел)</li>
+						<li>Повышает выносливость, придает<br>сил и энергии</li>
+						<li>Ускоряет обмен веществ</li>
+						<li>Снижает риск травм</li>
+						<li>Повышает потенцию</li>
+					</ul>
+				</div>
+				<div class="right">
+					<h3 class="caption"><i class="icon"></i><div class="text">Турмалин -<br>основа<br>энергетического<br>браслета</div></h3>
+					<ul class="items-list ordered">
+						<li>Известен своими<br>целебными свойствами.</li>
+						<li>Улучшается сон</li>
+						<li>Повышается<br>cтрессоустойчивость</li>
+						<li>Снимается мышечное<br>напряжение</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section effects section-bg-black">
+		<div id="effects" class="content">
+			<ul class="items-list">
+				<li class="first">Устраняет<br>головные боли</li>
+				<li class="second">Нормализует<br>артериальное<br>давление</li>
+				<li class="third">Нормализует<br>нервную систему</li>
+				<li class="four">Повышает<br>иммунитет</li>
+				<li class="five">Восстанавливает<br>и поддерживает<br>энергетический<br>баланс</li>
+				<li class="six">Повышает<br>потенцию</li>
+			</ul>
+			<button type="button" class="order-btn button button-bg-gold button-size-verybig button-icon-pointer">Заказать прямо сейчас</button>
+			<div class="stick">
+				Важная<br>
+				способность<br>
+				турмалина - это влияние<br>
+				на эректильную функцию.<br>
+				Мужской потенциал<br>
+				возрастет в разы,<br>
+				без использования<br>
+				таблеток и<br>
+				БАДов!
+			</div>
+		</div>
+	</div>
+
+	<div id="smi" class="section smi">
+		<div class="content">
+			<h2 class="header">Браслеты Power Balance набирают популярность<br>в России!</h2>
+			<iframe class="main-video" width="470" height="332" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div id="fake" class="section fake">
+		<div class="content">
+			<h2 class="header">Как отличить подделку</h2>
+			<ul class="items-list gallery text-center">
+				<li>
+					<img src="power_of_balance/files/fake-01-thumb.jpg">
+					<div class="desc">Реакция на растяжение.<br>У оригинального браслета есть<br>уплотнение вокруг голограммы - <br>урмалиновый модуль.</div>
+				</li>
+				<li>
+					<img src="power_of_balance/files/fake-02-thumb.jpg">
+					<div class="desc">Так выглядит<br>оригинальная коробка</div>
+				</li>
+				<li>
+					<img src="power_of_balance/files/fake-03-thumb.jpg">
+					<div class="desc">Надпись "Performance technology"<br>на оригинальном браслете<br>начинается от буквы "Е".</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="certificate" class="section certificate">
+		<div class="content">
+			<h2 class="header">Наши браслеты имеют сертификаты качества</h2>
+			<ul class="items-list gallery text-center">
+				<li>
+					<a class="pic fancybox" rel="gallery-certificate" href="power_of_balance/files/certificate-01.jpg"><span class="zoom-icon"></span><img src="power_of_balance/files/certificate-01-thumb.jpg"></a>
+				</li>
+				<li>
+					<a class="pic fancybox" rel="gallery-certificate" href="power_of_balance/files/certificate-02.jpg"><span class="zoom-icon"></span><img src="power_of_balance/files/certificate-02-thumb.jpg"></a>
+				</li>
+				<li>
+					<a class="pic fancybox" rel="gallery-certificate" href="power_of_balance/files/certificate-03.jpg"><span class="zoom-icon"></span><img src="power_of_balance/files/certificate-03-thumb.jpg"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="specialist-comment" class="section specialist-comment">
+		<div class="content">
+			<h2 class="header">Комментарий специалиста</h2>
+			<div class="pic"></div>
+			<div class="text">
+				<div class="name">Сергей Степанович Яковлев <span>спортивный врач</span></div>
+				<p>
+					Браслет Power Balance оказывает благоприятное влияние на весь организм,<br>
+					в результате чего повышается сопротивляемость к простудным <br>
+					заболеваниям, увеличивается обмен веществ, а вследствие - нормализуется<br>
+					вес и давление. Поскольку изначально браслет был создан для спортсменов,<br>
+					это отличный способ улучшить свои спортивные результаты,<br>
+					зарядиться силой и бодростью совершенно естественным способом.
+				</p>
+				<p>
+					Многие пациенты при использовании браслета обнаружили<br>
+					повышение либидо и были приятно удивлены<br>
+					в связи с положительными изменениями в своей жизни.
+				</p>
+			</div>
+			<button type="button" class="order-btn button button-bg-green button-size-verybig button-icon-pointer">Заказать прямо сейчас</button>
+		</div>
+	</div>
+
+	<div id="how-we-work" class="section how-we-work">
+		<div class="content">
+			<h2 class="header">Как мы работаем:</h2>
+			<ul class="items-list">
+				<li>
+					Оставляете заявку
+				</li><li>
+					Менеджер уточняет<br>данные заказа
+				</li><li>
+					Доставляем Вам заказ
+				</li><li>
+					Получаете браслет<br>и заряжаетесь<br>энергией
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="section video-comments">
+		<div class="content" id="comments">
+			<h2 class="header">Отзывы наших покупателей</h2>
+			<ul class="items-list">
+				<li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li><li>
+					<h3 class="title">Алексей Ануфриев г. Самара</h3>
+					<iframe width="280" height="210" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="delivery" class="section delivery">
+		<div class="content">
+			<h2 class="header">Быстрая доставка!<br><span>От 2 до 12 дней</span></h2>
+			<ul class="items-list">
+				<li class="delivery-type delivery-by-mail">
+					<h3 class="title">Доставка на почту</h3>
+					Производится почтой России отправлением 1 класса
+				</li>
+				<li class="delivery-type delivery-by-courier">
+					<h3 class="title">Доставка курьером в руки</h3>
+					Производится службой курьерской экспресс доставки
+				</li>
+				<li id="payment" class="payment text-center">
+					<h3 class="title">Оплата</h3>
+					<p>
+						товар оплачивается только при получении<br>
+						Вы ничем не рискуете и оплачиваете товар,<br>
+						как в обычном магазине
+					</p>
+				</li>
+				<li class="colors-variants text-center">
+					<h3 class="title">Вы можете выбрать любой цвет<br>и размер браслета</h3>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="bottom-form" class="section bottom-form shadow-bottom">
+		<div class="products-limit">Осталось в наличии:<br><span class="count">12</span> браслетов</div>
+		<div class="bg"></div>
+		<div class="content">
+			<form class="request-form send-request right" action="http://fresh-landing.ru/portfolio/power_of_balance/send.php" method="post">
+				<input type="hidden" name="subject" value="Заказ с формы 4">
+				<div class="text separator">
+					<h3 class="caption">Оставьте заявку,</h3>
+					<div class="text-center">чтобы зафиксировать скидку</div>
+				</div>
+				<div class="form-row">
+					<label>ФИО:</label><span class="form-field"><input type="text" name="name"></span>
+				</div>
+				<div class="form-row">
+					<label>Телефон<span class="form-required-label">*</span>:</label><span class="form-field"><input type="text" name="phone" required></span>
+				</div>
+				<div class="form-row">
+					<button class="button submit button-bg-orange button-size-big" type="submit"><div>Заказать со скидкой</div></button>
+				</div>
+			</form>
+			<div class="left">
+				<h3 class="discount">Скидка <i class="discount-value discount-50"></i></h3>
+				<div class="buy">
+					<div class="prices">
+						<span class="old-price">3000 <span class="currency">Р</span>.</span>
+						<span class="price"></span>
+					</div>
+				</div>
+				<div class="counter counter2">
+					<div class="caption">Скидка на браслет действует <span>только до <span class="date"></span></span></div>
+					<div class="counts" id="counter2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contacts" class="section contacts">
+		<div class="content">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=TSI2GwImyBngo1Tt1J10HXMAswNe9rBF"></script>
+			<div class="text-border">
+				<div class="text">
+					<h2 class="header">Контакты</h2>
+					<p>Телефон: 8 800 777 21 07</p>
+					<p>E-mail: info@power-of-balance.ru</p>
+					<p class="address">Адрес: г. Москва,<br>Измайловское шоссе, д. 71А, оф. 401</p>
+					<p>ОГРН: 312434509600092</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="section shadow-top">
+		<div class="content">
+			<div class="left">
+				<a class="agreement text-small" href="power_of_balance/sogl.html" target="_blank">Соглашение об обработке персональных данных</a>
+			</div>
+			<div class="developer">Разработка и продвижение сайта: <a href="../index.html" target="_blank"><img src="power_of_balance/images/develoder-logo.png" alt="fresh-landing.ru"></a></div>
+		</div>
+	</div>
+
+	<div style="display: none;">
+		<div id="callback-modal" class="box-modal">
+			<div class="box-modal_close arcticmodal-close"></div>
+			<div class="text text-center"></div>
+			<form action="http://fresh-landing.ru/portfolio/power_of_balance/send.php" method="post">
+				<input type="hidden" name="subject" value="Заказ звонка">
+				<table cellspacing="0" cellpadding="0" border="0" class="modal-form-table">
+					<tr>
+						<td align="left">Ваше имя:</td>
+						<td align="right" class="form-td">
+							<span class="form-field">
+								<input type="text" name="name" class="input-form">
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">Ваш телефон<span class="form-required-label">*</span>:</td>
+						<td align="right" class="form-td">
+							<span class="form-field">
+								<input type="text" name="phone" class="input-form" required>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" class="button button-bg-yellow button_size_med submit-form" value="Подтвердить">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<p class="text-center"><button type="button" id="callback-modal-btn-ok" class="button button_size_med button-bg-yellow arcticmodal-close">Ok</button></p>
+		</div>
+	</div>
+
+	<div style="display: none;">
+		<div id="success-modal" class="box-modal">
+			<div class="box-modal_close arcticmodal-close"></div>
+			<div class="text text-center">
+				<div class="header">Cпасибо.</div>
+				Заказ оформлен! В ближайшее время наш менеджер свяжется с Вами и уточнит все детали.
+			</div>
+			<p class="text-center"><button type="button" class="button button_size_med button-bg-yellow arcticmodal-close">Ok</button></p>
+		</div>
+	</div>
+
+	<div style="display: none;">
+		<div id="send-address-modal" class="box-modal">
+			<div class="box-modal_close arcticmodal-close"></div>
+			<div class="text"></div>
+			<form action="http://fresh-landing.ru/portfolio/power_of_balance/send.php" method="post">
+				<input type="hidden" name="subject">
+				<table cellspacing="0" cellpadding="0" border="0" class="modal-form-table">
+					<tr>
+						<td align="left">Ваше имя:</td>
+						<td align="right" class="form-td">
+							<span class="form-field">
+								<input type="text" name="name" class="input-form">
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">Ваш телефон<span class="form-required-label">*</span>:</td>
+						<td align="right" class="form-td">
+							<span class="form-field">
+								<input type="text" name="phone" class="input-form" required>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td align="left">Адрес доставки:</td>
+						<td align="right" class="form-td">
+							<span class="form-field">
+								<input type="text" name="address" class="input-form">
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" class="button button_size_med button-bg-yellow submit-form" value="Подтвердить">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<p class="text-center"><button type="button" id="send-address-modal-btn-ok" class="button button_size_med button-bg-yellow arcticmodal-close" style="display:none;">Ok</button></p>
+		</div>
+	</div>
+
+</body>
+</html>

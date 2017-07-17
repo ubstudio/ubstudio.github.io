@@ -1,0 +1,158 @@
+/* Стили Products */
+/* ============== */
+
+
+
+
+
+.products {
+	width: 100%;
+	background: #EAEAEA;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #333333;
+	padding-bottom: 60px;
+}
+
+.navigation {
+	margin-top: 40px;
+}
+
+.products .navigation > div {
+	display: inline-block;
+	vertical-align: top;
+	padding: 18px 17px;
+	border: 1px solid #D6D6D6;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: .8px;
+	background-image: -moz-linear-gradient( 90deg, rgb(237,237,237) 0%, rgb(255,255,255) 100%);
+  	background-image: -webkit-linear-gradient( 90deg, rgb(237,237,237) 0%, rgb(255,255,255) 100%);
+  	background-image: -ms-linear-gradient( 90deg, rgb(237,237,237) 0%, rgb(255,255,255) 100%);
+  	cursor: pointer;
+
+}
+
+.products .navigation > div:first-child {
+	border-radius: 25px 0 0 25px;
+}
+
+.products .navigation > div:last-child {
+	border-radius: 0 25px 25px 0;
+}
+
+.products .navigation > div:hover,
+.products .navigation .active {
+	background: #6B6B6B;
+	color: #FFFFFF;
+}
+
+.products .wrapper > p {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 14px;
+	letter-spacing: .9px;
+}
+
+.tab {
+	margin: 20px 0 35px 0;
+}
+
+.product-item {
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 10px;
+	width: 300px;
+	max-width: 33%;
+	font-size: 0; /* Чтобы избежать отступа снизу от изображения */
+	box-shadow: 0px 0px 10px #AAAAAA;
+}
+
+.char {
+	height: 65px;
+	background: #FFFFFF;
+	padding: 30px 20px 0 25px;
+	text-align: left;
+	position: relative;
+}
+
+.price {
+	height: 50px;
+	background: #F9F9F9;
+	padding: 0 20px;
+}
+
+.char p {
+	display: inline-block;
+	margin: 5px 0;
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.char p span {
+	font-weight: 500;
+}
+
+.price > div {
+	padding: 10px 0 0 0;
+	margin: 0;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ECB721;
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+.price > div > div {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin: -7px 0 0 5px;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.more {
+	position: absolute;
+	top: -23px;
+	left: 119px;
+	width: 65px;
+	height: 47px;
+	text-align: center;
+	background: url(../images/more.png) no-repeat left;
+	cursor: pointer;
+}
+
+.more:hover {
+	background-position: right;
+}
+
+.more p {
+	margin: 5px 0 0 0;
+	letter-spacing: 0;
+	font-weight: 300;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.products .wrapper > button.rnd {
+	width: 240px;
+	height: 45px;
+	font-size: 14px;
+	line-height: 45px;
+}
+
+.products button .icon {
+	position: relative;
+	width: 30px;
+	height: 45px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../images/btn-icon.png) no-repeat -120px center;
+	margin: -5px 5px 0 -10px;
+}
+
+
+

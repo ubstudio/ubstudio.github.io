@@ -1,0 +1,1398 @@
+/* Общие стили документа */
+/* =============================================================================================== */
+
+
+
+
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	min-width: 1000px;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+}
+
+*::selection {
+	color: #000000;
+	background: #ECB721; 
+}
+
+button.rnd {
+	display: inline-block;
+	border: none;
+	outline: none;
+	border-radius: 35px;
+	background: -moz-linear-gradient( 90deg, rgb(236,90,33) 0%, rgb(255,113,57) 100%);
+  	background: -webkit-linear-gradient( 90deg, rgb(236,90,33) 0%, rgb(255,113,57) 100%);
+ 	background: -ms-linear-gradient( 90deg, rgb(236,90,33) 0%, rgb(255,113,57) 100%);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 13px;
+	text-shadow: -1px -1px 1px #555555;
+	cursor: pointer;
+	box-shadow: 1px 1px 5px #555555;
+}
+
+button.rnd:hover {
+	background: -moz-linear-gradient( 90deg, rgb(207,161,32) 0%, rgb(252,196,38) 100%);
+  	background: -webkit-linear-gradient( 90deg, rgb(207,161,32) 0%, rgb(252,196,38) 100%);
+  	background: -ms-linear-gradient( 90deg, rgb(207,161,32) 0%, rgb(252,196,38) 100%);
+  	box-shadow: 1px 1px 6px #444444;
+}
+
+button.product-button {
+	width: 100%;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: #ECB721;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+button.product-button:hover {
+	background: #F4642C;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 30px;
+	color: #FFCC33;
+	font-weight: normal;
+	margin: 0;
+	padding: 30px 0 0 0;
+	text-align: center;
+}
+
+.h-dark {
+	color: #ECB721;
+}
+
+.separator {
+	padding-top: 65px;
+}
+
+.dark .sep-flame {
+	height: 42px;
+	background: url(../images/sep-flame.png) no-repeat center;
+}
+
+.light .sep-flame {
+	height: 42px;
+	background: url(../images/sep-flame-light.png) no-repeat center;
+}
+
+.dark .sep-line {
+	height: 17px;
+	background: url(../images/sep-line.png) no-repeat center;
+	margin-top: 10px;
+}
+
+.light .sep-line {
+	height: 17px;
+	background: url(../images/sep-line-light.png) no-repeat center;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+/*   Стили для Header   */
+/* =============================================================================================== */
+
+
+
+
+
+header {
+	width: 100%;
+	height: 81px;
+	background: #303030;
+	letter-spacing: .5px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+a[href="#"] {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 40px 0 20px;
+}
+
+nav, 
+nav ul, 
+nav li,
+nav a {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+	vertical-align: top;
+}
+
+nav {
+	margin: 15px 0 0 0;
+}
+
+nav a {
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	outline: 1px solid #979797;
+	color: #E3B022;
+}
+
+.call {
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	float: right;
+	margin: 15px 25px 0 0;
+}
+
+.call > div:nth-of-type(1) {
+	color: #FFFFFF;
+	font-size: 11px;
+	line-height: 16px;
+	letter-spacing: .7px;
+}
+
+.call > div:nth-of-type(2) {
+	height: 22px;
+	line-height: 22px;
+	color: #ECB721;
+	font-size: 14px;
+	background: url(../images/phone.png) no-repeat 2px 5px;
+}
+
+.call > div:nth-of-type(3) {
+	color: #F2632C;
+	font-size: 14px;
+	line-height: 16px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.call > div:nth-of-type(3):hover {
+	color: #FFFFFF;
+}
+
+
+
+
+
+/*   Стили для Main-screen   */
+/* =============================================================================================== */
+
+
+
+
+
+.main-screen {
+	width: 100%;
+	height: 800px;
+	background: url(../images/main.png) no-repeat center;
+	position: relative;
+	overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	z-index: 10;
+}
+
+.pattern {
+	width: 1920px;
+	height: 800px;
+	background: url(../images/pattern.png);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 20;
+}
+
+/* Gif-анимация */
+.gif {
+	width: 471px;
+	height: 704px;
+	background: url(../images/flame.gif) no-repeat center;
+	position: absolute;
+	top: -122px;
+	left: 265px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.main-title {
+	position: relative;
+	z-index: 30;
+}
+
+.long {
+	padding-top: 135px;
+	width: 580px;
+	margin: 0 auto;
+}
+
+.lines > div {
+	height: 1px;
+	width: 100%;
+	background: #898A86;
+	margin: 5px 0;
+}
+
+h1 {
+	font-weight: 300;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 36px;
+	letter-spacing: 2.5px;
+	line-height: 1.2em;
+}
+
+h1 span:nth-of-type(1) {
+	color: #ECB721;
+}
+
+h1 span > span {
+	color: #ECB721;
+	font-weight: 600;
+}
+
+.analog {
+	margin: 0 auto;
+	width: 580px;
+	color: #FFFFFF;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+.short {
+	width: 145px;
+}
+
+.short,
+.text {
+	display: inline-block;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.del {
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+	padding-top: 35px;
+}
+
+
+
+
+
+/*   Стили для Why   */
+/* =============================================================================================== */
+
+
+
+
+
+.why {
+	width: 100%;
+	background: #191919;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+}
+
+
+
+.reasons {
+	margin: 70px 0 0 0;
+}
+
+.reason {
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 2px 0;
+	background: url(../images/reasons.png) no-repeat center;
+	cursor: pointer;
+	text-align: right;
+	padding: 20px;
+}
+
+.first-triplet div:nth-child(1) {
+	background-position: 0 0;
+}
+
+.first-triplet div:nth-child(2) {
+	background-position: -290px 0;
+}
+
+.first-triplet div:nth-child(3) {
+	background-position: -580px 0;
+}
+
+.second-triplet div:nth-child(1) {
+	background-position: 0 -290px;
+}
+
+.second-triplet div:nth-child(2) {
+	background-position: -290px -290px;
+}
+
+.second-triplet div:nth-child(3) {
+	background-position: -580px -290px;
+}
+
+.first-triplet div:nth-child(1):hover {
+	background-position: 0 -580px;
+}
+
+.first-triplet div:nth-child(2):hover {
+	background-position: -290px -580px;
+}
+
+.first-triplet div:nth-child(3):hover {
+	background-position: -580px -580px;
+}
+
+.second-triplet div:nth-child(1):hover {
+	background-position: 0 -870px;
+}
+
+.second-triplet div:nth-child(2):hover {
+	background-position: -290px -870px;
+}
+
+.second-triplet div:nth-child(3):hover {
+	background-position: -580px -870px;
+}
+
+.first-triplet div:hover,
+.second-triplet div:hover {
+	color: #191919;
+} 
+
+.reason p:nth-of-type(1) {
+	margin: 180px 0 0 0;
+	text-transform: uppercase;
+}
+
+.reason p:nth-of-type(2) {
+	margin: 10px 0 0 0;
+	font-size: 11px;
+}
+
+.fire {
+	width: 100%;
+	height: 176px;
+	background: url(../images/fire.png) no-repeat center;
+	margin: -10px 0 0 0;
+}
+
+
+
+
+
+/*   Стили для Individual   */
+/* =============================================================================================== */
+
+
+
+
+
+.individual {
+	width: 100%;
+	height: 600px;
+	text-align: center;
+	background: url(../images/ind.png) no-repeat center;
+}
+
+.individual .wrapper > div:nth-of-type(2) {
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: 300;
+	text-align: left;
+	margin: 100px 0 0 0;
+}
+
+.individual .wrapper > button.rnd {
+	width: 510px;
+	height: 45px;
+	font-size: 14px;
+	line-height: 45px;
+	margin: 100px 0 0 0;
+}
+
+.individual button .icon {
+	position: relative;
+	width: 30px;
+	height: 45px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../images/btn-icon.png) no-repeat -90px center;
+	margin: -5px 5px 0 -10px;
+}
+
+
+
+
+
+/*   Стили для Our-work     */
+/* =============================================================================================== */
+
+
+
+
+
+.our-work {
+	width: 100%;
+	background: #F8F8F8;
+	padding-bottom: 70px;
+}
+
+.work {
+	padding: 50px 0 15px 0;
+}
+
+.work-photo {
+	display: inline-block;
+	width: 460px;
+	height: 380px;
+	background: url(../images/work1.jpg) no-repeat center;
+	float: left;
+}
+
+.info {
+	max-width: 480px;
+	height: 380px;
+	display: inline-block;
+	padding: 0 20px 0 20px;
+}
+
+.work-title {
+	display: inline-block;
+	border-top: 1px solid #A8A8A8;
+	line-height: 55px;
+	font-size: 30px;
+	color: #A8A8A8;
+	font-family: 'Playfair Display', serif;
+}
+
+.solution,
+.period,
+.budget {
+	font-weight: 300;
+	height: 30px;
+	margin: 8px 0;
+	line-height: 30px;
+	letter-spacing: 0;
+	padding-left: 45px;
+	font-size: 13px;
+	background: url(../images/work-info.png) no-repeat;
+}
+
+.solution {
+	background-position: 0 0;
+}
+
+.period {
+	background-position: 0 -30px;
+}
+
+.budget {
+	background-position: 0 -60px;
+}
+
+.info span {
+	font-weight: 400;
+}
+
+.name {
+	font-size: 16px;
+	color: #ffcc33;
+	margin: 30px 0 15px 0;
+}
+
+.info-text {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+.partner {
+	width: 100%;
+	height: 65px;
+	background: #ECECEC;
+	margin: 20px 0 0 0;
+	border-right: 5px solid #E9B521;
+}
+
+.partner div {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	padding-top: 10px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 16px;
+	color: #666666;
+	line-height: 1.5em;
+}
+
+.partner span {
+	font-weight: 400;
+	color: #E9B521;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.partner button.rnd {
+	vertical-align: top;
+	width: 415px;
+	height: 45px;
+	font-size: 14px;
+	line-height: 45px;
+	margin: 10px 0 0 0;
+}
+
+.partner button .icon {
+	position: relative;
+	width: 30px;
+	height: 45px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../images/btn-icon.png) no-repeat -90px center;
+	margin: -5px 5px 0 -10px;
+}
+
+.our-work .wrapper > div:nth-of-type(3) .work-photo {
+	background: url(../images/work2.jpg) no-repeat center;
+}
+
+.our-work .wrapper > div:nth-of-type(3) button {
+	margin-left: 50%;
+}
+
+
+
+
+
+/*   Стили для Quality     */
+/* =============================================================================================== */
+
+
+
+
+
+.quality {
+	width: 100%;
+	height: 1110px;
+	background: url(../images/quality.png) no-repeat center;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.quality-left {
+	text-align: right;
+}
+
+.quality-right {
+	text-align: left;
+}
+
+.quality-item {
+	width: 400px;
+}
+
+.quality-text {
+	display: inline-block;
+}
+
+.quality-icon {
+	width: 60px;
+	height: 172px;
+	display: inline-block;
+	background: url(../images/quality-icon.png) no-repeat;
+	vertical-align: top;
+}
+
+.quality-left .quality-icon {
+	margin: 0 0 0 20px;
+	float: right;
+}
+
+.quality-right .quality-icon {
+	margin: 0 20px 0 0;
+	float: left;
+}
+
+
+
+/* Позиционирование объектов Quality-item */
+
+.quality .wrapper > div:nth-of-type(2) {
+	position: absolute;
+	top: 305px;
+	left: 0;
+}
+
+.quality .wrapper > div:nth-of-type(3) {
+	position: absolute;
+	top: 305px;
+	right: 0;
+}
+
+.quality .wrapper > div:nth-of-type(4) {
+	position: absolute;
+	top: 520px;
+	left: 0;
+}
+
+.quality .wrapper > div:nth-of-type(5) {
+	position: absolute;
+	top: 740px;
+	left: 0;
+}
+
+.quality .wrapper > div:nth-of-type(6) {
+	position: absolute;
+	top: 740px;
+	right: 0;
+}
+
+
+
+/* Выбор нужной иконки из спрайта */
+
+
+.quality .wrapper > div:nth-of-type(2) .quality-icon {
+	background-position: 0 0;
+}
+
+.quality .wrapper > div:nth-of-type(3) .quality-icon {
+	background-position: -60px 0;
+}
+
+.quality .wrapper > div:nth-of-type(4) .quality-icon {
+	background-position: -240px 0;
+}
+
+.quality .wrapper > div:nth-of-type(5) .quality-icon {
+	background-position: -120px 0;
+}
+
+.quality .wrapper > div:nth-of-type(6) .quality-icon {
+	background-position: -180px 0;
+}
+
+
+
+/* Отступы для текста */
+
+
+.quality .wrapper > div:nth-of-type(2) .quality-text {
+	padding-top: 8px;
+}
+
+.quality .wrapper > div:nth-of-type(4) .quality-text {
+	padding-top: 52px;
+}
+
+.quality .wrapper > div:nth-of-type(5) .quality-text {
+	padding-top: 110px;
+}
+
+.quality .wrapper > div:nth-of-type(6) .quality-text {
+	padding-top: 110px;
+}
+
+
+
+
+
+/*   Стили для Opinions     */
+/* =============================================================================================== */
+
+
+
+
+
+.opinions {
+	width: 100%;
+	background: #EAEAEA;
+	text-align: center;
+	padding-bottom: 55px;
+}
+
+.opinions-items {
+	padding: 50px 0 0 0;
+}
+
+.opinion-item {
+	width: 460px;
+	display: inline-block;
+	margin: 0 10px 60px 10px;
+	text-align: left;
+}
+
+.opinion-text {
+	height: 148px;
+	background: url(../images/opinion-text.png) no-repeat center;
+	padding: 10px 20px;
+}
+
+.opinion-text p {
+	padding: 5px 0;
+	margin: 0;
+}
+
+.opinion-text p:nth-of-type(1) {
+	font-size: 15px;
+	font-weight: 300;
+	color: #333333;
+	letter-spacing: .8px;
+}
+
+.opinion-person img {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border: 2px solid white;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.opinion-person p {
+	margin: 5px 0;
+	font-size: 14px;
+	color: #333333;
+	font-weight: 300;
+}
+
+.opinion-person p:nth-of-type(1) {
+	padding-top: 8px;
+	font-size: 18px;
+	color: #000000;
+	font-weight: 400;
+}
+
+.opinion-person p:nth-of-type(3) {
+	font-style: italic;
+}
+
+.opinions button.rnd {
+	vertical-align: top;
+	width: 360px;
+	height: 60px;
+	font-size: 16px;
+	line-height: 60px;
+	margin: 10px 0 0 0;
+}
+
+.opinions button .icon {
+	position: relative;
+	width: 30px;
+	height: 60px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../images/btn-icon.png) no-repeat -60px center;
+	margin: -5px 5px 0 -10px;
+}
+
+
+
+
+
+/*   Стили для Connect     */
+/* =============================================================================================== */
+
+
+
+
+
+.connect {
+	width: 100%;
+	background: #F8F8F8;
+	padding-bottom: 50px;
+}
+
+.connect-bg {
+	width: 100%;
+	height: 635px;
+	font-family: 'Open Sans', sans-serif;
+	background: url(../images/connect.png) no-repeat center;
+}
+
+.speech {
+	position: absolute;
+	top: 65px;
+	left: 370px;
+	height: 134px;
+	background: url(../images/speech.png) no-repeat center;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.2em;
+	color: #FFFFFF;
+	padding: 15px 30px;
+	z-index: 50;
+}
+
+
+
+
+
+/*   Стили для Guarantee     */
+/* =============================================================================================== */
+
+
+
+
+
+.guarantee {
+	width: 100%;
+	text-align: center;
+}
+
+.garant-items {
+	padding: 50px 0;
+}
+
+.garant-item {
+	width: 220px;
+	height: 130px;
+	display: inline-block;
+	vertical-align: top;
+	background: url(../images/garant.png) no-repeat;
+	padding-top: 190px;
+	cursor: pointer;
+	margin: 0 10px;
+}
+
+.garant-item > p:nth-of-type(1) {
+	margin: 0;
+	font-weight: 300;
+	font-size: 18px;
+	color: #ECB721;
+}
+
+.garant-item > p:nth-of-type(2) {
+	font-weight: 300;
+	font-size: 14px;
+	color: #999999;
+	margin: 20px 0 0 0;
+}
+
+.garant-item p span {
+	font-weight: 400;
+}
+
+.garant-items > div:nth-of-type(1) {
+	background-position: 0 0;
+}
+
+.garant-items > div:nth-of-type(1):hover {
+	background-position: 0 -320px;
+}
+
+.garant-items > div:nth-of-type(2) {
+	background-position: -220px 0;
+}
+
+.garant-items > div:nth-of-type(2):hover {
+	background-position: -220px -320px;
+}
+
+.garant-items > div:nth-of-type(3) {
+	background-position: -440px 0;
+}
+
+.garant-items > div:nth-of-type(3):hover {
+	background-position: -440px -320px;
+}
+
+.garant-items > div:nth-of-type(4) {
+	background-position: -660px 0;
+}
+
+.garant-items > div:nth-of-type(4):hover {
+	background-position: -660px -320px;
+}
+
+
+
+
+
+/*   Стили для How-work     */
+/* =============================================================================================== */
+
+
+
+
+
+.how-work {
+	width: 100%;
+	text-align: center;
+	background: #303030;
+	color: #FFFFFF;
+}
+
+.how-work .separator {
+	opacity: 0.2;
+}
+
+.how-items {
+	padding: 105px 0;
+}
+
+.how-item {
+	display: inline-block;
+	vertical-align: top;
+	height: 110px;
+	width: 450px;
+	margin: 0 15px;
+}
+
+.how-icon {
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	background: url(../images/how-icon.png) no-repeat 0 0;
+	float: left;
+	margin: 0 30px 0 0;
+}
+
+.how-items > div:nth-of-type(2) .how-icon {
+	background-position: -110px 0;
+}
+
+.how-item p {
+	text-align: left;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.how-item > p:nth-of-type(1) {
+	font-size: 24px;
+	margin: 15px 0 15px 0;
+
+}
+
+.how-work .arrow {
+	width: 60px;
+	height: 33px;
+	position: absolute;
+	background: url(../images/how-arrow.png) no-repeat center;
+	bottom: -33px;
+	left: 50%;
+	margin: 0 0 0 -30px;
+}
+
+
+
+
+
+/*   Стили для Last-form     */
+/* =============================================================================================== */
+
+
+
+
+
+.last-form {
+	width: 100%;
+	height: 340px;
+	background: url(../images/last-form.png) no-repeat center;
+	color: #FFFFFF;
+}
+
+.last-form-title {
+	width: 710px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	font-size: 30px;
+	font-weight: 300;
+	padding: 55px 30px 0 0;
+}
+
+.last-form-title span {
+	font-size: 24px;
+}
+
+.last-form-title span span {
+	font-weight: 500;
+}
+
+.time2 {
+	width: 240px;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	float: right;
+	color: #ECB721;
+}
+
+.time2 div:nth-child(1) {
+	padding: 30px 30px 0 0;
+	font-size: 200px;
+	font-weight: 300;
+	letter-spacing: -30px;
+}
+
+.time2 div:nth-child(2) {
+	margin: -20px 0 0 0;
+	letter-spacing: 7px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+/*   Стили для Offer, offer-bg    */
+/* =============================================================================================== */
+
+
+
+
+
+.offer {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.offer-bg {
+	width: 100%;
+	height: 355px;
+	background: url(../images/offer-bg.png) no-repeat center;
+}
+
+.offer-bg .wrapper > div {
+	width: 50%;
+	height: 100%;
+	float: right;
+	text-align: center;
+}
+
+.offer-bg .wrapper > div p {
+	font-size: 30px;
+	font-weight: 300;
+	color: #FFFFFF;
+	padding-top: 100px;
+	margin: 0;
+}
+
+.offer-bg button.rnd {
+	vertical-align: top;
+	width: 380px;
+	height: 45px;
+	font-size: 16px;
+	line-height: 45px;
+	margin: 50px 0 0 0;
+}
+
+.offer-bg button .icon {
+	position: relative;
+	width: 30px;
+	height: 45px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../images/btn-icon.png) no-repeat -30px center;
+	margin: 0 5px 0 -10px;
+}
+
+
+
+
+
+/*   Стили для Questions    */
+/* =============================================================================================== */
+
+
+
+
+
+.questions {
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	background: url(../images/questions.png) no-repeat center;
+}
+
+.questions .wrapper > div {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 24px;
+	font-weight: 300;
+	color: #272727;
+	float: left;
+	padding: 70px 0 0 90px;
+}
+
+.questions button {
+	display: inline-block;
+	margin: 80px 0 0 0;
+	float: right;
+	width: 300px;
+	height: 50px;
+	border: none;
+	outline: none;
+	border-radius: 35px;
+	background: -moz-linear-gradient( 90deg, rgb(207,161,32) 0%, rgb(252,196,38) 100%);
+  	background: -webkit-linear-gradient( 90deg, rgb(207,161,32) 0%, rgb(252,196,38) 100%);
+  	background: -ms-linear-gradient( 90deg, rgb(207,161,32) 0%, rgb(252,196,38) 100%);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-shadow: -1px -1px 1px #555555;
+	cursor: pointer;
+	box-shadow: 1px 1px 5px #555555;
+}
+
+.questions button:hover {
+	background: -moz-linear-gradient( 90deg, rgb(236,90,33) 0%, rgb(255,113,57) 100%);
+  	background: -webkit-linear-gradient( 90deg, rgb(236,90,33) 0%, rgb(255,113,57) 100%);
+ 	background: -ms-linear-gradient( 90deg, rgb(236,90,33) 0%, rgb(255,113,57) 100%);
+  	box-shadow: 1px 1px 6px #444444;
+}
+
+.questions button .icon {
+	position: relative;
+	width: 30px;
+	height: 50px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../images/btn-icon.png) no-repeat 0 center;
+	margin: 0 5px 0 -10px;
+}
+
+
+
+
+
+/*   Стили для Map    */
+/* =============================================================================================== */
+
+
+
+
+
+.map {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.map .wrapper {
+	height: auto;
+}
+
+.contacts {
+	position: relative;
+	z-index: 100;
+	margin: 0 25px 0 0;
+	width: 363px;
+	height: 400px;
+	float: right;
+	background: url(../images/contacts.png) no-repeat center;
+	text-align: center;
+}
+
+.contacts h3 {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 24px;
+	color: #000000;
+	font-weight: normal;
+	margin: 0;
+	padding: 10px 0 25px 0;
+}
+
+.contact {
+	margin: 15px auto;
+	width: 230px;
+	height: 31px;
+	background: url(../images/contact-icon.png) no-repeat left 0;
+	text-align: left;
+	padding: 0 0 0 50px;
+	font-size: 14px;
+}
+
+.contact a {
+	text-decoration: none;
+	color: #000;
+}
+
+.contacts > div:nth-of-type(1) {
+	line-height: 14px;
+}
+
+.contacts > div:nth-of-type(2),
+.contacts > div:nth-of-type(3),
+.contacts > div:nth-of-type(4) {
+	line-height: 31px;
+}
+
+.contacts > div:nth-of-type(2) {
+	background-position: 0 -31px;
+}
+
+.contacts > div:nth-of-type(3) {
+	background-position: 0 -62px;
+}
+
+.contacts > div:nth-of-type(4) {
+	background-position: 0 -93px;
+}
+
+.contacts p {
+	font-size: 18px;
+	line-height: 25px;
+	padding: 10px 0 0 0;
+	margin: 0;
+}
+
+.contacts p span {
+	font-size: 18px;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+}
+
+.contacts button.rnd {
+	vertical-align: top;
+	width: 245px;
+	height: 40px;
+	font-size: 12px;
+	line-height: 40px;
+	margin: 20px 0 0 0;
+}
+
+.contacts button .icon {
+	position: relative;
+	width: 30px;
+	height: 40px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../images/btn-icon.png) no-repeat -60px center;
+	margin: 0 5px 0 -10px;
+}
+
+
+
+
+
+/*   Стили для Footer    */
+/* =============================================================================================== */
+
+
+
+
+
+footer {
+	width: 100%;
+	height: 100px;
+	background: #303030;
+	text-align: center;
+}
+
+footer a[href="#"] {
+	display: inline-block;
+	margin: 15px 0 0 0;
+	float: left;
+}
+
+footer .copy {
+	display: inline-block;
+	line-height: 100px;
+	font-size: 11px;
+	font-weight: 300;
+	color: #FFFFFF;
+}
+
+.dev {
+	display: inline-block;
+	float: right;
+	text-align: right;
+	font-weight: 300;
+	color: #FFFFFF;
+	margin: 35px 70px 0 0;
+}
+
+.dev > div:nth-of-type(1) {
+	font-size: 11px;
+	font-weight: 300;
+}
+
+.dev a {
+	display: inline-block;
+	font-size: 14px;
+	color: #FFFFFF;
+	position: relative;
+	text-decoration: none;
+}
+
+.dev a:hover {
+	color: #ECB721;
+}
+
+.dev a:after {
+	content: '';
+	width: 50px;
+	height: 49px;
+	background: url(../images/fresh.png) no-repeat center;
+	position: absolute;
+	top: -25px;
+	right: -60px;
+}
+
+

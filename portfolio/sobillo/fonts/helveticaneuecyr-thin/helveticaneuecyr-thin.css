@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HelveticaNeueCyrThin';
+    src: url('helveticaneuecyr-thin.eot');
+    src: local('☺'),
+    url('helveticaneuecyr-thin.eot') format('embedded-opentype'),
+         url('helveticaneuecyr-thin.woff') format('woff'),
+         url('helveticaneuecyr-thin.ttf') format('truetype'),
+         url('http://fresh-landing.ru/portfolio/sobillo/fonts/helveticaneuecyr-thin/helveticaneuecyr-thin.svg') format('svg');
+}

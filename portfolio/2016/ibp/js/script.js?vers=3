@@ -1,0 +1,142 @@
+/*
+
+	by GetLP.pro
+
+*/
+
+
+
+jas.hook_set('ready', function() {
+	function setimage1() {
+	jas.find('.p1').attr_set('style', 'background-image: url(http://fresh-landing.ru/portfolio/2016/ibp/img/p1v1.jpg);');
+	setTimeout(setimage2, 4000);
+	}
+	function setimage2() {
+	jas.find('.p1').attr_set('style', 'background-image: url(http://fresh-landing.ru/portfolio/2016/ibp/img/p1v2.jpg);');
+	setTimeout(setimage3, 4000);
+	}
+	function setimage3() {
+	jas.find('.p1').attr_set('style', 'background-image: url(http://fresh-landing.ru/portfolio/2016/ibp/img/p1v3.jpg);');
+	setTimeout(setimage4, 4000);
+	}
+	function setimage4() {
+	jas.find('.p1').attr_set('style', 'background-image: url(http://fresh-landing.ru/portfolio/2016/ibp/img/p1v4.jpg);');
+	setTimeout(setimage1, 4000);
+	}
+	setTimeout(setimage2, 4000);
+	$("[name=phone]").mask("+7 (999) 999-99-99");
+	jas.find('form').each(function() {
+		var j = jas(this);
+		if (j !== null) {
+			j.hook_set('process_begin', function(t, s) {
+				this.disable();
+				var s = jas.set(this.element);
+				s.find('.jas_form_submit').each(function() {
+					this.style.display = 'none';
+				});
+				s.find('._t1').each(function() {
+					this.style.display = 'block';
+					this.innerHTML = 'Подождите, идёт отправка';
+				});
+			})
+			.hook_set('process_end', function(t, s) {
+				jas.set(this.element).find('._t1').html('Успешно отправлено! Спасибо!');
+				document.getElementById('ccc').click();
+				jas('.popup_thank').show();
+			});
+		}
+	});
+});
+
+
+jas.hook_set('scroll', function() {
+	var s = Math.floor(document.documentElement.scrollTop || document.body.parentNode.scrollTop || document.body.scrollTop);
+	var h = jas.find('.header');
+	var z = jas.find('.header .b1');
+	var n = jas.find('.header .logo');
+	var m = jas.find('.header .t1');
+	var f = jas.find('.header .t2');
+	var o = jas.find('.header .menu');
+	var p = jas.find('.header .right');
+	var v = jas.find('.header .btn1');
+	if (s > 600) {
+		h.class_add('v1');
+		z.class_add('v1');
+		n.class_add('v1');
+		m.class_add('v1');
+		o.class_add('v1');
+		p.class_add('v1');
+		f.class_add('v1');
+		v.class_add('v1');
+	} else {
+		h.class_remove('v1');
+		z.class_remove('v1');
+		n.class_remove('v1');
+		m.class_remove('v1');
+		o.class_remove('v1');
+		p.class_remove('v1');
+		f.class_remove('v1');
+		v.class_remove('v1');
+	}
+	return true;
+});
+
+function show_popup(n) {
+	var a = {
+		1: {
+			'source'	: 'Кнопка Перезвоните мне в хедере'
+		},
+		2: {
+			'source'	: 'Кнопка Начать с консультации на первом экране'
+		},
+		3: {
+			'source'	: 'Комплект 1'
+		},
+		4: {
+			'source'	: 'Комплект 2'
+		},
+		5: {
+			'source'	: 'Комплект 3'
+		},
+		6: {
+			'source'	: 'Комплект 4'
+		},
+		7: {
+			'source'	: 'Комплект 5'
+		},
+		8: {
+			'source'	: 'Комплект 6'
+		},
+		9: {
+			'source'	: 'Комплект 7'
+		},
+		10: {
+			'source'	: 'Комплект 8'
+		},
+		11: {
+			'source'	: 'Комплект 9'
+		},
+		12: {
+			'source'	: 'Комплект 10'
+		},
+		13: {
+			'source'	: 'Комплект 11'
+		},
+		14: {
+			'source'	: 'Комплект 12'
+		}
+	}
+	jas('.popup form').source = a[n]['source'];
+	jas('.popup').show();
+}
+
+function mob_menu(n) {
+	if (n == 1) {
+		jas.find('.mob_menu .b1').attr_set('style', 'height: 100%;');
+		jas.find('.mob_menu .i1').attr_set('onclick', 'mob_menu(2);');
+	}
+	if (n == 2) {
+		jas.find('.mob_menu .b1').attr_set('style', 'height: 0px;');
+		jas.find('.mob_menu .i1').attr_set('onclick', 'mob_menu(1);');
+	}
+}

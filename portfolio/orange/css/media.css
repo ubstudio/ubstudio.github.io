@@ -1,0 +1,440 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	header .contact_container {
+		display: none;
+	}
+	header .btn_header {
+		display: none;
+	}
+	header .btn_header_part {
+		display: none;
+	}
+	header .hamburger {
+		display: block;
+	}
+	.home .heading_container h1 {
+		font-size: 70px;
+	}
+	.home .heading_container span {
+		font-size: 51px;
+	}
+	.home .heading_container p {
+		font-size: 26px;
+	}
+	.home .about ul li {
+		font-size: 20px;
+	}
+	.home .about ul li p {
+		width: 460px;
+	}
+	.home .h_img img {
+		width: 460px;
+	}
+	.home .h_img_p img {
+		width: 460px;
+	}
+	.opros .item img {
+		width: 455px
+	}
+	header .logo_container {
+		margin-top:11px;
+	
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.main_head .logo_box img {
+		height: 320px;
+		width: 320px;
+	}
+	.main_head .logo_box {
+		padding-bottom: 40px;
+		padding-top: 120px;
+	}
+	.main_head .heading h1 {
+		font-size: 2.5em;
+	}
+	.main_head .heading h2 {
+		font-size: 1.5em;
+		padding-bottom: 40px;
+	}
+	.main_head .button_box .btn_part {
+		float: none;
+		margin-bottom: 20px;
+	}
+	.main_head .button_box .btn_ych {
+		float: none;
+		margin-bottom: 30px;
+	}
+	.home .h_img {
+		display: none;
+	}
+	.home .h_img_p {
+		display: none;
+	}
+	.home .heading_container {
+		text-align: center;
+	}
+	.home .about {
+		text-align: center;
+	}
+	.install .i_item .tr2 {
+		display: none;
+	}
+	.install .apple, .android {
+		text-align: center;
+	}
+	.partners .i_item .tr2 {
+		display: none;
+	}
+	.partners .apple, .android {
+		text-align: center;
+	}
+	.answers .answer {
+		width: auto;
+	}
+	.contacts .e_dl .apple {
+		display: inline-block;
+	}
+	.contacts .e_dl .android {
+		display: inline-block;
+	}
+	.contacts .e_dl {
+		    padding-bottom: 0;
+	}
+	.contacts .contact {
+		text-align: center;
+	}
+	.contacts .contact .phone {
+		display: inline-block;
+	}
+	.contacts .contact .phone p {
+		padding-left: 10px;
+	}
+	.contacts .contact .mail {
+		display: inline-block;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.contacts .contact .mail p {
+		padding-left: 10px;
+	}
+	.contacts .contact p {
+		display: inline-block;
+	}
+	.callback .cb_img {
+		display: none;
+	}
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.main_head .logo_box img {
+		height: 220px;
+		width: 220px;
+	}
+	.main_head .heading h1 {
+		font-size: 1.5em;
+	}
+	.main_head .heading h2 {
+		font-size: 0.8em;
+	}
+	.main_head .logo_box {
+		margin-bottom: 0;
+		padding-top: 20px;
+	}
+	.main_head .button_box .btn_part {
+		float: none;
+		margin-bottom: 20px;
+	}
+	.main_head .button_box .btn_ych {
+		float: none;
+		margin-bottom: 30px;
+	}
+	.contacts {
+		background: #ff8e02;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.econom .e_img {
+			display: none;
+	}
+	.reviews .r_review {
+		width: auto;
+	}
+	.reviews .l_review {
+		width: auto;
+	}
+	.our_part .r_review {
+		width: auto;
+	}
+	.our_part .l_review {
+		width: auto;
+	}
+	#sogl {
+		width: 100%;
+		border: none;
+		
+	}
+	#sogl .close {
+		width: 100%;
+		height: 50px;
+		background: #ff8e02;
+		position: absolute;
+		margin: 0px 0px 0px 0px;
+		-webkit-transition: 0.5s;
+				transition: 0.5s;
+		cursor: pointer;
+		opacity: 1;
+	}
+	#sogl .close img{
+		left:48%;
+	}
+	#sogl .txt h1 {
+		padding-top:60px;
+	}
+	#sogl .txt p {
+		padding-left:5px;
+	}
+	#modal_call {
+		width: 100%;
+		border: none;
+		height:auto;
+	}
+	#modal_call .close {
+		width: 100%;
+		height: 50px;
+		background: #ff8e02;
+		position: absolute;
+		margin: 0px 0px 0px 0px;
+		-webkit-transition: 0.5s;
+				transition: 0.5s;
+		cursor: pointer;
+		opacity: 1;
+	}
+	#modal_call .close img{
+		left: 48%;
+	}
+	#modal_call button {
+		display:block;
+		margin:0 auto;
+		padding-bottom:80px;
+	}
+	#modal_call button {
+		padding-top:20px;
+	}
+	#modal_call input {
+		width: 100%;
+		margin-left: 0px;
+	}
+	#modal_call .txt{
+		padding-top:60px;
+	}
+	#thx {
+		width: 100%;
+		height: auto;
+		border: none;
+	}
+	#thx span{
+		display: block;
+		padding-bottom: 20px;
+	}
+	#thx .txt{
+		padding-top: 60px; }
+	#thx .close {
+		width: 100%;
+		height: 50px;
+		background: #ff8e02;
+		position: absolute;
+		margin: 0px 0px 0px 0px;
+		-webkit-transition: 0.5s;
+				transition: 0.5s;
+		cursor: pointer;
+		opacity: 1;
+	}
+	#thx .close img{
+		left: 48%;
+	}
+	#modal {
+		width: 100%;
+		height: auto;
+		border: none;
+	}
+	#modal .txt {
+		padding-top:60px;
+	}
+	#modal .close {
+		width: 100%;
+		height: 50px;
+		background: #ff8e02;
+		position: absolute;
+		margin: 0px 0px 0px 0px;
+		-webkit-transition: 0.5s;
+				transition: 0.5s;
+		cursor: pointer;
+		opacity: 1;
+	}
+	#modal .close img{
+		left: 48%;
+	}
+	#modal .apple{
+		display:block;
+		margin:0 auto;
+	}
+	#modal .android{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main_head .logo_box img {
+		height: 220px;
+		width: 220px;
+	}
+	.main_head .heading h1 {
+		font-size: 1.5em;
+	}
+	.main_head .heading h2 {
+		font-size: 0.8em;
+	}
+	.main_head .logo_box {
+		margin-bottom: 0;
+		padding-top: 50px;
+	}
+	.main_head .button_box .btn_part {
+		float: none;
+		margin-bottom: 20px;
+	}
+	.main_head .button_box .btn_ych {
+		float: none;
+		margin-bottom: 30px;
+	}
+	.home .heading_container h1 {
+    	font-size: 40px;
+    	line-height: 35px
+	}
+	.home .heading_container span {
+    	font-size: 29px;
+	}
+	.home .heading_container p {
+    	font-size: 17px;
+	}
+		.home .about ul li {
+		font-size: 18px
+	}
+	.home .about ul li p {
+		background-image: none;
+		border-bottom: none;
+		padding-left: 0;
+		width: auto;
+	}
+	header .logo_container img{
+		width: 250px;
+    	padding-top: 14px;
+	}
+	.contacts .coop {
+		font-size: 13px;
+	}
+	.econom .arw {
+		display: none;
+	}
+	.opros .item img {
+		width: 400px
+	}
+	header .logo_container {
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (max-width : 445px) {
+		.opros .item img {
+		width: 355px
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.main_head .logo_box img {
+		height: 180px;
+		width: 180px;
+	}
+	.main_head .heading {
+		max-width: 320px;
+		margin: 0 auto;
+	}
+	.main_head .heading h1 {
+		padding-top: 10px;
+		font-size: 1em;
+	}
+	.main_head .heading h2 {
+		font-size: 0.5em;
+	}
+	.main_head .logo_box {
+		padding-bottom: 10px;
+		padding-top: 20px;
+	}
+	.main_head .button_box .btn_part {
+		float: none;
+		margin-bottom: 20px;
+	}
+	.main_head .button_box .btn_ych {
+		float: none;
+		margin-bottom: 20px;
+	}
+	.install .i_item {
+		width: 290px;
+	}
+	.partners .i_item {
+		width: 290px;
+	}
+	.contacts .e_dl .apple .qr {
+		display: none;
+	}
+	.contacts .e_dl .android .qr {
+		display: none;
+	}
+	.contacts .coop {
+		font-size: 12px;
+	}
+	header .logo_container img {
+		padding-top: 16px;
+    	width: 220px;
+	}
+	.opros .item img {
+		width: 290px
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

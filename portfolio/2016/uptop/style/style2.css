@@ -1,0 +1,31 @@
+@font-face{
+  font-family: 'Open Sans', sans-serif;
+}
+@font-face{
+  font-family: 'Roboto Slab', serif;
+}
+.globalWrapper .headerWrapper .headerMenu ul li a,
+.globalWrapper .headerWrapper .headerButton a,
+.globalWrapper .mainWrapper .withPhone ul li .text h3,
+.globalWrapper .mainWrapper .howTakeMoney .blue li .text h3,
+.globalWrapper .mainWrapper .howTakeMoney .orange li .text h3,
+.globalWrapper .mainWrapper .howCan .rightText h3,
+.globalWrapper .mainWrapper .howCan .rightText h4,
+.globalWrapper .footerWrapper .contacts h3,
+.globalWrapper .footerWrapper .contacts .button,
+.globalWrapper .footerWrapper .contacts .upp{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.globalWrapper .mainWrapper .about p,
+.globalWrapper .mainWrapper .withPhone ul li .text p,
+.globalWrapper .mainWrapper .howTakeMoney .blue li .text p,
+.globalWrapper .mainWrapper .howTakeMoney .orange li .text p,
+.globalWrapper .mainWrapper .howCan .rightText p,
+.globalWrapper .footerWrapper .contacts p{
+  	font-family: 'Open Sans', sans-serif;
+}
+.globalWrapper .mainWrapper .withPhone ul li .text h3{
+  	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+}

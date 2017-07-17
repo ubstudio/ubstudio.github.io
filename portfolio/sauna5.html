@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Строительство и отделка саун и бань "под ключ" в Москве и Московской области</title>
+  <script type="text/javascript" src="sauna5/js/jquery.min.js"></script>
+  <script type="text/javascript" src="sauna5/js/flexslider/jquery.flexslider.js"></script>
+  <script type="text/javascript" src="sauna5/js/fancybox/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="sauna5/js/script.js"></script>
+  <script type="text/javascript" src="sauna5/js/wow.js"></script>
+  
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  
+  <link rel="stylesheet" media="all" type="text/css" href="sauna5/css/animate.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="sauna5/css/normalize.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="sauna5/js/flexslider/flexslider.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="sauna5/js/fancybox/jquery.fancybox.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="sauna5/css/fonts.css" />
+  <link rel="stylesheet" media="all" type="text/css" href="sauna5/css/style.css" />
+  <link href="sauna5/favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <link href="sauna5/favicon.ico" rel="icon">
+</head>
+<body>
+
+<div class="container" id="main">
+    <div class="header">
+        <div class="wrap">
+            <a href="sauna5.html" class="logo"></a>
+            <div class="button_box"><a class="button popup" href="sauna5.html#win_callme" onclick="$('.error').removeClass('active');">Перезвоните мне</a></div>
+            <div class="phone_box">
+                <span class="phone">8 (926) 721 20 71</span>
+                <span class="phone">8 (499) 393 38 75</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="wrap">
+            <ul>
+                <li class="first"><a class="scrollto" href="sauna5.html#why">Почему мы</a></li>
+                <li><a class="scrollto" href="sauna5.html#works">Наши работы</a></li>
+                <li><a class="scrollto" href="sauna5.html#scheme">Схема работы</a></li>
+                <li><a class="scrollto" href="sauna5.html#reviews">Отзывы</a></li>
+                <li><a class="scrollto" href="sauna5.html#sauna">FAQ</a></li>
+                <li><a class="scrollto" href="sauna5.html#map">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="wrap">
+            <span class="title1 wow fadeInDown"><span>Строительство и отделка бань и саун</span></span>
+            <span class="title1 two wow fadeInDown"><span>«под ключ» в квартире или коттедже</span></span>
+            <span class="title2 wow fadeInUp"><span>Отдыхай и улучшай здоровье в своей парной уже через 10 дней</span></span>
+            <div class="form_box wow fadeInUpBig">
+                <span class="t1">Оставьте заявку на бесплатный расчет сметы</span>
+                <span class="t2">индивидуальный дизайн и выезд специалиста бесплатно</span>
+                <form id="form1" class="form" action="http://fresh-landing.ru/portfolio/sauna5/php/form.php">
+                    <div class="error"><span>Поле не заполнено!</span><div class="arrow"><div></div></div></div>
+                    <input class="them" name="them" type="hidden" value="" />
+                    <input class="input input_name" name="name" type="text" value="" placeholder="Ваше имя..." onClick="$('.error').removeClass('active');" />
+                    <input class="input input_phone" name="phone" type="text" value="" placeholder="Ваш телефон..." onClick="$('.error').removeClass('active');" />
+                            <input type="hidden" name="utm_source" value="">
+                            <input type="hidden" name="utm_medium" value="">
+                            <input type="hidden" name="utm_campaign" value="">
+                            <input type="hidden" name="utm_term" value="">
+                            <input type="hidden" name="utm_content" value="">
+                    <div class="button_box"><span class="button" onClick="$('.error').removeClass('active');submitForm('form1');">Получить смету</span></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="section2" id="why">
+        <div class="wrap">
+            <span class="title1 wow fadeInDown">8 Причин выбрать нас</span>
+            <ul class="wow tada">
+                <li class="one">
+                    <span class="title">Безупречная<br>работа</span>
+                    <span class="text">Бригады с опытом строительства и отделки более 14 лет.</span>
+                </li>
+                <li class="two">
+                    <span class="title">СООТВЕТСТВИЕ НОРМАМ И ПРАВИЛАМ</span>
+                    <span class="text">Строительство объектов производится согласно требованиям ГОСТов и СНИПов.</span>
+                </li>
+                <li class="three">
+                    <span class="title">ТОЧНЫЙ РАСЧЕТ СТОИМОСТИ</span>
+                    <span class="text">100% прозрачная смета. Мы работаем без посредников и просчитываем несколько вариантов сметы, учитывая ваш бюджет.</span>
+                </li>
+                <li class="four">
+                    <span class="title">ТОЛЬКО КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ</span>
+                    <span class="text">Мы используем только экологичные материалы, самых известных брендов. HARVIA, TYLO, KASTOR, HELO и др.</span>
+                </li>
+            </ul>
+            <ul class="wow tada" data-wow-delay="0.6s">
+                <li class="five">
+                    <span class="title">СДАЧА ПРОЕКТА<br>В СРОК</span>
+                    <span class="text">Мы несем финансовую ответственность в случае просрочки сдачи объекта.</span>
+                </li>
+                <li class="six">
+                    <span class="title">ИНДИВИДУАЛЬНЫЙ ПОДХОД</span>
+                    <span class="text">Уникальный дизайн вашей бани или сауны.</span>
+                </li>
+                <li class="seven">
+                    <span class="title">РЕКОНСТРУКЦИЯ</span>
+                    <span class="text">Исправляем чужие ошибки. Мы беремся за работы по реконструкции или переделке неоконченных объектов.</span>
+                </li>
+                <li class="eight">
+                    <span class="title">ГАРАНТИЯ</span>
+                    <span class="text">Гарантия на работы согласно договора 12 месяцев.</span>
+                </li>
+            </ul>
+        </div>
+        <img class="img1" src="sauna5/img/img1.png" alt="" />
+        <img class="img2" src="sauna5/img/img2.png" alt="" />
+    </div>
+    <div class="section3">
+        <div class="wrap">
+            <span class="title1">Дерево, с которым мы работаем</span>
+            <ul class="one wow fadeInUpBig">
+                <li class="one">
+                    <span class="title">1. Вагонка липа</span>
+                    <span class="text">- Не выделяет смолу, что исключает опасность обжечься<br>
+                    - Имеет низкую плотность - является “дышащим” деревом<br>
+                    - Липа  дерево медонос</span>
+                </li>
+                <li class="two">
+                    <span class="title">2. Вагонка ольха</span>
+                     <span class="text">– Не выделяет смолу<br>
+                     - Имеют низкое содержание эфирных масел<br>
+                     - Имеет слегка розоватый оттенок</span>
+                </li>
+                <li class="three">
+                    <span class="title">3. Канадский кедр</span>
+                     <span class="text">- Содержит туяплицин – антисептик<br>
+                     -  Не гниет<br>
+                     - Цвет от шоколадного до светло-коричневого<br>
+                     - Обладает неповторимым ароматом</span>
+               </li>
+            </ul>
+            <ul class="two wow fadeInDownBig">
+                <li class="four">
+                    <span class="title">4. Полок Абаши</span>
+                    <span class="text">- Имеют низкую теплопроводность, не нагревается<br>
+                    - Африканское дерево практически не имеет сучков<br>
+                    - Стойкий к высоким температурам, не выделяет смол.</span>
+                </li>
+                <li class="five">
+                    <span class="title">5. Полок термо-абаш</span>
+                    <span class="text">- Комбинация абаша и термобаша, дает возможность создавать контраст темного и светлого, необходимого в  дизайнерских решениях.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section4" id="works">
+        <div class="wrap">
+            <span class="title1 wow fadeInDown">Наши работы</span>
+            <div class="work_box">
+                <span class="title">Сауны</span>
+                <div id="carousel" class="carousel">
+                    <ul class="slides">
+                        <li><img src="sauna5/img/works/suhanova/img1.jpg" alt="" /></li>
+                        <li><img src="sauna5/img/works/novinki/main.jpg" alt="" /></li>
+                        <li><img src="sauna5/img/works/angelovo/img1.jpg" alt="" /></li>
+                        <li><img src="sauna5/img/works/prohorovo/img1.jpg" alt="" /></li>
+                        <li><img src="sauna5/img/works/bristol/1.jpg" alt="" /></li>
+                    </ul>
+                </div>
+                <div id="slider" class="slider">
+                    <ul class="slides">
+
+                        <li><div class="desc_box">
+                            <span class="tit1">Финская сауна</span>
+                            <span class="tit2">Коттеджный поселок “Суханово парк”, дер. Суханово</span>
+                            <div class="left_box"><img src="sauna5/img/works/suhanova/img1.jpg" alt="" /></div>
+                            <div class="right_box">
+                                <span class="text"><font>Задача:</font> отделка сауны под ключ</span>
+                                <span class="text"><font>Размер:</font> 2,6 х 2,2 м, h – 2,1 м</span>
+                                <span class="text"><font>Срок реализации:</font> 30-45 дней</span>
+                                <span class="text"><font>Используемые материалы: </font> Стены, потолок – вагонка, сорт экстра, выполнены в округлой форме. 
+                                На потолке оптоволоконная подсветка. Особенность данной сауны в радиусных элементах полоков, выполненных из африканского 
+                                дерева абаши. Подсветка полоков из светодиодной ленты. На стене шлифованная плитка из гималайской соли. Печь,Harvia 
+                                Cilindro11, встроена в полоки и имеет 3 защитных ограждения. Стеклянная дверь и секция размером 1300х2100 мм. </span>
+                            </div>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/suhanova/img2.jpg" rel="gallery1"></a><img src="sauna5/img/works/suhanova/img2.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/suhanova/img3.jpg" rel="gallery1"></a><img src="sauna5/img/works/suhanova/img3.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/suhanova/img4.jpg" rel="gallery1"></a><img src="sauna5/img/works/suhanova/img4.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/suhanova/img5.jpg" rel="gallery1"></a><img src="sauna5/img/works/suhanova/img5.jpg" alt="" /></li>
+                            </ul>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/suhanova/img6.jpg" rel="gallery1"></a><img src="sauna5/img/works/suhanova/img6.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/suhanova/6.jpg" rel="gallery1"></a><img src="sauna5/img/works/suhanova/img7.jpg" alt="" /></li>
+                            </ul>
+                        </div></li>
+
+                        <li><div class="desc_box">
+                            <span class="tit1">Финская сауна</span>
+                            <span class="tit2">Дер. Новинки</span>
+                            <div class="left_box"><img src="sauna5/img/works/novinki/11.jpg" alt="" /></div>
+                            <div class="right_box">
+                                <span class="text"><font>Задача:</font> Отделка сауны под ключ</span>
+                                <span class="text"><font>Размер:</font> S - 6,5 м2, h – 2,2 м</span>
+                                <span class="text"><font>Срок реализации:</font> 15-20 дней</span>
+                                <span class="text"><font>Используемые материалы: </font> Стены, потолок, полоки – имитация бруса из канадского кедра микс. Электрическая печь IKI ручной сборки, производства Финляндии встроена в нижний полок. Обруч на печь подсвечен оптоволокном Cariitti. На стене плитка Tulikivi. Освещение стен и полоков - световой шнур Xenoflex. . На полу настил из канадского кедра.</span>
+                            </div>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/novinki/22.jpg" rel="gallery9"></a><img src="sauna5/img/works/novinki/22.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/novinki/33.jpg" rel="gallery9"></a><img src="sauna5/img/works/novinki/33.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/novinki/44.jpg" rel="gallery9"></a><img src="sauna5/img/works/novinki/44.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/novinki/55.jpg" rel="gallery9"></a><img src="sauna5/img/works/novinki/55.jpg" alt="" /></li>
+                            </ul>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/novinki/66.jpg" rel="gallery9"></a><img src="sauna5/img/works/novinki/66.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/novinki/77.jpg" rel="gallery9"></a><img src="sauna5/img/works/novinki/77.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/novinki/88.jpg" rel="gallery9"></a><img src="sauna5/img/works/novinki/88.jpg" alt="" /></li>
+                            </ul>
+                        </div></li>
+
+                        <li><div class="desc_box">
+                            <span class="tit1">Финская сауна</span>
+                            <span class="tit2">Дер. Ангелово</span>
+                            <div class="left_box"><img src="sauna5/img/works/angelovo/img1.jpg" alt="" /></div>
+                            <div class="right_box">
+                                <span class="text"><font>Задача:</font> отделка сауны под ключ</span>
+                                <span class="text"><font>Размер:</font> 2,7 х 2,1 м, h – 2,2 м</span>
+                                <span class="text"><font>Срок реализации:</font> 7 дней</span>
+                                <span class="text"><font>Используемые материалы: </font> Стены, пол – вагонка из светлого канадского кедра 15х135 мм Softline. 
+                                Полоки из абаша в комбинации с термообработанным абашем. Элек. печь HElO Pikkutonttu 9 встроена в полок. Стена за печью из плитки 
+                                гималайской соли со светодиодной подсветкой. На полу деревянный настил из абаша. </span>
+                            </div>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/angelovo/img1.jpg" rel="gallery2"></a><img src="sauna5/img/works/angelovo/img1.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/angelovo/img2.jpg" rel="gallery2"></a><img src="sauna5/img/works/angelovo/img2.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/angelovo/img3.jpg" rel="gallery2"></a><img src="sauna5/img/works/angelovo/img3.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/angelovo/img4.jpg" rel="gallery2"></a><img src="sauna5/img/works/angelovo/img4.jpg" alt="" /></li>
+                            </ul>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/angelovo/img5.jpg" rel="gallery2"></a><img src="sauna5/img/works/angelovo/img5.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/angelovo/5.jpg" rel="gallery2"></a><img src="sauna5/img/works/angelovo/img6.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/angelovo/6.jpg" rel="gallery2"></a><img src="sauna5/img/works/angelovo/img7.jpg" alt="" /></li>
+                            </ul>
+                        </div></li>
+                        <li><div class="desc_box">
+                            <span class="tit1">Финская сауна</span>
+                            <span class="tit2">Дер. Прохорово</span>
+                            <div class="left_box"><img src="sauna5/img/works/prohorovo/img1.jpg" alt="" /></div>
+                            <div class="right_box">
+                                <span class="text"><font>Задача:</font> отделка сауны под ключ</span>
+                                <span class="text"><font>Размер:</font> 2,0 х 1,1 м, h – 2,1 м</span>
+                                <span class="text"><font>Срок реализации:</font> 4 дня</span>
+                                <span class="text"><font>Используемые материалы: </font> Мини сауна. Стены, пол – вагонка из липы сорт экстра. Полок из абаша 
+                                со вставками из термоабаша. Печь Harvia Trendi 4.5. Камень в каменку – жадеит. Декоративные абажуры из липы. Стеклянная дверь 
+                                1900х700мм, бронза прозрачная. На полу настил из абаша.</span>
+                            </div>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/prohorovo/1.jpg" rel="gallery3"></a><img src="sauna5/img/works/prohorovo/img2.jpg" alt="" /></li>
+                                <li><a class="popup" href="http://fresh-landing.ru/portfolio/sauna5/img/works/prohorovo/img3.jpg" rel="gallery3"></a><img src="http://fresh-landing.ru/portfolio/sauna5/img/works/prohorovo/img3.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/prohorovo/2.jpg" rel="gallery3"></a><img src="sauna5/img/works/prohorovo/img4.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/prohorovo/img5.jpg" rel="gallery3"></a><img src="sauna5/img/works/prohorovo/img5.jpg" alt="" /></li>
+                            </ul>
+                        </div></li>
+                      <li><div class="desc_box">
+                            <span class="tit1">Финская сауна</span>
+                            <span class="tit2">Коттеджный поселок “Бристоль”</span>
+                            <div class="left_box"><img src="sauna5/img/works/bristol/7.jpg" alt="" /></div>
+                            <div class="right_box">
+                                <span class="text"><font>Задача:</font> Отделка сауны под ключ на мансарде жилого дома</span>
+                                <span class="text"><font>Размер:</font> 2,55 х 1,85 м, высота потолков от 1,5 до 1,9 м</span>
+                                <span class="text"><font>Срок реализации:</font> 8 дней</span>
+                                <span class="text"><font>Используемые материалы: </font> Стены, потолок – вагонка из канадского кедра микс. Полоки из абаша со вставками из канадского кедра. Печь Harvia Moderna V60. Камень в каменку – жадеит. Декоративные абажуры из канадского кедра. На стене за печью, панно из гималайской соли 200х100 мм. Стеклянная дверь 1900х700мм, бронза прозрачная. На полу настил из абаша. </span>
+                            </div>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/bristol/1.jpg" rel="gallery8"></a><img src="sauna5/img/works/bristol/1.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/bristol/2.jpg" rel="gallery8"></a><img src="sauna5/img/works/bristol/2.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/bristol/3.jpg" rel="gallery8"></a><img src="sauna5/img/works/bristol/3.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/bristol/4.jpg" rel="gallery8"></a><img src="sauna5/img/works/bristol/4.jpg" alt="" /></li>
+                            </ul>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/bristol/5.jpg" rel="gallery8"></a><img src="sauna5/img/works/bristol/5.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/bristol/6.jpg" rel="gallery8"></a><img src="sauna5/img/works/bristol/6.jpg" alt="" /></li>
+                            </ul>
+                        </div></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="work_box">
+                <span class="title">Бани</span>
+                <div id="carousel1" class="carousel">
+                    <ul class="slides">
+                        <li><img src="sauna5/img/works/elizarovo/img1.jpg" alt="" /></li>
+                        <li><img src="sauna5/img/works/prudi/img1.jpg" alt="" /></li>
+                        <li><img src="sauna5/img/works/postnikovo/img1.jpg" alt="" /></li>
+                        <li><img src="sauna5/img/works/zaicevo/img1_th.jpg" alt="" /></li>
+                    </ul>
+                </div>
+                <div id="slider1" class="slider">
+                    <ul class="slides">
+                        <li><div class="desc_box">
+                            <span class="tit1">Русская баня</span>
+                            <span class="tit2">Коттеджный Поселок “Елизарово парк”, Первомайское</span>
+                            <div class="left_box"><img src="sauna5/img/works/elizarovo/img1.jpg" alt="" /></div>
+                            <div class="right_box">
+                                <span class="text"><font>Задача:</font> Отделка парной бани под ключ</span>
+                                <span class="text"><font>Размер:</font> 3 х 3 м, h - 2,4 м</span>
+                                <span class="text"><font>Срок реализации:</font> 15-30 дней</span>
+                                <span class="text"><font>Используемые материалы: </font> Стены, потолок – вагонка из липы 16х95 мм, сорт Экстра. Полоки – абаши 
+                                со вставками из канадского кедра. Цветная светодиодная подсветка полоков. Цветотерапия Harvia. Дровяная печь Kastor KSIS27 в 
+                                облицовке из змеевика. Стены за печью – плитка из змеевика. Дымоход Феррум в облицовке из змеевика. Настил на пол из абаши.</span>
+                            </div>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/elizarovo/img7.jpg" rel="gallery4"></a><img src="sauna5/img/works/elizarovo/img7.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/elizarovo/img3.jpg" rel="gallery4"></a><img src="sauna5/img/works/elizarovo/img3.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/elizarovo/img2.jpg" rel="gallery4"></a><img src="sauna5/img/works/elizarovo/img2.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/elizarovo/img4.jpg" rel="gallery4"></a><img src="sauna5/img/works/elizarovo/img4.jpg" alt="" /></li>
+                            </ul>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/elizarovo/img5.jpg" rel="gallery4"></a><img src="sauna5/img/works/elizarovo/img5.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/elizarovo/img6.jpg" rel="gallery4"></a><img src="sauna5/img/works/elizarovo/img6.jpg" alt="" /></li>
+                            </ul>
+                        </div></li>
+                        <li><div class="desc_box">
+                            <span class="tit1">Русская баня</span>
+                            <span class="tit2">КП “Чистые пруды”, Крекшино</span>
+                            <div class="left_box"><img src="sauna5/img/works/prudi/img1.jpg" alt="" /></div>
+                            <div class="right_box">
+                                <span class="text"><font>Задача:</font> Отделка парной бани под ключ</span>
+                                <span class="text"><font>Размер:</font> 2,70 х 2,5 м, h – 2,3 м</span>
+                                <span class="text"><font>Срок реализации:</font> 15-25 дней</span>
+                                <span class="text"><font>Используемые материалы: </font> Стены – вагонка из канадского кедра 15х135 мм Softline. Потолок – вагонка 
+                                из канадского кедра 11х95 мм. Полоки - абаши со вставками из канадского кедра. Дровяная печь Kastor KSIS27 в облицовке из талькомагнезита 
+                                с кварцем. На стене за печью плитка из змеевика. Дымоход Schiedel Uni в облицовке плиткой из змеевика. Настил на пол из абаша.</span>
+                            </div>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/prudi/2.jpg" rel="gallery5"></a><img src="sauna5/img/works/prudi/img2.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/prudi/img3.jpg" rel="gallery5"></a><img src="sauna5/img/works/prudi/img3.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/prudi/4.jpg" rel="gallery5"></a><img src="sauna5/img/works/prudi/img4.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/prudi/5.jpg" rel="gallery5"></a><img src="sauna5/img/works/prudi/img5.jpg" alt="" /></li>
+                            </ul>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/prudi/img6.jpg" rel="gallery5"></a><img src="sauna5/img/works/prudi/img6.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/prudi/img7.jpg" rel="gallery5"></a><img src="sauna5/img/works/prudi/img7.jpg" alt="" /></li>
+                            </ul>
+                        </div></li>
+                        <li><div class="desc_box">
+                            <span class="tit1">Русская баня</span>
+                            <span class="tit2">Дер. Постниково</span>
+                            <div class="left_box"><img src="sauna5/img/works/postnikovo/img1.jpg" alt="" /></div>
+                            <div class="right_box">
+                                <span class="text"><font>Задача:</font> Отделка парной под ключ</span>
+                                <span class="text"><font>Размер:</font> 3,6 х 3,4 м, h – 2,4 м</span>
+                                <span class="text"><font>Срок реализации:</font> 7-14 дней</span>
+                                <span class="text"><font>Используемые материалы: </font> Стены – вагонка из ольхи, сорт Экстра. Потолок двухуровневый (ольха + канадский кедр). 
+                                Полоки абаши со вставками из термообработанного абаша. Нижние полоки сдвижные. Дровяная печь Harvia Legend 300 Duo. 2 сетки на дымоход Harvia. 
+                                На стене за печью плитка из талькохлорита “рваный камень”. По краям плитки декор из гималайской соли с подсветкой. Потолок подсвечен RGB 
+                                светодиодной подсветкой. Дверь Tylo DGL 80х210 см. </span>
+                            </div>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/postnikovo/img2.jpg" rel="gallery6"></a><img src="sauna5/img/works/postnikovo/img2.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/postnikovo/img3.jpg" rel="gallery6"></a><img src="sauna5/img/works/postnikovo/img3.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/postnikovo/img4.jpg" rel="gallery6"></a><img src="sauna5/img/works/postnikovo/img4.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/postnikovo/img5.jpg" rel="gallery6"></a><img src="sauna5/img/works/postnikovo/img5.jpg" alt="" /></li>
+                            </ul>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/postnikovo/img6.jpg" rel="gallery6"></a><img src="sauna5/img/works/postnikovo/img6.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/postnikovo/6.jpg" rel="gallery6"></a><img src="sauna5/img/works/postnikovo/img7.jpg" alt="" /></li>
+                            </ul>
+                        </div></li>
+                        <li><div class="desc_box">
+                            <span class="tit1">Русская баня</span>
+                            <span class="tit2">Коттеджный поселок “Усадьба Зайцево”, дер. Ямищево</span>
+                            <div class="left_box"><img src="sauna5/img/works/zaicevo/img1.jpg" alt="" /></div>
+                            <div class="right_box">
+                                <span class="text"><font>Задача:</font> Отделка парной под ключ</span>
+                                <span class="text"><font>Размер:</font> 2,6 х 1,9 м, h – 2,2 м</span>
+                                <span class="text"><font>Срок реализации:</font> 7 дней</span>
+                                <span class="text"><font>Используемые материалы: </font> Стены, потолок – вагонка из липы, сорт экстра. Полоки абаши со вставками из 
+                                термообработанного абаша. Часть нижнего полока сдвижная. Печь Kastor Karhu 20, в облицовке из талькомагнезита. Стена за печью выложена 
+                                плиткой из талькохлорита “рваный камень”. Дымоход Schiedel Permeter, углублен и спрятан в стену. Дверь ALDO 1900 х 700 мм.</span>
+                            </div>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/zaicevo/img2.jpg" rel="gallery7"></a><img src="sauna5/img/works/zaicevo/img2_th.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/zaicevo/img3.jpg" rel="gallery7"></a><img src="sauna5/img/works/zaicevo/img3_th.jpg" alt="" /></li>
+                                <li><a class="popup" href="sauna5/img/works/zaicevo/img4.jpg" rel="gallery7"></a><img src="sauna5/img/works/zaicevo/img4_th.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/zaicevo/img5.jpg" rel="gallery7"></a><img src="sauna5/img/works/zaicevo/img5_th.jpg" alt="" /></li>
+                            </ul>
+                            <ul class="galery">
+                                <li><a class="popup" href="sauna5/img/works/zaicevo/img6.jpg" rel="gallery7"></a><img src="sauna5/img/works/zaicevo/img6_th.jpg" alt="" /></li>
+                                <li class="last"><a class="popup" href="sauna5/img/works/zaicevo/7.jpg" rel="gallery7"></a><img src="sauna5/img/works/zaicevo/img7_th.jpg" alt="" /></li>
+                            </ul>
+                        </div></li>
+                     </ul>
+                </div>
+           </div>
+        </div>
+        <img class="img3" src="sauna5/img/img3.png" alt="" />
+        <img class="img4" src="sauna5/img/img4.png" alt="" />
+        <img class="img5" src="sauna5/img/img5.png" alt="" />
+        <img class="img6" src="sauna5/img/img6.png" alt="" />
+        <img class="img7" src="sauna5/img/img7.png" alt="" />
+    </div>
+    <div class="section5">
+        <div class="wrap">
+            <span class="title1 wow fadeInDown">Мечтаете о своей бане или сауне?<br>Уже через 10 дней ваша мечта<br>исполнится!</span>
+            <div class="button_box"><a class="button popup" href="sauna5.html#win_callme" onClick="$('.error').removeClass('active');">Исполнить мечту</a></div>
+        </div>
+    </div>
+    <div class="section6">
+        <div class="wrap">
+            <div class="left_box">
+                <img class="step one wow fadeIn" src="sauna5/img/step/st1.png" alt="" />
+                <img class="step two wow fadeIn" data-wow-delay="0.5s" src="sauna5/img/step/st2.png" alt="" />
+                <img class="step three wow fadeIn" data-wow-delay="1s" src="sauna5/img/step/st3.png" alt="" />
+                <img class="step four wow fadeIn" data-wow-delay="1.5s" src="sauna5/img/step/st4.png" alt="" />
+                <img class="step five wow fadeIn" data-wow-delay="2s" src="sauna5/img/step/st5.png" alt="" />
+                <img class="step six wow fadeIn" data-wow-delay="2.5s" src="sauna5/img/step/st6.png" alt="" />
+                <img class="step seven wow fadeIn" data-wow-delay="3s" src="sauna5/img/step/st7.png" alt="" />
+                <img class="step eight wow fadeIn" data-wow-delay="3.5s" src="sauna5/img/step/st8.png" alt="" />
+                <img class="step nine wow fadeIn" data-wow-delay="4s" src="sauna5/img/step/st9.png" alt="" />
+                <img class="step ten wow fadeIn" data-wow-delay="4.5s" src="sauna5/img/step/st10.png" alt="" />
+            </div>
+            <div class="right_box">
+                <span class="title1 wow fadeInDown">Этапы внутренней отделки бани: Русская парная размером 2000 х 2600 мм, h – 2200 мм</span>
+                <span class="text">1. Пароизоляция и изготовление каркаса стен.</span>
+                <span class="text">2. Монтаж утеплителя. Разводка электричества.</span>
+                <span class="text">3. Монтаж вентиляционной системы. Фольгирование..</span>
+                <span class="text">4. Крепление контробрешетки и вагонки на потолке сауны.</span>
+                <span class="text">5. Крепление минеритовых плит. Монтаж скрытого дымохода в стену.</span>
+                <span class="text">6. Обшивка стен и потолка сауны вагонкой из липы сорта “Экстра”.</span>
+                <span class="text">7. Приклеивание плитки из натурального камня талькохлорит “рваный камень”.</span>
+                <span class="text">8. Изготовление полоков из африканского дерева абаши. Вставки из термообработанного абаши.</span>
+                <span class="text">9. Установка финской печи Kastor Karhu 20. Сборка облицовки из талькохлорита. Установка стеклянной двери.</span>
+                <span class="text">10. Пусконаладочные работы. Шлифовка и уборка.</span>
+                <div class="button_box"><a class="button popup" href="sauna5.html#win_callme" onclick="$('.error').removeClass('active');">Заказать монтаж</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="section7"  id="scheme">
+        <div class="wrap">
+            <span class="title1 wow fadeInDown">Схема работы</span>
+            <ul>
+            	<li class="one">Вы <a class="popup" href="sauna5.html#win_callme" onclick="$('.error').removeClass('active');">оставляете заявку</a> на сайте или звоните нам по телефону:<br>8 (926) 721-20-71<br>8 (499) 393-38-75</li>
+            	<li class="two">Мы выезжаем к вам делаем замеры и составляем смету</li>
+            	<li class="last three">Согласовываем сроки строительства, заключаем договор</li>
+            </ul>
+            <ul>
+            	<li class="four">Производим строительные работы согласно срокам договора</li>
+            	<li class="five">Сдаем вам готовый объект</li>
+            	<li class="last six">Вы наслаждаетесь собственной баней или сауной</li>
+            </ul>
+            <img src="sauna5/img/arrows.png" alt="" class="arrows" />
+        </div>
+    </div>
+    <div class="section8" id="reviews">
+        <div class="wrap">
+            <span class="title1 wow fadeInDown">Отзывы о нашей работе</span>
+            <div class="flexslider">
+                <ul class="slides">
+                	<li>
+                        <div class="left_box">
+                            <div class="img_box"><div class="frame"></div><img src="sauna5/img/slider/alex.jpg" alt="" /></div>
+                            <span class="title">Баня / 7 дней</span>
+                            <span class="name">Александр</span>
+                            <p>Заказал отделку бани в Saunahealth. Приехал замерщик Андрей, все померил, рассказал что будет делаться и как. На следующий день прислали смету. Заключили договор и начали строить. В сроки по договору уложились, сделали за 7 дней, за что им спасибо. В целом, работа выполнена качественно и в срок. Советую.</p>
+                        </div>
+                        <div class="right_box">
+                            <div class="img_box"><div class="frame"></div><img src="sauna5/img/slider/nurvel.jpg" alt="" /></div>
+                            <span class="title">Сауна / 8 дней</span>
+                            <span class="name">Нурвели</span>
+                            <p>Я строю дом дочке в подарок. На мансардном этаже решил сделать сауну в канадском кедре с электропечью. Сложность была именно в кривом потолке и выпирающих балках мансарды. Каково было мое удивление, как выровняли потолок строители сауны. Сразу скажу, мастера своего дела.</p>
+                        </div>
+                    </li>
+                	<li>
+                        <div class="right_box">
+                            <div class="img_box"><div class="frame"></div><img src="sauna5/img/slider/uly.jpg" alt="" /></div>
+                            <span class="title">Баня / 6 дней</span>
+                            <span class="name">Юлия</span>
+                            <p>Обратилась в эту фирму для отделки сауны в бане. Вежливый мастер приехал на замер, всё рассказал, подсказал какие недорогие  и качественные материалы можно подобрать. У меня не было лишних запросов – всё просто и без прикрас. Смету посчитали быстро, через 2 дня приехали заключать договор, и ещё через неделю я уже могла наслаждаться красивой сауной.  Качество работы оценили даже соседи, потому что у них сауна меньше по размерам, но по стоимости вышла дороже. Я очень довольна, что обратилась именно  в ту компанию. Всё быстро, качественно и недорого.</p>
+                        </div>
+                        <div class="left_box">
+                            <div class="img_box"><div class="frame"></div><img src="sauna5/img/slider/viktor.jpg" alt="" /></div>
+                            <span class="title">Сауна / 3 дня</span>
+                            <span class="name">Виктор Николаевич</span>
+                            <p>Буду краток. В загородном доме поставили отдельностоящую сауну. Спецы славяне, сделали за 3 дня. Красиво, культурно, за собой все убрали и вывезли мусор. Ставлю 9 баллов из 10.</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section9" id="sauna">
+        <div class="wrap">
+            <span class="title1 wow fadeInDown">Что важно при строительстве сауны?</span>
+            <div class="ques_block">
+                <span class="ques one">Гималайская соль
+                    <div class="descr">
+                        <span class="title">Что такое  гималайская соль и зачем она нужна в сауне?</span>
+                        <p>Гималайская соль - это минерал, формировавшийся в Юрском периоде более 250 млн. лет назад. Именно поэтому в ней 
+                        содержится более 80 микроэлементов полезных для здоровья человека. Соль является успешным средством лечения и профилактики 
+                        бронхиальной астмы, аллергических и инфекционных заболеваний, заболеваний ЦНС и иммунной системы. В сауне же, при высоких 
+                        температурах, выделение отрицательных ионов из нее происходит значительно быстрее, чем при комнатной температуре.</p>
+                    </div>
+                </span>
+                <span class="ques two">Высота потолков, полоков и двери
+                    <div class="descr">
+                        <span class="title">Какой должна быть высота потолков, полоков и двери в сауне?</span>
+                        <p>Высота потолков зависит от размеров парной, её дизайна и мощности печи. В среднем, это от 2,1 до 2,5 м. Также стоит 
+                        учитывать высоту полоков и размер двери в бане. Они вычисляются, основываясь на антропометрических данных заказчика и 
+                        его пожеланий.</p>
+                    </div>
+                </span>
+                <span class="ques three">Вентиляция
+                    <div class="descr">
+                        <span class="title">Нужна ли вентиляция в сауне?</span>
+                        <p>Действительно, вентиляция в сауне или бане просто необходима. Эксперты в сауне финны, считают, что воздух в парной должен 
+                        меняться не менее 6 раз в час. Ведь при отсутствии циркуляции воздуха в помещении может скопиться запах плесени и пота. При 
+                        правильно спроектированной приточно-вытяжной вентиляции, в парной всегда будет свежий воздух, так необходимый для хорошего 
+                        самочувствия.</p>
+                    </div>
+                </span>
+                <span class="ques four">Печь
+                    <div class="descr">
+                        <span class="title">Какую печь выбрать?</span>
+                        <p>При выборе печи важно правильно выбрать ее мощность и количество камней в каменке. В руководстве по эксплуатации имеется 
+                        таблица с мощностями печей в зависимости от объема парилки. От объема камней в каменке зависит количество выделяемого им пара. 
+                        Каждый индивидуально для себя выбирает режим “парения” в бане. Кто-то любит “сухую сауну”, где температура достигает 120 градусов. 
+                        А кому-то больше по душе  “русская парная” с температурой около 80 градусов и влажностью 60%.</p>
+                    </div>
+                </span>
+                <span class="ques five">Стеклянная дверь
+                    <div class="descr">
+                        <span class="title">Как влияет установка стеклянной двери на теплопотери?</span>
+                        <p>Устанавливать стеклянную дверь в сауну сейчас очень модно, да и выглядит она бесспорно красиво. Стекло обладает достаточно 
+                        высокой теплопроводностью, следовательно, потери тепла не избежать. При выборе мощности печи для сауны, необходимо руководствоваться 
+                        её объемом и допуском на теплопотери от стеклянной двери, эквивалентным увеличению объема сауны на 1,5-2 м3.</p>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+        <span class="title1">Контакты</span>
+        <div class="contact_box">
+            <span class="title">Контакты</span>
+            <span class="text">E-mail info@sauna5.ru</span>
+            <span class="text">Телефон 8 (926) 721 20 71<br>8 (499) 393 38 75</span>
+            <span class="text">Адрес: Москва, Канатчиковский проезд, д. 7 стр.3</span>
+            <form id="form2" class="form" action="http://fresh-landing.ru/portfolio/sauna5/php/form.php">
+                <div class="error"><span>Поле не заполнено!</span><div class="arrow"><div></div></div></div>
+                <input class="them" name="them" type="hidden" value="" />
+                <input class="input input_name" name="name" type="text" value="" placeholder="Ваше имя..." onClick="$('.error').removeClass('active');" />
+                <input class="input input_phone" name="phone" type="text" value="" placeholder="Ваш телефон..." onClick="$('.error').removeClass('active');" />
+                            <input type="hidden" name="utm_source" value="">
+                            <input type="hidden" name="utm_medium" value="">
+                            <input type="hidden" name="utm_campaign" value="">
+                            <input type="hidden" name="utm_term" value="">
+                            <input type="hidden" name="utm_content" value="">
+                <div class="button_box"><span class="button" onClick="$('.error').removeClass('active');submitForm('form2');">Перезвоните мне</span></div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <!-- <span class="inn">ИНН 5011091753<br>ОГРН 1145033002223</span> -->
+            <div class="clear"></div>
+            <a href="sauna5.html#win_agreement" class="popup agreement">Соглашение об обработке персональных данных</a>
+            <a href="../index.html" class="fresh" target="_blank">Разработка сайта:<br><font>Fresh-landing.ru</font></a>
+        </div>
+    </div>
+</div>
+
+<div class="win_popup" id="win_agreement">
+    <div class="form_box">
+        <span class="tit1">Соглашение об обработке персональных данных</span>
+        <p>Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской Федерации.</p>
+        <p>Все лица заполнившие сведения, составляющие персональные данные на данном сайте, а также разместившие иную информацию 
+        обозначенными действиями подтверждают свое согласие на обработку персональных данных и их передачу оператору обработки персональных данных.</p>
+        <p>Под персональными данными Гражданина понимается нижеуказанная информация: </p>
+        <p>общая информация (Имя, телефон и адрес электронной почты); посетители сайта направляют свои персональные данные для получения услуг расчёта стоимости заказа.</p>
+        <p>Гражданин, принимая настоящее Соглашение, выражают свою заинтересованность и полное согласие, что обработка их персональных 
+        данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, уничтожение.</p>
+        <p>Гражданин гарантирует: информация, им предоставленная, является полной, точной и достоверной; при предоставлении информации 
+        не нарушается действующее законодательство Российской Федерации, законные права и интересы третьих лиц; вся предоставленная 
+        информация заполнена Гражданина в отношении себя лично. </p>
+    </div>
+</div>
+
+<div class="win_popup" id="win_success">
+    <div class="form_box">
+        <span class="tit1" style="font-size: 24px;">СООБЩЕНИЕ УСПЕШНО ОТПРАВЛЕНО</span>
+        <span class="tit1"><font>мы перезвоним вам в ближайшее время</font></span>
+    </div>
+</div>
+
+
+<div class="win_popup" id="win_callme">
+    <div class="form_box">
+        <span class="tit1">Оставьте заявку</span>
+        <form id="form3" class="form" action="http://fresh-landing.ru/portfolio/sauna5/php/form.php">
+            <div class="error"><span>Поле не заполнено!</span><div class="arrow"><div></div></div></div>
+            <input class="them" name="them" type="hidden" value="" />
+            <input class="input input_name" name="name" type="text" value="" placeholder="Ваше имя..." onClick="$('.error').removeClass('active');" />
+            <input class="input input_phone" name="phone" type="text" value="" placeholder="Ваш телефон..." onClick="$('.error').removeClass('active');" />
+                            <input type="hidden" name="utm_source" value="">
+                            <input type="hidden" name="utm_medium" value="">
+                            <input type="hidden" name="utm_campaign" value="">
+                            <input type="hidden" name="utm_term" value="">
+                            <input type="hidden" name="utm_content" value="">
+            <div class="button_box"><span class="button" onClick="$('.error').removeClass('active');submitForm('form3');">Отправить</span></div>
+        </form>
+    </div>
+</div>
+
+
+
+
+<script>new WOW().init();</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter24690755 = new Ya.Metrika({id:24690755,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="http://mc.yandex.ru/watch/24690755" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

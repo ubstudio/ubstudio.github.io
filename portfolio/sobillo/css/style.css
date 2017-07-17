@@ -1,0 +1,495 @@
+/*- - - - - - - - - -
+[TABLE OF CONTENTS]
+
+1. BODY
+2. CONTEINER / .conteiner
+3. CONTENT / .content
+4. HEADER / .header
+    4.1 HEADER FIRST / .header-first
+    4.2 HEADER SECOND / .header-second
+    4.3 HEADER THIRD / .header-third
+5. TITLE TOP / .title.top
+6. FORM TOP / .content .right
+    6.1 FORM RIGHT / .content .right .form-right
+7. GOODS / .goods
+    7.1 GOODS FIRST LINE / .goods .line1
+8. ABOUT US / .about-us
+9. SLIDER / .slider
+10. FORM COUNTDOWN / .form-countdown
+    10.1 FORM LEFT / .form-left
+        10.1.1 COUNTDOWN / .countdown
+    10.2 FORM RIGHT / .content .right .form-right
+11. PROBLEMS / .problems
+12. DECISION / .decision
+13. TITLE RECOMENDATION / .title.recomendation
+14. FORM MINI / .form-mini
+    14.1 FORM RIGHT / .content .right .form-right
+15. HOW WE WORK / .how-we-work
+16. SERTIFICATE / .sertificate
+17. FEEDBACK / .feedback
+18. PARTNERS / .partners
+19. FOOTER / .footer
+    19.1 FOOTER FIRST / .footer-first
+    19.2 FOOTER SECOND / .footer-second
+    19.3 FOOTER THIRD / .footer-third
+20. COPYRIGHT / .copyright
+- - - - - - - - - -*/
+
+/*- - - - - - - - - -
+[COLOR CODES]
+
+#FFFFFF (white): title (text), goods-title (text), buttons (text), form-left (text), countdown (text)
+#000000 (black): header (text), top-title, title (background), content, input, placeholder, slider, footer
+#FA6900 (orange): header-second (numbers), countdown, decision (span text), title-recomendation (background)
+#575757 (dark gray): goods-title (background)
+#595959 (gray): partners (p text)
+#b3b3b3 (light gray): footer-second (numders)
+#FF0000 (red): slider
+
+a Landing Copyright (standard): #EF7E20 (orange)
+a Landing Copyright (visited): #EF7E20 (orange)
+a Landing Copyright (hover): #FF0000 (red)
+a Landing Copyright (active): #FF0000 (red)
+
+- - - - - - - - - -*/
+
+/*- - - - - - - - - -
+[TYPOGRAPHY]
+
+
+
+
+- - - - - - - - - -*/
+
+@import "http://fresh-landing.ru/portfolio/sobillo/css/reset.css";
+
+@import "http://fresh-landing.ru/portfolio/sobillo/css/jquery-ui-1.9.1.custom.css";
+
+/*font-family: 'HelveticaNeueCyrLight';*/
+@import "../fonts/helveticaneuecyr-light/helveticaneuecyr-light.css";
+
+/*font-family: 'HelveticaNeueCyrMedium';*/
+@import "../fonts/helveticaneuecyr-medium/helveticaneuecyr-medium.css";
+
+/*font-family: 'HelveticaNeueCyrRoman';*/
+@import "../fonts/helveticaneuecyr-roman/helveticaneuecyr-roman.css";
+
+/*font-family: 'HelveticaNeueCyrThin';*/
+@import "../fonts/helveticaneuecyr-thin/helveticaneuecyr-thin.css";
+
+html, body{height:100%;	padding: 0px;margin: 0px;width: 100%;}
+
+body{
+    background: #fff;
+    font-family: 'HelveticaNeueCyrBold';
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+    line-height: 130%;
+}
+
+input:-moz-placeholder { color: #666666; }
+input::-webkit-input-placeholder { color: #666666; }
+
+.input-text-error:-moz-placeholder { color: #C52935; }
+.input-text-error::-webkit-input-placeholder { color: #C52935; }
+
+.input-text-ok:-moz-placeholder { color: #C52935; }
+.input-text-ok::-webkit-input-placeholder { color: #C52935; }
+
+.clear{
+    clear: both;
+}
+
+span.dot { position:absolute; text-indent: -1000em; }
+span.ruble { text-transform:uppercase; }
+span.hyphen:after { content: '\2013'; }
+span.hyphen { position:absolute; margin:.2ex .3ex 0 -.1ex; behavior: expression(this.innerHTML = '&ndash;');
+text-shadow: none;}
+
+.goods span.hyphen { position:absolute; margin:.25ex .3ex 0 -.1ex; behavior: expression(this.innerHTML = '&ndash;'); }
+.form-left strong span.hyphen { position:absolute; margin:.32ex .3ex 0 0ex; behavior: expression(this.innerHTML = '&ndash;');
+    -moz-transform:    scaleX(1.1);
+    -o-transform:      scaleX(1.1);
+    -webkit-transform: scaleX(1.1);
+    transform:         scaleX(1.1);
+}
+
+/* BLOCK MODAL WINDOWS BEGIN */
+
+#alert_window, #alert_window2 {
+    color: #666666;
+    font-family: 'HelveticaNeueCyrThin';
+    line-height: 130%;
+	display: none;
+	padding: 70px 40px 10px;
+	z-index: 9999;
+        text-align:center;
+}
+
+#alert_window p, #alert_window2 p {
+    font-size:18px;
+    font-weight:bold;
+    color: #474747;
+    display:block;
+}
+
+#alert_window p strong, #alert_window2 p strong {
+    font-family: 'HelveticaNeueCyrThin';
+    font-size: 35px;
+    margin-bottom: 30px;
+    line-height: 110%;
+    color: #474747;
+}
+
+#cert_window{
+	background-color: #ffecbf;
+	border: 1px solid #444;
+	border-radius: 10px;
+	display: none;
+	height: 600px;
+	padding: 15px 20px;
+	width: 425px;
+	z-index: 9999;
+}
+
+#mask {
+	background: #FFFFFF;
+	display:none;
+	height: 100%;
+	opacity: 0.9;
+	position: fixed;
+		top: 0;
+		left: 0;
+	width: 100%;
+	z-index: 100;
+}
+/* BLOCK MODAL WINDOWS END */
+
+/*BUTTONS BEGIN*/
+
+            input.submit{
+                font-family: 'PFDinTextCondProBold';
+                background: rgb(206,43,55); /* Old browsers */
+                /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+                background: rgb(252,194,48); /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjYzIzMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYTgyMmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(252,194,48,1) 0%, rgba(250,130,46,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,194,48,1)), color-stop(100%,rgba(250,130,46,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(252,194,48,1) 0%,rgba(250,130,46,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(252,194,48,1) 0%,rgba(250,130,46,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(252,194,48,1) 0%,rgba(250,130,46,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(252,194,48,1) 0%,rgba(250,130,46,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc230', endColorstr='#fa822e',GradientType=0 ); /* IE6-8 */
+
+                border-radius: 5px;
+                color: #FFFFFF;
+                text-shadow: 0px -1px 0px rgba(191,98,66,0.8);
+                letter-spacing: 1px;
+                text-align: center;
+                border: none;
+		-webkit-box-shadow:  0px 1px 2px 0px rgba(102, 101, 55, 0.5);
+                        box-shadow:  0px 1px 2px 0px rgba(102, 101, 55, 0.5);
+            }
+            input.submit:hover{
+               background: #f7af2f;
+
+
+
+
+             /*   -webkit-box-shadow:  0px 5px 24px 0px rgba(206, 43, 55, 0.4);
+                        box-shadow:  0px 5px 24px 0px rgba(206, 43, 55, 0.4);*/
+                cursor: pointer;
+            }
+            input.submit:active{
+                background: rgb(193,129,38); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2MxODEyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjglIiBzdG9wLWNvbG9yPSIjZjdhZjJmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y3YWYyZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  rgba(193,129,38,1) 0%, rgba(247,175,47,1) 8%, rgba(247,175,47,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(193,129,38,1)), color-stop(8%,rgba(247,175,47,1)), color-stop(100%,rgba(247,175,47,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(193,129,38,1) 0%,rgba(247,175,47,1) 8%,rgba(247,175,47,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(193,129,38,1) 0%,rgba(247,175,47,1) 8%,rgba(247,175,47,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(193,129,38,1) 0%,rgba(247,175,47,1) 8%,rgba(247,175,47,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(193,129,38,1) 0%,rgba(247,175,47,1) 8%,rgba(247,175,47,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18126', endColorstr='#f7af2f',GradientType=0 ); /* IE6-8 */
+
+
+            }
+
+/*BUTTONS END*/
+
+/*CONTEINER BEGIN*/
+.conteiner{
+    display: block;
+    padding: 0 0 20px 0;
+    background: #FFFFFF;
+    height: 100%;
+    margin: 0 auto 0;
+    max-width: 1598px;
+    min-width: 1020px;
+    -webkit-box-shadow:  0 0 15px #b1b1b1;
+        box-shadow:  0 0 15px #b1b1b1;
+}
+
+.conteiner .content-bg {
+    background: url(../images/content-bg.jpg) center top no-repeat;
+    height: 784px;
+    padding-top: 0px;
+}
+    /*CONTENT BEGIN*/
+    .conteiner .content-bg .content{
+	color: #FFFFFF;
+        margin: 0 auto 0;
+	padding-top: 63px;
+        width: 970px;
+    }
+    .conteiner .content-bg .content p{
+        line-height: 130%;
+    }
+    .conteiner .content-bg .content .left{
+	float: left;
+	margin-left: 20px;
+    }
+    .conteiner .content-bg .content .right{
+	float: right;
+	margin-right: 0px;
+    }
+    .conteiner .content-bg .content .right span.title{
+	font-family: 'HelveticaNeueCyrThin';
+	font-size: 43px;
+	line-height: 130%;
+	text-transform: uppercase;
+	text-align: left;
+	float: right;
+	margin-right: 10px;
+    }
+    .conteiner .content-bg .content .right .disc{
+	font-family: 'HelveticaNeueCyrThin';
+	background: #FFFFFF;
+	border-radius: 300px;
+	color: #474747;
+	height: 335px;
+	font-size: 18px;
+	line-height: 130%;
+	width: 325px;
+	margin: 15px 0px 30px 0px;
+	padding: 25px 30px;
+	text-align: center;
+    }
+    .conteiner .content-bg .content .right .disc strong{
+	font-family: 'HelveticaNeueCyrMedium';
+    }
+    .disc img{
+	margin-bottom: 5px;
+    }
+            /*FORM RIGHT BEGIN*/
+            .content .right .form-right{
+                border-radius: 3px;
+                display: block;
+                height:100%;
+                margin: 0px 0px 0 0;
+            }
+            .content .right .form-right input[type="text"]:first-child{
+                margin-top:13px;
+            }
+            .content .right .form-right input[type="text"]{
+                border-radius: 5px;
+                border: none;
+                background: #f5f5f5;
+                font-family: 'HelveticaNeueCyrThin';
+                font-size: 14px;
+                width: 274px;
+                margin: 13px 0 0 0px;
+                padding: 2px 0 0 10px;
+                height: 36px;
+            }
+            .content .right .form-right input[type="text"]:focus{
+                background: #eeeeee;
+            }
+            
+            .content .right .form-right input.submit{
+                border-radius: 5px;
+                color: #FFFFFF;
+                font-family: 'HelveticaNeueCyrLight';
+                border: none;
+		padding-top: 6px;
+                height: 44px;
+                margin: 16px 0 0 0px;
+                width: 240px;
+                font-size: 23px;
+            }
+            .submit span{
+                position: relative;
+                top: 7px;
+                font-size: 18px;
+            }
+	    .content .right .form-right p{
+                color: #c6c6c6;
+                font-family: 'HelveticaNeueCyrThin';
+                font-size: 12px;
+                margin: 10px 0 0 0;
+                text-align: center;
+                line-height: 130%;
+            }
+	    .contacts{
+		font-family: 'HelveticaNeueCyrThin';
+		font-size: 18px;
+		float:right;
+		margin-right: 43px;
+		margin-bottom: 20px;
+	    }
+	    .contacts span{
+		font-size: 24px;
+		position: relative;
+		top: 15px;
+	    }
+            /*FORM RIGHT END*/
+        
+        /*FORM TOP END*/
+        
+        
+        /*FOOTER BEGIN*/
+        .footer{
+            display: block;
+            background: #FFFFFF;
+            padding: 13px 0px 35px;
+        }
+        .footer .content{
+	    color: #000000;
+            width: 970px;
+            margin: 0px auto 0px;
+            text-align: center;
+            padding: 0px 0px 0px;
+        }
+        .footer .content .left, .footer .content .right{
+	    color: #c6c6c6;
+	    font-family: 'HelveticaNeueCyrThin';
+	    font-size: 14px;
+	    line-height: 130%;
+        }
+	.footer .left p, .footer .right p{
+            margin-bottom: 10px;
+        }
+            /*FOOTER FIRST BEGIN*/
+            .footer .left{
+		float: left;
+		margin-left: 20px;
+                padding-top: 27px;
+                text-align: left;
+                font-size: 20px;
+		line-height: 130%;
+            }
+            /*FOOTER FIRST END*/
+            
+            /*FOOTER SECOND BEGIN*/
+            .footer .content .right{
+		float: right;
+                padding-top: 27px;
+                text-align: left;
+		margin-right: 103px;
+            }
+	    .footer .content .right a{
+		color: #c6c6c6;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(198,198,198,0.2); 
+	    }
+	    .footer .content .right a:hover{
+		color: #e20713;
+	    }
+	    .footer .content .right a.landcopy{
+		background: url(http://fresh-landing.ru/portfolio/sobillo/images/lp-logo.png) no-repeat;
+		display: block;
+		cursor: pointer;
+		height: 40px;
+		width: 170px;
+		margin-top: 5px;
+		border: none;
+	    }
+            .footer .content .right .landcopy:hover{
+		background: url(http://fresh-landing.ru/portfolio/sobillo/images/lp-logo-hover.png) no-repeat;
+	    }
+            /*FOOTER SECOND END*/
+            
+        
+        /*FOOTER END*/
+        
+    /*CONTENT END*/
+    
+/*CONTEINER END*/
+
+/*IPHONE*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .content .right .form-right input[type="text"]:first-child, .content .right .form-right input[type="text"], .content .right .form-right input.submit, .content .right .form-right p{
+        margin-top: 12px;
+    }
+    .form-mini .form-right input[type="text"]:first-child, .form-mini .form-right input[type="text"], .form-mini .form-right input.submit, .form-mini .form-right p{
+        margin-top: 12px;
+    }
+    .form-catalog .form-right input[type="text"]:first-child{
+        margin-top: 8px;
+    }
+    .form-catalog .form-right input[type="text"], .form-catalog .form-right input.submit, .form-catalog .form-right p{
+        margin-top: 12px;
+    }
+    .maps-adress div:first-child{
+        padding-left: 10px;
+    }
+    .left{
+	float: left;
+	margin-left: 50px;
+    }
+    .conteiner .bg-content .content .left{
+	float: left;
+	margin-left: 50px;
+    }
+    .conteiner .content-bg .content .right{
+	margin-right: 35px;
+    }
+    .footer .content .left{
+	margin-right: 30px;
+    }
+    .footer .content .right{
+	margin-left: 134px;
+    }
+}
+ 
+/*IPAD*/   
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .content .right .form-right input[type="text"]:first-child, .content .right .form-right input[type="text"], .content .right .form-right input.submit, .content .right .form-right p{
+        margin-top: 12px;
+    }
+    .form-mini .form-right input[type="text"]:first-child, .form-mini .form-right input[type="text"], .form-mini .form-right input.submit, .form-mini .form-right p{
+        margin-top: 12px;
+    }
+    .form-catalog .form-right input[type="text"]:first-child{
+        margin-top: 8px;
+    }
+    .form-catalog .form-right input[type="text"], .form-catalog .form-right input.submit, .form-catalog .form-right p{
+        margin-top: 12px;
+    }
+    .maps-adress div:first-child{
+        padding-left: 10px;
+    }
+    .conteiner .bg-content .content .left{
+	float: left;
+	margin-left: 50px;
+    }
+    .conteiner .content-bg .content .right{
+	margin-right: 35px;
+    }
+    .footer .content .left{
+	margin-left: 30px;
+    }
+    .footer .content .right{
+	margin-right: 134px;
+    }
+}

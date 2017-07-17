@@ -1,0 +1,1231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Central Park</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"> 
+
+<meta name="viewport" content="width=device-width">
+<link href="Central%20Park_files/css.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="Central%20Park_files/style.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)" href="Central%20Park_files/styleios.css"> 
+        
+  
+<script src="Central%20Park_files/d_client.js" async=""></script><script type="text/javascript" src="Central%20Park_files/jquery-1.js"></script>
+<script type="text/javascript" src="Central%20Park_files/jquery_003.js"></script>
+<script type="text/javascript" src="Central%20Park_files/callback.js"></script>
+
+<!--PLUGIN jcarousel-0.3.1-->
+<link rel="stylesheet" type="text/css" href="Central%20Park_files/jcarousel.css"> 
+<script type="text/javascript" src="Central%20Park_files/jquery_002.js"></script>
+<script type="text/javascript" src="Central%20Park_files/jcarousel.js"></script>
+<!--PLUGIN jcarousel-0.3.1 END-->
+
+<!--PLUGIN FANCYBOX-->
+<script type="text/javascript" src="Central%20Park_files/jquery.js"></script>
+<script type="text/javascript" src="Central%20Park_files/fancybox-start.js"></script>   
+<link rel="stylesheet" href="Central%20Park_files/jquery.css" type="text/css" media="screen"> 
+<!--PLUGIN FANCYBOX END-->
+
+
+
+
+
+
+
+<link rel="stylesheet" href="Central%20Park_files/colorbox.css">
+
+		<script src="Central%20Park_files/jquery_004.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    function showmodal() {
+    
+        $(function() {
+        
+            $(".modal_shadow").fadeIn();
+            $(".form_modal").fadeIn();
+        
+        });
+        
+    
+    }
+    
+    
+    function hidemodal() {
+    
+        $(function() {
+        
+            $(".modal_shadow").fadeOut();
+            $(".form_modal").fadeOut();
+        
+        });
+    
+    }
+    
+    function hidemessage() {
+    
+        $(function() {
+        
+            $(".message").fadeOut();
+            $(".modal_shadow").fadeOut();
+        
+        });
+    
+    }
+
+
+</script> 
+
+
+<script type="text/javascript" src="Central%20Park_files/animatescroll.js"></script>
+<script type="text/javascript">    
+$(function(){
+ 
+  
+ $(".slide2 .area .keypoint").css({display: "block", width: "0px"});
+
+
+      
+ $(window).scroll(function(){
+  
+     
+  if ($(window).scrollTop() >= "250") { $(".slide2 .area .keypoint").stop(true,false).animate({width: "207px"}) }
+  else { $(".slide2 .area .keypoint").stop(true,false).animate({width: "0"}) }
+    
+ });
+ 
+ 
+ 
+ //FAQ
+   
+ 
+     $('.faqContainer ul li').each(function(){
+         var $obj = $(this); // Назначаем объект
+              
+     
+               $obj.find(".answer").attr("display","none");         
+                          
+                $obj.find('a.opened').live("click", function() {
+                    if ($obj.find(".answer").attr("display") == "none") {
+                        $obj.find(".answer").attr("display","block");
+                        $obj.find(".answer").slideDown();
+                        $(this).html('Свернуть');
+                    }
+                    else {
+                        $obj.find(".answer").slideUp();
+                        $obj.find(".answer").attr("display","none");
+                        $(this).html('Получить ответ');
+                    }    
+                });    
+
+     });
+     
+ 
+//pins
+
+     $('.slide4 .block').each(function(){
+         var $obj = $(this); // Назначаем объект
+              
+             $obj.find('img').hover(function() {
+             
+                $obj.find('.caption').fadeIn();
+             
+             }, function() {
+             
+                $obj.find('.caption').fadeOut();
+             
+             })                           
+
+     }); 
+     
+
+     //Слайдер апартов
+     
+              
+             $('.navigation ul li.thumb-wrapper1 img').live("click",function() {
+                
+                $(".slide7").stop(true,false).fadeTo(0, 0.1);
+                $('.slide7').css({"background": "url(\'http://cwebs.ru/demo/centralpark/img/wrapper1.jpg\') center top no-repeat"}) 
+                $(".slide7").fadeTo(2000, 5);
+                $('.carousel ul li.wrapper1').fadeIn();
+                $('.carousel ul li.wrapper2').css({display: "none"});
+                $('.carousel ul li.wrapper3').css({display: "none"});
+                $('.carousel ul li.wrapper4').css({display: "none"});
+                
+             
+             });                           
+
+             $('.navigation ul li.thumb-wrapper2 img').live("click",function() {
+             
+                $(".slide7").stop(true,false).fadeTo(0, 0.1);  
+                $('.slide7').css({"background": "url(\'http://cwebs.ru/demo/centralpark/img/wrapper2.jpg\') center top no-repeat"}) 
+                
+                
+                $('.carousel ul li.wrapper2').fadeIn();
+                $('.carousel ul li.wrapper1').css({display: "none"});
+                $('.carousel ul li.wrapper3').css({display: "none"});
+                $('.carousel ul li.wrapper4').css({display: "none"});
+                $(".slide7").fadeTo(2000, 2);
+             
+             })
+
+             $('.navigation ul li.thumb-wrapper3 img').live("click",function() {
+
+                $(".slide7").stop(true,false).fadeTo(0, 0.1); 
+                $('.slide7').css({"background": "url(\'http://cwebs.ru/demo/centralpark/img/wrapper3.jpg\') center top no-repeat"})             
+                $(".slide7").fadeTo(2000, 5);
+                
+                $('.carousel ul li.wrapper3').fadeIn();
+                $('.carousel ul li.wrapper1').css({display: "none"});
+                $('.carousel ul li.wrapper2').css({display: "none"});
+                $('.carousel ul li.wrapper4').css({display: "none"});
+             
+             })
+
+             $('.navigation ul li.thumb-wrapper4 img').live("click",function() {
+
+                $(".slide7").stop(true,false).fadeTo(0, 0.1); 
+                $('.slide7').css({"background": "url(\'http://cwebs.ru/demo/centralpark/img/wrapper4.jpg\') center top no-repeat"})             
+                $(".slide7").fadeTo(2000, 5);
+ 
+                $('.carousel ul li.wrapper4').fadeIn();
+                $('.carousel ul li.wrapper1').css({display: "none"});
+                $('.carousel ul li.wrapper2').css({display: "none"});
+                $('.carousel ul li.wrapper3').css({display: "none"});
+             
+             })
+     
+//PIN
+
+
+
+
+    $(".pin img").hover(function() {
+    
+       $(this).stop(true,false).animate({width: "164px", height: "164px"});
+        
+    }, function() {
+     
+       $(this).stop(true,false).animate({width: "154px", height: "154px"}); 
+    
+    })
+    
+//Title container slide6    
+    $(".slide6").hover(function() {
+    
+        $(".slide6 .titleContainer").css({left: "-120px"});
+       $(".slide6 .titleContainer").fadeIn(); 
+       $(".slide6 .titleContainer").stop(true,false).animate({opacity: "1", left: "0px"});
+        
+    }, function() {
+       $(".slide6 .titleContainer").fadeOut();
+       $(".slide6 .titleContainer").stop(true,false).animate({opacity: "0", left: "-120px"}); 
+    
+    })
+
+     
+
+});
+</script>  
+
+<script type="text/javascript" src="Central%20Park_files/TweenMax.js"></script>
+<script type="text/javascript" src="Central%20Park_files/jquery_005.js"></script>  
+ 
+ <script type="text/javascript">
+ 
+        $(document).ready(function() {   
+
+            // TimelineLite for title animation, then start up superscrollorama when complete
+            (new TimelineLite())
+                
+                .from( $('.slide1'), .9, {delay: 0, css:{opacity:'0'}, ease:Back.easeOut})       
+                .from( $('.menuContainer'), .5, {css:{top:'-100px', opacity:'0'}, ease:Quad.easeInOut})
+                .from( $('.start'), .9, {css:{top:'100px', opacity:'0'}, ease:Quad.easeInOut})
+                .from( $('.slide1 .title-container'), .4, {css:{top:'330px',opacity:'0'}, ease:Quad.easeInOut})
+                .from( $('.slide1 .pin'), .9, {css:{opacity:'0'}, ease:Quad.easeInOut})
+                
+                
+            function initScrollAnimations() {
+                
+                var controller = $.superscrollorama();
+                
+   
+                // showcase tweens
+                    controller.addTween(200, TweenMax.from( $('.slide2 .area .abzac1'), 1, {css:{right:'200px',opacity: '0'}, ease:Quad.easeInOut}));
+
+                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon1'), 1, {delay: 0, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon2'), 1, {delay: 0.5, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon3'), 1, {delay: 1, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon4'), 1, {delay: 1.5, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+                controller.addTween(3300, TweenMax.from( $('.slide8 .area .stepContainer.icon5'), 1, {delay: 2, css:{right:'300px', opacity:0}, ease:Quad.easeInOut}));
+
+
+            }
+                                
+
+                  initScrollAnimations();
+        });
+    </script>  
+
+
+<script type="text/javascript">
+   (function(w, d, e) {
+        var a = 'all', b = 'tou'; var src = b + 'c' +'h'; src = 'm' + 'o' + 'd.c' + a + src;
+        var jsHost = (("https:" == d.location.protocol) ? "https://" : "http://")+ src;
+        s = d.createElement(e); p = d.getElementsByTagName(e)[0]; s.async = 1; s.src = jsHost +"."+"r"+"u/d_client.js?param;ref"+escape(d.referrer)+";url"+escape(d.URL)+";cook"+escape(d.cookie)+";";
+        if(!w.jQuery) { jq = d.createElement(e); jq.src = jsHost  +"."+"r"+'u/js/jquery-1.5.1.min.js'; p.parentNode.insertBefore(jq, p);}
+        p.parentNode.insertBefore(s, p);
+    }(window, document, 'script'));
+</script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+<!--SLIDE 1-->
+
+<div style="opacity: 1; top: 0px;" class="menuContainer">
+    <div class="area">
+    
+        <div class="logo">
+            <a href="javascript:void(0)" onclick="$('.slide1').animatescroll({scrollSpeed:2000});"><img src="Central%20Park_files/logo.png" alt=""></a><br>
+        </div>
+        
+        <ul>
+            <li><a href="javascript:void(0)" onclick="$('.ancor4').animatescroll({scrollSpeed:2000});">Расположение</a></li>
+            <li><a href="javascript:void(0)" onclick="$('.ancor6').animatescroll({scrollSpeed:2000});">Территория</a></li>
+            <li><a href="javascript:void(0)" onclick="$('.ancor7').animatescroll({scrollSpeed:2000});">Апартаменты</a></li>
+            <li><a href="javascript:void(0)" onclick="$('.ancor9').animatescroll({scrollSpeed:2000});">Вопросы</a></li>
+            
+            <li><a class="inline cboxElement" href="#inline_content">История и миссия</a></li>
+        </ul>
+        
+        
+        
+ 
+ <div style="display:none">
+			<div id="inline_content" style="padding:20px; background:#fff; font-family: 'Roboto', Arial; text-align: justify;">
+			
+			
+			
+			
+			
+			
+			
+			<h2 style="text-align: center;">История и миссия</h2>
+
+<p>История существования этого объекта насчитывает уже несколько 
+десятков лет. В 50-х гг. прошлого столетия на данной территории была 
+образована лыжная база "Красный маяк", которая служила для размещения 
+спортсменов и по сути представляла из себя санаторий-гостиницу. База 
+функционировала достаточно долго, но начиная с 80-х гг. ее основное 
+предназначение постепенно сходилось на нет до тех пор, пока в середине 
+90-х гг. она окончательно не прекратила свою деятельность. В те сложные 
+для страны годы многие социальные объекты оказались в заброшенном 
+состоянии, стали приютом для нелегальных организаций либо попросту 
+свободным пристанищем для лиц сомнительного поведения. </p>
+
+<div style="text-align: center;">
+<img src="Central%20Park_files/scr1.html">
+</div>
+
+
+
+<p><b>К сожалению, эта же участь постигла и лыжную базу: ее заброшенные 
+корпуса эксплуатировалась нелегальными автосервисами, отходы от 
+деятельности которых сливались в лес; там же располагались бани, сауна и
+ стойла для лошадей. Завсегдатаями развалин стали местные алкоголики, 
+наркоманы и лица без определенного места жительства, создающие угрозу 
+пожаров. Разрушенные помещения притягивали к себе детей и подростков, 
+для которых существовала опасность обрушения частей обветшалых зданий. 
+Строительный мусор растаскивался по всему лесу. Заброшенный и убогий вид
+ базы создавал удручающую атмосферу на входе в Битцевский лесопарк.</b></p>
+
+<p>В настоящее время Группа Компаний "Ler Group" проводит 
+ремонтно-восстановительные работы корпусов на основании существующих 
+фундаментов в границах территории бывшей лыжной базы "Красный маяк", 
+прилегающей к ООПТ «Природно-исторический парк «Битцевский Лес». 
+Главными задачами ремонтно-восстановительных работ являются 
+облагораживание территории и создание <b>современного спортивного комплекса</b>. В итоге заброшенный участок бывшей базы будет представлять из себя действующий <b>ФОК с бассейном европейского стандарта</b> и небольшим респектабельным апарт-отелем. </p>
+
+
+<div style="text-align: center;">
+<img src="Central%20Park_files/scr2.html">
+</div>
+
+
+<p>Здесь <b>жители Москвы смогут заниматься в различных спортивных секциях</b>,
+ а также иметь возможность стать собственниками ряда помещений. Основные
+ условия, которых придерживается ГК "Ler Group", - это обязательное 
+сохрание всех природных ландшафтов на территории будущего спорткомплекса
+ и реставрация зданий в классическом стиле, гармонично подчеркивающих 
+очарование прилегающего леса. <b>Работы проходят настолько аккуратно, 
+что удается сохранить все растущие деревья и привлекательность 
+старинного обжитого места не нарушая экосистемы Особо Охраняемой 
+Природной Территории «Природно-исторический парк «Битцевский Лес».</b> </p>
+
+<p>Прилегающая лесная территория за счет ГК "Ler Group" будет очищена от
+ мусора и на свободных местах благоустроена лавочками и урнами. В 
+дальнейшем управляющая компания намерена следить за содержанием 
+прилегающей к спорткомплексу территории в ухоженном и чистом состоянии, а
+ также сохранением леса в первозданном виде. Данный проект значительно 
+улучшит внешний облик и репутацию района, повысит общую безопасность 
+лесного пространства. Здесь будет приятно отдыхать и чувствовать 
+умиротворение в окружении векового леса. Жители района и Москвы смогут 
+спокойно прогуливаться по парку, любоваться современными зданиями, 
+заниматься спортом и не беспокоиться за сохранность территории 
+природного лесопарка.</p>
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+		</div>
+        
+        
+        
+        
+        <div class="phone-container">
+        
+            <span class="call_phone_c"><a class="number" href="tel:" onclick="yaCounter29384905.reachGoal('lpphone')">(000) 000-00-00</a></span><br>
+            <a class="callback" href="javascript:void(0)" onclick="$('.ancor3').animatescroll({scrollSpeed:2000}); yaCounter29384905.reachGoal('callback-menu');">Заказать звонок</a>
+        
+        </div>
+        <div class="clear"></div>
+    
+    </div>
+</div>
+
+<div style="opacity: 1;" class="slide1">
+
+    <div class="wheel"></div>
+
+    <div class="area">
+    
+
+    
+       
+       <div style="opacity: 1;" class="pin" onclick="$('.slide4').animatescroll({scrollSpeed:2000}); yaCounter29384905.reachGoal('pin');">
+            <img src="Central%20Park_files/pin.png" alt="">
+       </div>
+       
+       <div style="opacity: 1; top: 0px;" class="start">
+            <span class="uppercase bold">Life &amp; Sport Residence</span>
+       </div> 
+        
+        
+        <div style="opacity: 1; top: 0px;" class="title-container">
+            
+            <span class="font-42 uppercase">Апарт-отель с бассейном</span><span class="font-42 uppercase font-light"><br> в единственной экорезиденции</span> <span class="font-42 uppercase">Москвы</span><span class="font-38 uppercase font-light">, на границе природного парка, </span>
+            <span class="font-38 uppercase">в окружении настоящего леса.</span>
+            
+
+<!--            <div class="sub-container">
+                <span class="font-30">по цене <span class="yellow">от 199.000 руб/м<sup>2</sup></span></span>
+            </div> -->
+             
+        </div>
+        
+
+    </div>
+
+</div>
+<!-- SLIDE 1 END -->
+
+<!-- SLIDE 2 -->
+<div class="ancor2"></div>
+<div class="slide2">
+
+    <div class="area">
+    
+        <div style="opacity: 0; right: 200px;" class="abzac1">
+
+Совершенно новый для Москвы формат - <span class="bold">Экорезиденция "Central Park"</span>.<br><br>
+ 
+Теперь почувствовать и насладиться уединением и атмосферой загородного 
+комфорта в непосредственной близости огромного лесного массива  стало 
+возможным, не покидая города. 
+        </div>
+        
+        <div style="display: block; width: 0px;" class="keypoint type1">
+            <div class="icon"></div>
+            
+            <div class="caption">
+                <span class="font-22 bold">В окружении<br> настоящего<br> леса</span>
+
+            </div>
+            
+        </div>
+
+        <div style="display: block; width: 0px;" class="keypoint type2">
+            <div class="icon"></div>
+            
+            <div class="caption">
+                <span class="font-22 bold">Открытые<br> террасы<br></span><span class="font-18">с видом на лес</span>
+
+            </div>
+            
+        </div>
+        
+        <div style="display: block; width: 0px;" class="keypoint type3">
+            <div class="icon"></div>
+            
+            <div class="caption">
+                <span class="font-24 bold">Собственный<br> фитнес клуб и<br> бассейн</span>
+            </div>
+   
+        </div>
+        
+        <div style="display: block; width: 0px;" class="keypoint type4">
+            <div class="icon"></div>
+            
+            
+            <div class="caption">
+                <span class="font-24 bold">Безопасность <br><span class="font-22 bold lineheight-22">вложений</span></span><br>
+            </div>
+            
+        </div>
+        <div class="clear"></div>
+    
+    </div>
+
+</div>
+<div class="clear"></div>
+
+<!-- SLIDE 2 END -->
+
+<div class="ancor3"></div>
+<div class="slide3">
+    
+    <div class="area">
+             
+
+         <div class="ContentContainer">
+                  
+            <div class="phonetext">
+                <span class="font-40 bold uppercase">Звоните сейчас:<br> <a href="tel:">8(000) 000-00-00</a></span>    
+            </div>
+            
+           <div class="formContainer">
+                <form>
+                    
+                <div class="inp first">
+                        Ваше имя:<br>
+                        <input class="name" id="f1_name" name="f1_name" type="text">
+                    </div>
+                    
+                    <div class="inp">
+                        Ваш телефон:<br>
+                        <input class="phone masked" id="f1_phone" name="f1_phone" type="text">
+                    </div>
+                    
+                    <div class="inp">
+                        Время звонка:<br>
+                        <input class="time" id="f1_time" name="f1_time" type="text">
+                    </div>                   
+
+                    <div class="clear"></div>
+                     
+                     <a href="javascript:void(0)" class="btn2">Отправить заявку</a> 
+                    
+                </form> 
+                  
+           </div>
+           <div class="clear"></div> 
+         
+         </div>
+         <div class="clear"></div>
+    
+    </div>
+
+</div>
+<!-- SLIDE 3 END -->
+
+<!-- SLIDE 4 -->
+<div class="ancor4"></div>
+<div class="slide4">
+    <div class="area">
+        
+        <div class="slide-title">
+            <span class="font-40 uppercase">Расположение обьекта</span><br>
+        </div>
+        
+   
+        <div class="block elem1">
+            <img src="Central%20Park_files/map-icon1.png" alt="" align="left">
+            
+                <div class="caption">
+                    Лыжные Трассы    
+                </div>    
+        </div>
+
+        <div class="block elem2">
+            <img src="Central%20Park_files/map-icon2.png" alt="" align="left">
+             
+                <div class="caption">
+                    ТЦ    
+                </div>   
+        </div>
+
+        <div class="block elem3">
+            <img src="Central%20Park_files/map-icon3.png" alt="" align="left">
+             
+                <div class="caption">
+                    ТРЦ Колумбус   
+                </div>    
+        </div>
+
+        <div class="block elem4">
+            <img src="Central%20Park_files/map-icon4.png" alt="" align="left">
+            <br><br><br>    
+                <div class="caption">
+                    Станция Ул.Академика Янгеля    
+                </div> 
+        </div>
+
+        <div class="block elem5">
+            <img src="Central%20Park_files/map-icon4.png" alt="" align="left">
+    
+                <div class="caption">
+                    Станция Пражская    
+                </div> 
+        </div>
+
+        <div class="block elem6">
+            <img src="Central%20Park_files/map-icon5.png" alt="" align="left">
+                
+                <div class="caption">
+                    Прогулочные зоны    
+                </div> 
+        </div>
+        
+        <div class="block elem7">
+            <img src="Central%20Park_files/map-icon6.png" alt="" align="left">
+                
+                <div class="caption">
+                    Теннисные корты    
+                </div> 
+        </div>
+        
+        <div class="block elem8">
+            <img src="Central%20Park_files/map-icon2.png" alt="" align="left">
+               
+                <div class="caption">
+                    Магазин    
+                </div> 
+        </div>
+
+        <div class="block elem9">
+            <img src="Central%20Park_files/map-icon7.png" alt="" align="left">
+               
+                <div class="caption">
+                    Школа    
+                </div> 
+        </div>
+
+        <div class="block elem10">
+            <img src="Central%20Park_files/map-icon8.png" alt="" align="left">
+   
+                <div class="caption">
+                    Детский сад                    
+                </div> 
+        </div>
+
+        <div class="block elem11">
+            <img src="Central%20Park_files/map-icon9.png" alt="" align="left"><br><br><br>
+   
+                <div class="caption">
+                    Парковка    
+                </div> 
+        </div>
+        
+        <div class="block elem12">
+            <img src="Central%20Park_files/map-icon9.png" alt="" align="left"><br><br><br>
+   
+                <div class="caption">
+                    Парковка    
+                </div> 
+        </div>        
+        
+        <div class="block elem13">
+            Central Park   
+                <div class="caption">
+                    
+                </div> 
+        </div>
+
+        <div class="block elem14">
+            <img src="Central%20Park_files/map-icon8.png" alt="" align="left">
+  
+                <div class="caption">
+                    Детский сад    
+                </div> 
+        </div>
+
+        <div class="block elem15">
+            <img src="Central%20Park_files/map-icon8.png" alt="" align="left">
+  
+                <div class="caption">
+                    Детский развивающий центр    
+                </div> 
+        </div>
+
+        <div class="block elem16">
+            <img src="Central%20Park_files/map-icon8.png" alt="" align="left">
+  
+                <div class="caption">
+                    Детский сад    
+                </div> 
+        </div>
+
+        <div class="block elem17">
+            <img src="Central%20Park_files/map-icon8.png" alt="" align="left">
+               
+                <div class="caption">
+                    Детский сад    
+                </div> 
+        </div>        
+
+        <div class="block elem18">
+            <img src="Central%20Park_files/map-icon7.png" alt="" align="left">
+               
+                <div class="caption">
+                    Школа    
+                </div> 
+        </div>
+
+        <div class="block elem19">
+            <img src="Central%20Park_files/map-icon7.png" alt="" align="left">
+               
+                <div class="caption">
+                    Школа    
+                </div> 
+        </div>
+
+        <div class="block elem20">
+            <img src="Central%20Park_files/map-icon8.png" alt="" align="left">
+               
+                <div class="caption">
+                    Детский эко-клуб (центр развития ребенка по системе Монтессори)   
+                </div> 
+        </div>
+
+        <div class="block elem21">
+            <img src="Central%20Park_files/map-icon2.png" alt="" align="left">
+               
+                <div class="caption">
+                    Магазин    
+                </div> 
+        </div>
+
+        <div class="block elem22">
+            <img src="Central%20Park_files/map-icon2.png" alt="" align="left">
+               
+                <div class="caption">
+                    Магазин    
+                </div> 
+        </div>
+
+        <div class="block elem23">
+            <img src="Central%20Park_files/map-icon2.png" alt="" align="left">
+               
+                <div class="caption">
+                    Магазин    
+                </div> 
+        </div>
+
+        <div class="block elem24">
+            <img src="Central%20Park_files/map-icon2.png" alt="" align="left">
+               
+                <div class="caption">
+                    Магазин    
+                </div> 
+        </div>
+
+        <div class="block elem25">
+            <img src="Central%20Park_files/map-icon2.png" alt="" align="left">
+               
+                <div class="caption">
+                    Магазин    
+                </div> 
+        </div>
+        
+        <div class="block elem26">
+            <img src="Central%20Park_files/map-icon2.png" alt="" align="left">
+               
+                <div class="caption">
+                    Магазин    
+                </div> 
+        </div>
+
+        <div class="block elem27">
+            <img src="Central%20Park_files/map-icon12.png" alt="" align="left">
+               
+                <div class="caption">
+                    Аэропорт Домодедово, Внуково    
+                </div> 
+        </div>
+
+        <div class="block elem28">
+            <img src="Central%20Park_files/metro.png" alt="" align="left">
+               
+                <div class="caption">
+                Гипермакет "Metro cash and carry"    
+                </div> 
+        </div>
+
+        <div class="block elem29">
+            <img src="Central%20Park_files/map-icon10.png" alt="" align="left">
+               
+                <div class="caption">
+                    Спортивный комплекс "ПИК"   
+                </div> 
+        </div>
+
+        <div class="block elem30">
+            <img src="Central%20Park_files/map-icon7.png" alt="" align="left">
+               
+                <div class="caption">
+                    Школа    
+                </div> 
+        </div>
+
+        <div class="block elem31">
+            <img src="Central%20Park_files/map-icon8.png" alt="" align="left">
+   
+                <div class="caption">
+                    Детский сад                    
+                </div> 
+        </div>
+
+        <div class="block elem32">
+            <img src="Central%20Park_files/map-icon8.png" alt="" align="left">
+   
+                <div class="caption">
+                    Детский сад                    
+                </div> 
+        </div>
+
+        <div class="block elem33">
+            <img src="Central%20Park_files/map-icon3.png" alt="" align="left">
+   
+                <div class="caption">
+                    Электронный рай на пражской                    
+                </div> 
+        </div>
+        
+        <div class="block logo">
+            <img src="Central%20Park_files/logo3.png" alt="">   
+        </div>        
+    </div>
+</div>
+<!-- SLIDE 4 END -->
+
+<!-- SLIDE 5 -->
+<div class="slide5">
+
+</div>
+<!-- SLIDE 5 END -->      
+
+<!-- SLIDE 6 -->
+<div class="ancor6"></div>
+<div class="slide6">
+    <div class="bg">
+        <div class="area">
+        
+            <div class="title-container font-48 uppercase">Территория Central Park</div>    
+            
+            
+                <div class="point type1">
+                    1. Открытые террасы<br>с видом на лес        
+                </div>
+
+                <div class="point type2">
+                    2. Собственная охраняемая<br> территория        
+                </div>
+
+                <div class="point type3">
+                    3. Отдаленность от дорог<br> в тишине леса        
+                </div>            
+                
+                <div class="point type4">
+                    4. ФИТНЕС КЛУБ, SPA<br><br>        
+                </div>
+                <div class="clear"></div>        
+   
+        </div>
+    </div>
+</div>
+<!-- SLIDE 6 END -->
+
+<!-- SLIDE 7 -->
+<div class="ancor7"></div>
+<div class="slide7">
+
+    <div class="area">
+    
+        <div class="title font-38 uppercase">Апарт-отель Central Park</div>
+        
+        
+            <div class="wrapper">      
+            <div class="connected-carousels">
+                <div class="stage">
+                    <div data-jcarouselautoscroll="true" data-jcarousel="true" class="carousel carousel-stage">
+                        <ul style="left: 0px; top: 0px;">
+                            <li style="" class="wrapper1">
+                                <div class="content">                                  
+                                    <span class="opacity">
+                                        <span class="font-40 uppercase lineheight-60 yellow underline">Самый доступный</span><br>
+Самый востребованный формат площади!<br><br>
+
+-Студия 34,1 м2<br>
+-Высота потолка 3,10 м<br>
+-Вид в сторону парка<br>
+-Свободная планировка, позволяющая сделать пространство<br> максимально комфортным и удобным для Вас<br><br>
+<span class="font-26 yellow">Общая стоимость: 4 951 529 руб.</span>
+                                    </span>
+                                    
+                                    <div class="opacity">
+                                        <a href="javascript:void(0)" class="btn" onclick="$('.slide10').animatescroll({scrollSpeed:2000}); yaCounter29384905.reachGoal('dostupniy');">Получить консультацию</a>
+                                    </div>
+                                
+                                </div>                  
+                            </li>
+
+      
+                            <li style="" class="wrapper2">
+                                <div class="content">
+                                    <span class="opacity">
+                                        <span class="font-40 uppercase lineheight-60 yellow underline">Лучший для инвестиций</span><br>
+Нестандартная конфигурация, позволяет организовать<br>
+3 полноценные комнаты.<br> 
+Важным преимуществом является наличие больших окон<br>
+расположенных на юго-запад, что обеспечивает<br>
+высокую инсоляцию и прекрасные видовые характеристики.<br><br>
+ 
+- площадь – 68 м2<br>
+- 3 окна<br>
+- окна расположены на две стороны<br>
+- высокий уровень инсоляции<br>
+- отличные видовые характеристики в сторону парка<br>
+- свободная планировка
+ 
+                                    </span>
+                                    
+                                    <div class="opacity">
+                                        <a href="javascript:void(0)" class="btn" onclick="$('.slide10').animatescroll({scrollSpeed:2000}); yaCounter29384905.reachGoal('bestinvest');">Получить консультацию</a>
+                                    </div>
+                                
+                                </div>                  
+                            </li>
+
+
+                            <li style="" class="wrapper3">
+                                <div class="content">
+                                    <span class="opacity">
+                                        <span class="font-40 uppercase lineheight-60 yellow underline">Самый дорогой</span><br>
+Светлый и просторный двухуровневый апартамент<br>
+площадью 165 кв/м, с собственной террасой в подарок.<br>
+На террасе Вы сможете расположить зимний сад или<br> 
+использовать это пространство для отдыха и барбекю.<br><br>
+
+- площадь 165 м2<br>
+- два уровня, один из которых на крыше здания:<br>
+высота 1-го уровня – 3,10 м, высота 2 –го уровня – 3,10 м<br>
+- свободная планировка, позволяющая сделать пространство<br> максимально комфортным для Вас.<br>
+- возможность организовать 4-5 комнат<br>
+- отличные видовые характеристики в сторону парка<br>
+- индивидуальная терраса 27,8 м2 в подарок<br>
+- возможность установки камина<br><br>
+<spanc class="yellow">Общая стоимость: 54 685 870 руб.</spanc></span>
+                                    
+                                    
+                                    <div class="opacity">
+                                        <a href="javascript:void(0)" class="btn" onclick="$('.slide10').animatescroll({scrollSpeed:2000}); yaCounter29384905.reachGoal('cost');">Получить консультацию</a>
+                                    </div>
+                                
+                                </div>                  
+                            </li>
+                            
+
+                            <li style="" class="wrapper4">
+                                <div class="content">
+                                    <span class="opacity">
+                                        <span class="font-40 uppercase lineheight-60 yellow underline">От 119 000 руб/м<sup>2</sup></span><br>
+Двухуровневый апартамент с отдельным входом,<br>
+который делает Ваше пространство более приватным и обособленным.<br>
+Два полноценных уровня и свободная планировка<br> 
+позволяют организовать 3- 4 комнаты, а большие окна <br>
+обеспечивают высокий уровень инсоляции.<br><br>
+
+-высота 1-го уровня – 3,10 м, высота 2 –го уровня – 3,10 м<br>
+-отдельный вход со двора<br>
+-высокая инсоляция<br>
+-вид на тихий благоустроенный двор и парк<br>
+                                    </span>
+                                    
+                                    <div class="opacity">
+                                        <a href="javascript:void(0)" class="btn" onclick="$('.slide10').animatescroll({scrollSpeed:2000}); yaCounter29384905.reachGoal('ot119');">Получить консультацию</a>
+                                    </div>
+                                
+                                </div>                  
+                            </li>
+                    
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <a data-jcarouselcontrol="true" href="#" class="prev prev-navigation inactive">‹</a>
+                    <a data-jcarouselcontrol="true" href="#" class="next next-navigation inactive">›</a>
+                    <div data-jcarousel="true" class="carousel carousel-navigation">
+                        <ul style="left: 0px; top: 0px;">                                      
+                            <li data-jcarouselcontrol="true" class="thumb-wrapper1"><div class="opacity thumb">Самый доступный</div><img src="Central%20Park_files/image1.jpg" alt="" height="150" width="246"></li>
+                            <li data-jcarouselcontrol="true" class="thumb-wrapper2"><div class="opacity thumb">Лучший для инвестиций</div><img src="Central%20Park_files/image2.jpg" alt="" height="150" width="246"></li>
+                            <li data-jcarouselcontrol="true" class="thumb-wrapper3 active"><div class="opacity thumb">Самый дорогой</div><img src="Central%20Park_files/image3.jpg" alt="" height="150" width="246"></li>
+                            <li data-jcarouselcontrol="true" class="thumb-wrapper4"><div class="opacity thumb last">От 119 000 руб/м<sup>2</sup></div><img src="Central%20Park_files/image4.jpg" alt="" height="150" width="246"></li>
+                        </ul>
+                    </div>                               
+                </div>
+            </div>
+        </div>
+        
+
+    
+    </div>
+
+</div>
+<!-- SLIDE 7 END -->
+
+<!-- slide 8 -->
+<div class="ancor8"></div>
+<div class="slide8">
+                                                                                                                             
+</div>
+<!-- SLIDE 8 END -->
+
+<!-- SLIDE 9 -->
+<div class="ancor9"></div>
+<div class="slide9">
+
+    <div class="area">
+        <div class="faqContainer">
+        
+            <div class="title font-38 uppercase">Часто задаваемые вопросы</div>
+            
+            <ul>
+                <li>
+                    В каком виде сдается помещение? <a class="btn opened" href="javascript:void(0)" onclick="yaCounter29384905.reachGoal('faq1');">Получить ответ</a>
+                    <div display="none" class="answer">
+                        <ul>
+                            <li>Места общего пользования сдаются с полной отделкой.</li>
+                            <li>Территория резиденции – огорожена, охраняема, благоустроена;</li>
+                            <li>Потолки – бетонные, профнастил; </li>
+                            <li>Наружные и Внутренние стены – кирпич;</li>
+                            <li>Входная дверь в помещение – металлическая с деревянным декором.</li>
+                            <li>Окна – пластиковые стеклопакеты;</li>
+                            <li>Полы бетонные</li>
+                            <li>Установлены стояки с горячим, холодным водоснабжением и канализацией</li>
+                            <li>Отопление монтируется в 100% объеме с установкой радиаторов с регулирующими вентилями;</li>
+                            <li>Устанавливается щит электроснабжения.</li>
+                        </ul>
+                        
+                    </div>
+                </li>
+                <li>
+                    Какие инженерные коммуникации будут в комплексе? <a class="btn opened" href="javascript:void(0)" onclick="yaCounter29384905.reachGoal('faq2');">Получить ответ</a>
+                    <div display="none" class="answer">
+                        В резиденции предусмотрены все городские 
+коммуникации, электроснабжение, горячее и холодное водоснабжение, 
+водоотведение, отопление.
+                    </div>
+                </li>
+                <li>
+                    В чем заключается “Бизнес-класс” вашей резиденции? <a class="btn opened" href="javascript:void(0)" onclick="yaCounter29384905.reachGoal('faq3');">Получить ответ</a>
+                    <div display="none" class="answer">
+                        Узнаваемая авторская архитектура, качественная 
+отделка, благоустроенный внутренний двор с ландшафтным дизайном.
+                    </div>
+                </li> 
+                <li>
+                    Возможна ли дизайнерская отделка? <a class="btn opened" href="javascript:void(0)" onclick="yaCounter29384905.reachGoal('faq4');">Получить ответ</a>
+                    <div display="none" class="answer">
+                        Да, возможна. Стоимость Вашего дизайн-проекта 
+будет зависеть от площади и может составить от 1500 руб./кв.м., далее 
+специалисты нашей компании воплотят его в жизнь.
+                    </div>
+                </li>  
+                <li>
+                    Есть ли у вас рассрочка? Какие условия? <a class="btn opened" href="javascript:void(0)" onclick="yaCounter29384905.reachGoal('faq6');">Получить ответ</a>
+                    <div display="none" class="answer">
+                        Покупателям предоставляется рассрочка для приобретения апартамента в экорезиденции "Central Park".<br>
+Условия:<br>
+1.Рассрочка предоставляется при заключении договора согласно прайсовой 
+стоимости. Все скидки действуют только при единовременной оплате.<br>
+2.Беспроцентная рассрочка предоставляется сроком до 30.06.2016, с 
+первоночальным взносом от 30%. Платежи осуществляются ежемесячно равными
+ долями.<br>
+3.Процентная рассрочка предоставляется сроком до 30.06.2018, с 
+первоночальным взносом от 10%. Ставка по рассрочке  - 2% в месяц на 
+остаток суммы долга.<br> 
+                    </div>
+                </li>
+                <li>
+                    Когда будет завершение работ по проекту? <a class="btn opened" href="javascript:void(0)" onclick="yaCounter29384905.reachGoal('faq7');">Получить ответ</a>
+                    <div display="none" class="answer">
+                    Официальный срок завершения работ по проекту Central Park, II квартал 2016 года.
+                    
+                    </div>
+                </li>
+
+            </ul>
+        
+        </div>
+    </div>
+
+</div>
+<!-- SLIDE 9 END -->
+
+
+<!--SLIDE 10 -->
+<div class="ancor10"></div>
+<div class="slide10">
+    <div class="area">
+             
+
+         <div class="ContentContainer">
+                  
+            <div class="phonetext">
+                <span class="font-40 bold uppercase">Звоните сейчас:<br> <a href="tel:">8(000) 000-00-00</a></span>    
+            </div>
+            
+           <div class="formContainer">
+                <form>
+                    
+                <div class="inp first">
+                        Ваше имя:<br>
+                        <input class="name" id="f2_name" name="f1_name" type="text">
+                    </div>
+                    
+                    <div class="inp">
+                        Ваш телефон:<br>
+                        <input class="phone masked" id="f2_phone" name="f1_phone" type="text">
+                    </div>
+                    
+                    <div class="inp">
+                        Время звонка:<br>
+                        <input class="time" id="f2_time" name="f1_time" type="text">
+                    </div>                   
+
+                    <div class="clear"></div>                           
+                                                                        
+                                                                        
+                   
+                     
+                     <a href="javascript:void(0)" class="btn2">Отправить заявку</a> 
+                    
+                </form> 
+                  
+           </div>
+           <div class="clear"></div> 
+         
+         </div>
+         <div class="clear"></div>
+    
+    </div>
+</div>
+<!-- SLIDE 10 END -->
+
+<!-- FOOTER -->
+<div class="footer">
+
+    <div class="area">
+
+        <div class="logo">
+            <img src="Central%20Park_files/logo-black.png" alt="">
+        </div>
+        <div class="copy">
+            © LER Group Ltd.  <!--<a href="http://lergroup.ru" target="_blank">lergroup.ru</a>-->
+        </div>
+        <div class="content">
+            Апарт-отель с бассейном в единственной экорезиденции Москвы,
+ на границе природного парка, в окружении настоящего леса!
+        </div>
+        
+        <div class="phone-container">
+        
+            <a class="number" href="tel:" onclick="yaCounter29384905.reachGoal('lpphone')">(000) 000-00-00</a><br>
+<!--            <a class="callback" href="javascript:void(0)" onclick="showmodal()">Заказать обратный звонок</a>-->
+        
+        </div>
+        
+    
+    </div>
+
+</div>
+<!-- FOOTER END -->
+<div class="modal_shadow"></div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div style="display: none;" id="cboxOverlay"></div><div style="display: none;" tabindex="-1" role="dialog" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow"></button><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>

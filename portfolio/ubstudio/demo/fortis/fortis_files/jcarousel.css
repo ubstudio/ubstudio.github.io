@@ -1,0 +1,173 @@
+/** Stage container **/
+
+.connected-carousels .stage {
+    width: 1024px;
+    height: 595px;
+    position: relative;
+
+}
+
+.connected-carousels .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.connected-carousels .photo-credits a {
+    color: #fff;
+}
+
+/** Navigation container **/
+
+.connected-carousels .navigation {
+    width: 260px;
+    margin: 20px auto;
+    position: relative;
+}
+
+/** Shared carousel styles **/
+
+.connected-carousels .carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.connected-carousels .carousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.connected-carousels .carousel li {
+    float: left;
+}
+
+/** Stage carousel specific styles **/
+
+.connected-carousels .carousel-stage {
+height: 595px;
+}
+
+/** Navigation carousel specific styles **/
+
+.connected-carousels .carousel-navigation {
+    
+position: absolute;
+  left: 50%;
+  margin: 0px 0px 0px -512px;
+  height: 160px;
+  width: 1024px;
+  background: #fff;
+}
+
+.connected-carousels .carousel-navigation li {
+    cursor: pointer;
+}
+
+.connected-carousels .carousel-navigation li img {
+    display: block;
+    border: 5px solid #fff;
+}
+
+.connected-carousels .carousel-navigation li.active img {
+    border-color: #ffe932;
+}
+
+/** Stage carousel controls **/
+
+.connected-carousels .next-stage {
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    text-decoration: none;
+    width: 87px;
+    height: 595px;
+    right: -1px;
+    cursor: pointer;
+    background: transparent url('../../../../img/banner-arrow-right.png') no-repeat 0px 0px;
+}
+
+.connected-carousels .prev-stage {
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    text-decoration: none;
+    width: 87px;
+    height: 595px;
+    right: -1px;
+    cursor: pointer;
+    background: transparent url('../../../../img/banner-arrow-left.png') no-repeat 0px 0px;
+}
+
+.connected-carousels .prev-stage {
+    left: 0;
+    
+}
+
+.connected-carousels .next-stage {
+    right: 0;
+}
+
+.connected-carousels .prev-stage.inactive,
+.connected-carousels .next-stage.inactive {
+    display: none;
+}
+
+.connected-carousels .prev-stage span,
+.connected-carousels .next-stage span {
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    text-decoration: none;
+    width: 87px;
+    height: 595px;
+}
+.connected-carousels .prev-stage span {
+    left: 20px;
+}
+
+.connected-carousels .next-stage span {
+    right: 20px;
+}
+
+.connected-carousels .prev-stage:hover span,
+.connected-carousels .next-stage:hover span {
+    display: block;
+}
+
+/** Navigation carousel controls **/
+
+.connected-carousels .prev-navigation,
+.connected-carousels .next-navigation {
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    text-decoration: none;
+    width: 87px;
+    height: 595px;
+
+}
+
+.connected-carousels .prev-navigation {
+    left: -1px;
+    cursor: pointer;
+
+}
+
+.connected-carousels .next-navigation {
+    right: -1px;
+    cursor: pointer;
+
+}
+
+.connected-carousels .prev-navigation.inactive,
+.connected-carousels .next-navigation.inactive {
+    opacity: .5;
+    cursor: default;
+}

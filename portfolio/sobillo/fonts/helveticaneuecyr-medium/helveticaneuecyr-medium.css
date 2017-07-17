@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HelveticaNeueCyrMedium';
+    src: url('helveticaneuecyr-medium.eot');
+    src: local('☺'),
+    url('helveticaneuecyr-medium.eot') format('embedded-opentype'),
+         url('helveticaneuecyr-medium.woff') format('woff'),
+         url('helveticaneuecyr-medium.ttf') format('truetype'),
+         url('http://fresh-landing.ru/portfolio/sobillo/fonts/helveticaneuecyr-medium/helveticaneuecyr-medium.svg') format('svg');
+}

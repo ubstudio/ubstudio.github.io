@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Альянс - Таможенные услуги</title>
+    <meta name="keywords" content="Альянс - Таможенные услуги">
+    <meta name="description" content="Альянс - Таможенные услуги">
+    <link rel="shortcut icon" href="http://fresh-landing.ru/portfolio/btk39/images/favicon.ico" type="images/x-icon">
+
+    <link href="css/normalize-2.1.2.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="js/arcticmodal/jquery.arcticmodal.css" rel="stylesheet">
+    <link href="js/arcticmodal/themes/simple.css" rel="stylesheet">
+    <link href="js/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+    <script src="js/arcticmodal/jquery.arcticmodal.js"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+
+    <script>
+        $(function($) {
+            $.localScroll({
+                duration: 1000,
+                hash: true,
+                offset: -60
+            });
+
+            $('.callback').click(function(){
+                $('#callback-modal').arcticmodal();
+            });
+
+            $('.fancybox').fancybox();
+
+            // убираем видео ютуба с самого высокого слоя
+            $('iframe').each(function() {
+                var url = $(this).attr("src");
+                if ($(this).attr("src").indexOf("?") > 0) {
+                    $(this).attr({
+                        "src": url + "&wmode=transparent",
+                        "wmode": "Opaque"
+                    });
+                } else {
+                    $(this).attr({
+                        "src": url + "?wmode=transparent",
+                        "wmode": "Opaque"
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="content">
+            <a class="logo" href="index.html#home"></a>
+            <div class="right text-right">
+                <button type="button" class="callback button button_size_short">Заказать звонок</button>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html#comments">Отзывы</a></li>
+                <li><a href="index.html#services">Услуги</a></li>
+                <li><a href="index.html#our-cargo">Сложности</a></li>
+                <li><a href="index.html#footer">Контакты</a></li>
+            </ul>
+            <span class="phone">тел. <span class="number">+7(4012) 605 052</span></span>
+        </div>
+    </div>
+
+    <div id="home" class="section home">
+        <div class="content">
+            <div class="description">
+                <h3 class="title">Таможенное оформление грузов<br>по всей России</h3>
+                <div class="separator"></div>
+                <div class="slogan">
+                    Мы - профессионалы таможенных услуг<br>
+                    с грандиозным опытом работы<br>
+                    Растаможем Ваш груз<br>
+                    быстро, не дорого и без головной боли.<br><br>
+                    Гарантируем результат.
+                </div>
+            </div>
+            <form class="request-form" action="http://fresh-landing.ru/portfolio/btk39/send.php" method="post">
+                <input type="hidden" name="subject" value="Рассчитать стоимость">
+                <div class="text">
+                    <h3 class="header">
+                        Минимизируйте расходы<br>на таможенное оформление
+                    </h3>
+                    <h3 class="sub-header">с нами это возможно</h3>
+                    <div class="separator">Рассчитайте стоимость растаможки прямо сейчас</div>
+                    Позвоните по телефону +7 (4012) 605 052<br>или заполните форму ниже
+                </div>
+                <label>Ваше имя:<br><input type="text" name="name" required></label>
+                <label>Ваш телефон:<br><input type="text" name="phone" required></label>
+                <label>Ваш e-mail:<br><input type="text" name="email"></label>
+                <input class="button button_size_med" type="submit" value="Рассчитать стоимость">
+            </form>
+        </div>
+    </div>
+
+    <div id="why-we" class="section why-we odd">
+        <div class="content">
+            <h2 class="header">Почему именно мы</h2>
+            <ul>
+                <li class="first">
+                    <div class="title"><span>8</span><br>лет опыта</div>
+                    <div class="text">Опыт работы охватывает всю таможенную номенклатуру</div>
+                </li><li class="second">
+                    <div class="title">Минимизация<br>расходов<br>на таможенное<br>оформление</div>
+                    <div class="text">Гибкие цены</div>
+                </li><li class="third">
+                    <div class="title">Гарантия результата</div>
+                    <div class="text">Ваш груз будет растаможен</div>
+                </li><li class="four">
+                    <div class="title">Гарантия сроков</div>
+                    <div class="text">Растаможим вовремя</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section why-we why-we2">
+        <div class="content">
+            <ul>
+                <li class="first">
+                    <div class="title"><a class="fancybox" href="files/doc-1.png"><span class="zoom-icon"></span><img src="files/doc-1-thumb.jpg" height="125" width="89" alt="Свидетельство"></a></div>
+                    <div class="text">Мы являемся<br>таможенным представителем</div>
+                </li><li class="second">
+                    <div class="title">Содействие<br>в доставке груза<br>в регионы</div>
+                    <div class="text">Поможем с логистикой</div>
+                </li><li class="third">
+                    <div class="title">Работаем<br>как “под ключ”,<br>так и с разовыми<br>поставками</div>
+                    <div class="text">Выполняем любые<br>условия клиента</div>
+                </li><li class="four">
+                    <div class="title">Грамотные<br>и<br>операвтивные<br>консультации<br>по всем вопросам<br>ВЭД</div>
+                    <div class="text">С нами<br>Вы всегда на верном пути</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!--<div id="comments" class="section video odd">
+        <div class="content">
+            <div class="videos">
+                <h3>Всё ещё не звоните? - посмотрите отзывы клиентов</h3>
+                <ul class="items-list">
+                    <li>
+                        <iframe width="340" height="208" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+                    </li><li>
+                        <iframe width="340" height="208" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+                    </li><li>
+                        <iframe width="340" height="208" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+                    </li><li>
+                        <iframe width="340" height="208" src="http://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="section consultation">
+        <div class="content">
+            <h2 class="header">Узнайте все ньюансы работы с Вашим грузом - прямо сейчас</h2>
+            <form class="request-form" action="http://fresh-landing.ru/portfolio/btk39/send.php" method="post">
+                <input type="hidden" name="subject" value="Консультация">
+                <div class="text">
+                    Позвоните по телефону +7 (4012) 605 052, либо заполните заявку ниже
+                </div>
+                <label>Ваше имя: <input type="text" name="name" required></label>
+                <label>Ваш телефон: <input type="text" name="phone" required></label>
+                <input class="button button_size_med" type="submit" value="Консультация">
+            </form>
+        </div>
+    </div>
+
+    <div id="services" class="section services odd">
+        <div class="content">
+            <h2 class="header">Виды наших услуг</h2>
+            <ul class="items-list">
+                <li class="first">
+                    <div class="icon"></div>
+                    Грамотные и оперативные<br>консультации<br>по всем вопросам,<br>связанным с ВЭД;
+                </li><li class="second">
+                    <div class="icon"></div>
+                    Реализация полного комплекса<br>таможенных услуг<br>без привлечения представителей<br>заказчика;
+                </li><li class="third">
+                    <div class="icon"></div>
+                    Таможенные услуги непосредственно<br>на самой границе,<br>а также на большинстве<br>таможенных постов<br>Калининградской области;
+                </li><li class="four">
+                    <div class="icon"></div>
+                    Содействие в доставке<br>товара<br>в различные регионы.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section services2">
+        <div class="content">
+            <div class="column left">
+                <h2 class="header">Что входит в комплекс услуг<br>по таможенному оформлению товара</h2>
+                <ul class="items-list bullet-list">
+                    <li>
+                        все необходимые консультации,<br>связанные с таможенным оформлением грузов;
+                    </li>
+                    <li>
+                        составление перечня требуемых документов,<br>а также их предварительный анализ;
+                    </li>
+                    <li>
+                        определение кода груза по ТН ВЭД;
+                    </li>
+                    <li>
+                        получение всех требуемых таможенных документов;
+                    </li>
+                    <li>
+                        получение всех необходимых разрешительных<br>документов для таможенного оформления;
+                    </li>
+                    <li>
+                        прямой контроль при таможенном оформлении;
+                    </li>
+                    <li>
+                        оказание услуг по всем операциям, связанным<br>с импортом, экспортом, а также оформлением и<br>транзитом товаров произведённых в<br>Калининградской области<br>(особой экономической зоне - ОЭЗ);
+                    </li>
+                    <li>
+                        расчет таможенных платежей;
+                    </li>
+                    <li>
+                        оформление необходимых документов<br>для отправки товара;
+                    </li>
+                    <li>
+                        таможенное оформление отправки груза<br>с территории Калининградской области (ОЭЗ)<br> на остальную территорию России.
+                    </li>
+                </ul>
+            </div>
+            <div class="column right">
+                <h2 class="header">Какие могут возникнуть сложности<br>при таможенном оформлении?</h2>
+                Основные ошибки таможенного оформлениея связаны с:
+                <ul class="items-list bullet-list">
+                    <li>
+                        крайне запутанной и сложной системой таможенного<br>законодательства, куда постоянно вносятся различные<br>изменения и дополнения;
+                    </li>
+                    <li>
+                        неверным пониманием толкования закона и других<br>нормативных актов;
+                    </li>
+                    <li>
+                        большим потоком информации по всем вопросам<br>касаемо таможенного регулирования;
+                    </li>
+                    <li>
+                        внезапным изменением действующих нормативов;
+                    </li>
+                    <li>
+                        неграмотным определением ТН ВЭД<br>декларируемого груза, а также цены на него и т.д.
+                    </li>
+                </ul>
+                <p>
+                    На самом деле это лишь основная часть всех ошибок.<br>Самостоятельно пройти таможенное оформление товара<br>практически не реально.
+                </p>
+                <p>
+                    Но мы знаем абсолютно все тонкости и<br>уловки на наших границах.<br>Более того, таможенная служба уже прекрасно знает нас<br>и наши возможности, что автоматически делает оформление<br>простым и быстрым.<br>Наши высококвалифицированные декларанты прекрасно<br>справляются с любыми трудностями.<br>Поэтому, сотрудничая с нами, вы изначально обеспечиваете<br>себе беcпроблемный переход груза через границу.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="our-cargo" class="section our-cargo odd">
+        <div class="content">
+            <h2 class="header">Груз, который мы оформляли</h2>
+            <div class="column2">
+                <ul class="items-list bullet-list">
+                    <li>автомобильный транспорт любого типа,</li>
+                    <li>строительная техника любого назначения<br>(экскаваторы, бульдозеры, краны, катки, сваебойные машины и т.п.),</li>
+                    <li>запасные части к строительной технике (новые и б/у),<br>дорожное оборудование, двигатели</li>
+                    <li>сельскохозяйственные машины и оборудование, камыш строительный,</li>
+                    <li>дизель-генераторы, счётчики электрические,</li>
+                    <li>диски и инструмент с искуственным алмазным напылением,</li>
+                    <li>медицинское оборудование,</li>
+                    <li>трубы, прокат листовой, водосточное оборудование,</li>
+                    <li>мебель разного вида и назначения, зеркала,</li>
+                </ul>
+            </div>
+            <div class="column2">
+                <ul class="items-list bullet-list">
+                    <li>оборудование мясное, упаковочное,</li>
+                    <li>сальники, прокладки для автомобилей, покрышки новые и наварные,</li>
+                    <li>биотуалеты и принадлежности для их использования,</li>
+                    <li>мыльная основа, моющие средства,</li>
+                    <li>минеральное моторное масло, краски,</li>
+                    <li>одежда, обувь,</li>
+                    <li>статуэтки декоративные, бижутерия (без драгметаллов)</li>
+                    <li>этикетки, печатная продукция, упаковочный материал, картон,</li>
+                    <li>колбасная продукция, варёно-копчёные изделия, яблоки, пиво,</li>
+                    <li>макаронные изделия, консервация, соусы, джемы, детское питание,</li>
+                    <li>корм для домашних животных,</li>
+                    <li>обрезки шкур КРС.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section our-cargo2">
+        <div class="content">
+            <div class="men"></div>
+            <div class="women"></div>
+            <div class="description">
+                Наша компания работает на рынке таможенных услуг далеко не первый год.<br>Наши услуги широко востребованы среди тех клиентов, которые не привыкли к тому,<br>чтобы с их грузом что-то случалось на границе.<br>За всё время нашей деятельности мы стали известны<br>как надежный и выполняющий все свои обязательства<br>партнер в области оказания комплексных таможенных услуг. 
+            </div>
+            <form class="request-form" action="http://fresh-landing.ru/portfolio/btk39/send.php" method="post">
+                <input type="hidden" name="subject" value="Таможенное оформление">
+                <div class="text">
+                    <div class="header">Прямо сейчас</div>
+                    <div class="sub-header">рассчитайте систему минимизации расходов</div>
+                    <div class="separator">на таможенное оформление</div>
+                    <span class="text-small">Позвоните по телефону +7 (4012) 605 052<br>или заполните форму ниже</span>
+                </div>
+                <label>Ваше имя:<br><input type="text" name="name" required></label>
+                <label>Ваш телефон:<br><input type="text" name="phone" required></label>
+                <label>Ваш e-mail:<br><input type="text" name="email"></label>
+                <input class="button button_size_med" type="submit" value="Подтвердить">
+            </form>
+        </div>
+    </div>
+
+    <div id="footer" class="section contacts odd">
+        <div class="content">
+            <h2 class="header">Контакты</h2>
+            <div class="left map">
+                <!-- <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=RqkLg7DLi1AswzrVWYndC7ePE-bn4C7z&width=530&height=320"></script> -->
+                <iframe width="530" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/maps/ms?msa=0&amp;msid=210366307831450286295.0004f3b6eaf93c250fd30&amp;ie=UTF8&amp;ll=54.650244,20.542926&amp;spn=0,0&amp;t=m&amp;output=embed"></iframe>
+            </div>
+            <div class="right">
+                <div class="company-name">ЗАО “АЛЬЯНС”</div>
+                <p>
+                    Адрес офиса:<br>
+                    236034 Россия, Калининградская область,<br>
+                    г. Калининград, улица Дзержинского, 246 Б
+                </p>
+                <p>E-mail: btk-39@bk.ru</p>
+                <div class="phone">
+                    Телефон: +7 (4012) 605 052
+                    <div class="text-small">Работаем с 9:00 до 17:00</div>
+                    <div class="text-small">Понедельник - Пятница</div>
+                </div>
+                
+                <a class="agreement text-small" href="sogl.html" target="_blank">соглашение об обработке персональных данных</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <div class="developer">Разработка и продвижение сайта: <a href="../../index.html" target="_blank"><img src="images/develoder-logo.png" alt="fresh-landing.ru"></a></div>
+        </div>
+    </div>
+
+
+    <div style="display: none;">
+        <div class="box-modal" id="callback-modal">
+            <div class="box-modal_close arcticmodal-close">x</div>
+            <form action="http://fresh-landing.ru/portfolio/btk39/send.php" method="post">
+                <input type="hidden" name="subject" value="Заказ звонка">
+                <table cellspacing="0" cellpadding="0" border="0" class="modal-form-table">
+                    <tr>
+                        <td align="left">Ваше имя:</td>
+                        <td align="right" class="form-td">
+                            <input type="text" name="name" class="input-form" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">Ваш телефон:</td>
+                        <td align="right" class="form-td">
+                            <input type="text" name="phone" class="input-form" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" class="button button_size_med submit-form" value="Подтвердить">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

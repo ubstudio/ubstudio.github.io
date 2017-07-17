@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Lukomory.ru - Пошив штор</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="http://fresh-landing.ru/portfolio/lukomory/js/ajax.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<script type="text/javascript">
+	var myDate = new Date();
+	function returnEndDate(d,h,m){
+		myDate.setDate(myDate.getDate()+d);
+		myDate.setHours(myDate.getHours()+h);
+		myDate.setMinutes(myDate.getMinutes()+m);
+		return myDate;
+	}
+	if($.cookie("timer")){
+		var dateEnd = $.cookie("timer");
+	}else{
+		var dateEnd = returnEndDate(19,23,45);
+		$.cookie("timer", dateEnd, {expires: 14});
+	}
+	</script>	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#add_comm_title").click(function(){
+			$("#add_comm_form").slideToggle("slow");
+			$(this).toggle; return false;
+		});
+	});
+	</script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header_big" style="height: 50px;overflow: hidden;">
+			<div class="header main">
+				<div class="logo">
+					<img src="images/logo.png" alt="" />
+				</div>
+				<div id="more_than"><br/>Пошив всех видов штор в Москве</div>
+				<div class="callback">
+					<p class="phone">+7(981)798-97-02</p>
+					<p class="order jqModal"><a href="index.html#" class="order_b">Перезвони мне</a></p>
+				</div>
+			</div>
+		</div>
+		<div id="lenses_big">
+<!-- 			<div id="lenses_bg_left"></div>
+			<div id="lenses_bg_right"></div> -->
+			<div class="lenses main">
+				<div id="lenbg"><div id="lenses_t"><!-- 
+					<p>Позвони или оставь заявку в <br/>
+					<span>выходной день</span><br/>
+					и получи дополнительную  <br/>
+					<span>скидку 3%</span></p> -->
+					<p>Сделай заявку до конца акции и получи:<br />
+					<br />бесплатный выезд нашего специалиста<br />
+					выбор материала, расчёт стоимости
+					<br /><br />и бутылочку шампанского в подарок!
+					</p>
+				</div>
+				<div class="form" style="background: url(images/new_form_bg.png) no-repeat 5px 5px;height: auto;min-height: 274px;margin-top: 5px;">
+					<div id="note_first">
+						<div class="show_hide" style="font-weight:bold;"><p>Пожалуйста, оставьте заявку <br/>на замер и рассчёт стоимости</p></div>
+					</div>
+					<form action="http://fresh-landing.ru/portfolio/lukomory/send.php" id="form_first_ajax">
+						<input type="text" class="name" placeholder="Имя" name="name"/>
+						<input type="text" class="tel" placeholder="Телефон" name="tel"/>
+						<input type="submit" class="submit" value="Отправить" />
+					</form>
+				</div></div>
+			</div>
+		</div>
+		<div id="hurry_big">
+			<div class="hurry main">
+				<div><p class="title_m">Торопись!</p><p class="title">Бесплатный рассчёт и шампанское ограниченны!</p></div>
+				<div class="timer_wrap">
+					<div class='day'>
+						<p class='day0'></p>
+						<p class='day1'></p>
+					</div>
+					<div class="razd"></div>
+					<div class='hour'>
+						<p class='hour0'></p>
+						<p class='hour1'></p>
+					</div>
+					<div class="razd"></div>
+					<div class='min'>
+						<p class='min0'></p>
+						<p class='min1'></p>
+					</div>
+					<div class="razd"></div>
+					<div class='sec'>
+						<p class='sec0'></p>
+						<p class='sec1'></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="prod_big">
+			<div class="prod main">
+				<div id="prod_items">
+					<div class="title">Солнцезащитные шторы</div>
+					<div class="prod_item">
+						<img src="images/1_1.jpg" alt="" />
+						<div class="prod_t">2 900 Руб. <span>4 900 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/1_2.jpg" alt="" />
+						<div class="prod_t">2 500 Руб. <span>4 200 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/1_3.jpg" alt="" />
+						<div class="prod_t">2 100 Руб. <span>3 900 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/1_4.jpg" alt="" />
+						<div class="prod_t">2 700 Руб. <span>4 000 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="title">Прозрачные шторы</div>
+					<div class="prod_item">
+						<img src="images/2_1.jpg" alt="" />
+						<div class="prod_t">1 900 Руб. <span>2 900 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/2_2.jpg" alt="" />
+						<div class="prod_t">1 200 Руб. <span>2 100 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/2_3.jpg" alt="" />
+						<div class="prod_t">1 700 Руб. <span>1 900 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/2_4.jpg" alt="" />
+						<div class="prod_t">1 400 Руб. <span>2 100 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="title">Современные шторы с затемнением</div>
+					<div class="prod_item">
+						<img src="images/3_1.jpg" alt="" />
+						<div class="prod_t">2 400 Руб. <span>2 900 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/3_2.jpg" alt="" />
+						<div class="prod_t">1 900 Руб. <span>2 200 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/3_3.jpg" alt="" />
+						<div class="prod_t">2 500 Руб. <span>3 300 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/3_4.jpg" alt="" />
+						<div class="prod_t">1 800 Руб. <span>2 300 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="title">Детские и подростковые шторы</div>
+					<div class="prod_item">
+						<img src="images/4_1.jpg" alt="" />
+						<div class="prod_t">2 300 Руб. <span>5 900 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/4_2.jpg" alt="" />
+						<div class="prod_t">1 300 Руб. <span>1 700 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/4_3.jpg" alt="" />
+						<div class="prod_t">2 400 Руб. <span> 3 500 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+					<div class="prod_item">
+						<img src="images/4_4.jpg" alt="" />
+						<div class="prod_t">2 100 <span> 3 000 Руб.</span></div>
+						<div class="prod_order"><a href="http://fresh-landing.ru/portfolio/lukomory/default.htm" class="jqModal prod_ord">Купить</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="how_big">
+			<div class="how main">
+				<div class="title">Как мы работаем</div>
+				<div id="how_items">
+					<div class="how_item one">
+						Звонок
+					</div>
+					<div class="how_item two">
+						Консультация
+					</div>
+					<div class="how_item three">
+						Замер
+					</div>
+					<div class="how_item four">
+						Производство
+					</div>
+					<div class="how_item five">
+						Установка
+					</div>
+					<div class="how_item six">
+						Оплата
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="comm_big">
+			<div class="comm main">
+				<div class="title"><p>Отзывы</p></div>
+				<div id="comm_items">
+					<div class="comm_item">
+						<div class="comm_ph">
+							<img src="images/ph_1.jpg" alt="" style="width: 89px; height: 89px;">
+						</div>
+						<div class="comm_text" style="top: 0px;">
+							<p>Мария Головко</p>
+							<p>Являюсь новоселом и приобрела у данной фирмы себе в квартиру шторы. Работают очень удобно, быстро и качественно, мне очень все понравилось. А самое главное очень уважительное отношение к клиенту у всей команды фирмы!!! За что им огромное человеческое спасибо!!! http://vk.com/id8486763
+							</p>
+						</div>
+					</div>
+					<div class="comm_item">
+						<div class="comm_ph">
+							<img src="images/ph_2.jpg" alt="" style="width: 89px; height: 89px;">
+						</div>
+						<div class="comm_text" style="top: -18px;">
+							<p>Антон  Урманов</p>
+							<p>Большое спасибо за качественную работу. Вчера установили шторы на 3 окна. Толковая консультация,  быстро и во время. Спасибо. urmanov1@tut.by 
+							</p>
+						</div>
+					</div>
+					<div class="comm_item">
+						<div class="comm_ph">
+							<img src="images/ph_3.jpg" alt="" style="width: 89px; height: 89px;">
+						</div>
+						<div class="comm_text">
+							<p>Александр Счук</p>
+							<p>Лазил в интернете. Искал шторы. Звонил в несколько фирм. А  эти парни меня зацепили сразу своим общением. Оставил заявку на замер. Перезвонили, в тот же день приехали. Все рассказали, посоветовали что выбрать. В итоге я остановился на классических шторах. Классно. Мне понравилось. Спасибо. Порекомендовал знакомым. schuk@bk.ru 
+							</p>
+						</div>
+					</div>
+					<div id="add_comm">
+						<div id="add_comm_title">Оставить отзыв</div>
+						<div id="add_comm_form" style="display: none;">
+							<div id="note_add">
+								<div class="show_hide_add"></div>
+							</div>
+							<form action="http://fresh-landing.ru/portfolio/lukomory/send.php" id="form_add_ajax">
+								<input type="text" placeholder="Имя" name="name">
+								<textarea name="comm" placeholder="Отзыв cо ссылкой на ваш профиль ВКонтакте"></textarea>
+								<input type="submit">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="usl_big">
+			<div class="usl main">
+				<div id="usl_items">
+					<div class="title" style="margin-bottom: 30px;width: 575px;margin-top: -10px;font-size: 33px;">Почему клиенты выбирают нас</div>
+					<p class="usl_item">Сроки.<span>У нас очень короткие сроки. От замера до монтажа максимум 5 дней.</span></p>
+					<p class="usl_item">Мы производители.<span>Поэтому даем гарантию на свою продукцию. Всегда можно обратиться с претензией, а мы обязательно её удовлетворим.</span></p>
+					<p class="usl_item">Качество.<span>У нас высокое качество продукции и монтажа. Мы делаем все, чтобы не подвести<br/>своего клиента и не испортить свою репутацию.</span></p>
+					<p class="usl_item">Доставка и монтаж.<span>У нас совершенно БЕСПЛАТНАЯ доставка. Вам не придется дополнительно искать<br/>установщиков. Мы все сделаем сами.</span></p>
+					<p class="usl_item">Цена.<span>Мы производитель. Поэтому можем Вам предложить выгодную цену.</span></p>
+					<p class="usl_item">Ассортимент.<span>Мы можем предложить огромный выбор расцветок и структуры тканей, поэтому можем<br/>удовлетворить запросы любого клиента.</span></p>
+					<p class="usl_item">Квалифицированные сотрудники.<span>У нас квалифицированные сотрудники. Всегда выслушают Вас и задав несколько<br/>вопросов помогут Вам решить Вашу задачу.</span></p>
+				</div>
+				<div id="probl_items">
+					<div class="title" style="margin-bottom: 30px;width: 360px;margin-top: 3px;font-size: 33px;">Проблемы, с которыми сталкиваются люди</div>
+					<p class="probl_item">Большие сроки исполнения</p>
+					<p class="probl_item">Работа по предоплате</p>
+					<p class="probl_item">Отсутствие гарантии</p>
+					<p class="probl_item">Небольшой ассортимент</p>
+				</div>
+				<div class="form">
+					<div id="note_second">
+						<div class="show_hide"><p>Появились какие-то вопросы?<br/><span>оставь заявку и мы перезвоним</span></p></div>
+					</div>
+					<form action="http://fresh-landing.ru/portfolio/lukomory/send.php" id="form_second_ajax">
+						<input type="text" class="name" placeholder="Имя" name="name"/>
+						<input type="text" class="tel" placeholder="Телефон" name="tel"/>
+						<input type="submit" class="submit" value="Отправить" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="title" style="margin-top: 40px;margin-bottom: 30px;">Бесплатная доставка по Москве и до ТК</div> -->
+		<div id="footer_big">
+			<div class="footer main">
+				<div id="soc">
+					<a href="../../index.html" target="_blank"><img src="images/logofresh.png" alt="" /></a>
+				</div>
+				<div class="callback">
+					<p class="email">info@lukomory.ru</p>
+					<p class="phone">+7(981)798-97-02</p>
+					<p class="order"><a href="index.html#" class="order_b jqModal">Перезвони мне</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="jqmWindow" id="dialog">
+		<a href="index.html#" class="jqmClose">Close</a>
+		<div id="fourth_form">
+			<div class="form">
+				<div id="note_third">
+					<div class="show_hide"><p>Чтобы купить оставьте<br/>свои данные</p></div>
+				</div>
+				<form action="http://fresh-landing.ru/portfolio/lukomory/send.php" id="form_third_ajax">
+					<input type="text" class="name" placeholder="впишите имя" name="name"/>
+					<input type="text" class="tel" placeholder="впишите телефон" name="tel"/>
+					<input type="submit" class="submit" value="Отправить" />
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
