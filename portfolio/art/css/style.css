@@ -803,7 +803,7 @@ footer .copy .dev a:after {
   content: "";
   display: inline-block;
   vertical-align: top;
-  width: 50px;
+  width: 60px;
   height: 50px;
   background: url(../images/fresh.png) no-repeat center;
   position: absolute;

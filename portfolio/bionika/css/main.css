@@ -1387,7 +1387,7 @@ footer .copy {
 
 .dev a:after {
 	content: '';
-	width: 50px;
+	width: 56px;
 	height: 49px;
 	background: url(../images/fresh.png) no-repeat center;
 	position: absolute;

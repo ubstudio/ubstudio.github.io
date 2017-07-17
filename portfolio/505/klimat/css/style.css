@@ -1118,10 +1118,10 @@ input[type="text"] {
 	line-height: 76px;
 }
 .footer .made_by a {
-	background: url(../images/fresh_logo.png) no-repeat 1px 12px;
+	/*background: url(../images/fresh_logo.png) no-repeat 1px 12px;
 	display: inline-block;
 	padding: 0 0 0 59px;
-	margin: 0 0 0 19px;
+	margin: 0 0 0 19px;*/
 }
 /*footer end*/
 
