@@ -143,9 +143,8 @@ img {
     border-radius: 5px; }
 
 .about-me__paragraph2 {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 1%;
+  margin: 0 -3% 0;
+  padding: 0 0 10px 10px;
   text-indent: 35px; }
   .about-me__paragraph2:first-of-type {
     margin-top: 0; }
