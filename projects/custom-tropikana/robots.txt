@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: *utm_medium=
+Disallow: *utm_source=
+Disallow: *utm_campaign=
+Disallow: *utm_content=
+Disallow: *utm_term=
+Disallow: *utm_placement=
+Disallow: *utm_network=
+Disallow: *utm_position_type=
+Disallow: *utm_position=
+Disallow: *utm_matchtype=
+
+Sitemap: http://revo-samara.ru/sitemap.xml
+
+Host: revo-samara.ru

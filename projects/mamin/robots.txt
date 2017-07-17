@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Host: http://www.sega34.ru/
+Sitemap: http://www.sega34.ru/

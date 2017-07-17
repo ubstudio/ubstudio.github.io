@@ -142,6 +142,24 @@ img {
             box-shadow: 0 0 1px 1px #d9b786 inset;
     border-radius: 5px; }
 
+.about-me__paragraph2 {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 1%;
+  text-indent: 35px; }
+  .about-me__paragraph2:first-of-type {
+    margin-top: 0; }
+  .about-me__paragraph2 b {
+    padding: 3px 7px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #d2a86c;
+    text-indent: 0px;
+    white-space: nowrap;
+    -webkit-box-shadow: 0 0 1px 1px #d9b786 inset;
+            box-shadow: 0 0 1px 1px #d9b786 inset;
+    border-radius: 5px; }
+
 .contacts__title {
   color: #333333; }
 
@@ -348,7 +366,19 @@ footer {
   font-weight: normal; }
 
 .projects__item-link {
-  font-size: 12px; }
+  font-size: 16px;
+  text-decoration: none;
+  cursor: url("https://html5book.ru/wp-content/uploads/2015/09/fox.png"), pointer
+}
+ a {
+    color: #fff; /* Цвет ссылок */
+   }
+a:visited {
+    color: #fff; /* Цвет посещенных ссылок */
+   }
+ a:active {
+    color: yellow; /* Цвет активных ссылок */
+   }
 
 .submain {
   background: #333333;
