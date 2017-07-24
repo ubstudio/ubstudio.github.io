@@ -355,7 +355,8 @@ footer {
   color: white;
   overflow: hidden;
   visibility: hidden;
-  background: rgba(0, 0, 0, 0.9); }
+  background: rgba(0, 0, 0, 0.9); 
+  text-align: center;}
 
 .projects__item-title {
   margin: 0 7%;
